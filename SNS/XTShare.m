@@ -15,22 +15,22 @@
     return [[[self class] alloc] init];
 }
 
-+ (void)shareMessage:(OSMessage *)message toPlatform:(XTSharePlatform)platform
++ (void)shareMessage:(OSMessage *)message toPlatform:(XTSNSPlatform)platform
 {
     switch (platform) {
-        case XTSharePlatformWeibo:
+        case XTSNSPlatformWeibo:
             [OpenShare shareToWeibo:message Success:nil Fail:nil];
             break;
-        case XTSharePlatformQQZone:
+        case XTSNSPlatformQQZone:
             [OpenShare shareToQQZone:message Success:nil Fail:nil];
             break;
-        case XTSharePlatformQQ:
+        case XTSNSPlatformQQ:
             [OpenShare shareToQQFriends:message Success:nil Fail:nil];
             break;
-        case XTSharePlatformWXSceneTimeline:
+        case XTSNSPlatformWXSceneTimeline:
             [OpenShare shareToWeixinTimeline:message Success:nil Fail:nil];
             break;
-        case XTSharePlatformWXSceneSession:
+        case XTSNSPlatformWXSceneSession:
             [OpenShare shareToWeixinSession:message Success:nil Fail:nil];
             break;
         default:
@@ -38,14 +38,14 @@
     }
 }
 
-+ (void)shareText:(NSString *)text toPlatform:(XTSharePlatform)platform
++ (void)shareText:(NSString *)text toPlatform:(XTSNSPlatform)platform
 {
     OSMessage *message = [[OSMessage alloc] init];
     message.title = text;
     [[self class] shareMessage:message toPlatform:platform];
 }
 
-+ (void)shareText:(NSString *)text image:(UIImage *)image toPlatform:(XTSharePlatform)platform
++ (void)shareText:(NSString *)text image:(UIImage *)image toPlatform:(XTSNSPlatform)platform
 {
     OSMessage *message = [[OSMessage alloc] init];
     message.title = text;
@@ -53,7 +53,7 @@
     [[self class] shareMessage:message toPlatform:platform];
 }
 
-+ (void)shareLink:(NSString *)linkUrl image:(UIImage *)image title:(NSString *)title description:(NSString *)description toPlatform:(XTSharePlatform)platform
++ (void)shareLink:(NSString *)linkUrl image:(UIImage *)image title:(NSString *)title description:(NSString *)description toPlatform:(XTSNSPlatform)platform
 {
     OSMessage *message = [[OSMessage alloc] init];
     message.title = title;

@@ -8,18 +8,11 @@
 
 #import <Foundation/Foundation.h>
 #import <UIKit/UIKit.h>
+#import "XTSNSDefine.h"
 
 /**
  *  第三方登录封装接口，提供登录，获取用户信息等
  */
-
-
-typedef NS_ENUM(NSUInteger, XTUserType) {
-    XTUserTypeQQ,
-    XTUserTypeWeixin,
-    XTUserTypeWeibo,
-};
-
 @interface XTOAuth : NSObject
 
 /**
@@ -36,6 +29,6 @@ typedef NS_ENUM(NSUInteger, XTUserType) {
  *  @param viewController 传入ViewController，由其展现登录界面
  *  @param completion     完成代理，返回相关数据
  */
-- (void)loginWithUserType:(XTUserType)userType prentViewController:(UIViewController *)viewController completionHandle:(void (^)(NSDictionary *data, NSError *error))completion;
+- (void)loginWithUserType:(XTSNSPlatform)userType prentViewController:(UIViewController *)viewController completionHandle:(void (^)(NSDictionary *data, NSError *error))completion;
 
 @end

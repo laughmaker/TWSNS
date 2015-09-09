@@ -64,7 +64,7 @@ static CGFloat const kSpace = 10.0;
 
 - (void)shareButtonClickEvent:(UIButton *)sender
 {
-    XTSharePlatform platform = sender.tag;
+    XTSNSPlatform platform = sender.tag;
     [XTShare shareMessage:self.message toPlatform:platform];
     
     [self hideSelf:self];

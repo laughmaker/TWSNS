@@ -10,19 +10,11 @@
 #import <UIKit/UIKit.h>
 #import "OpenShareHeader.h"
 #import "OpenShare.h"
+#import "XTSNSDefine.h"
 
 /**
  *  分享控制类
  */
-// 定义分类平台类型
-typedef enum : NSUInteger {
-    XTSharePlatformWXSceneSession = 1,  // 分享到微信会话
-    XTSharePlatformWXSceneTimeline,     // 分享到微信朋友圈
-    XTSharePlatformQQ,                  // 分享到QQ好友
-    XTSharePlatformQQZone,              // 分享到QQ空间
-    XTSharePlatformWeibo,               // 分享到新浪微博
-} XTSharePlatform;
-
 @interface XTShare : NSObject
 
 /**
@@ -31,7 +23,7 @@ typedef enum : NSUInteger {
  *  @param message  分享消息
  *  @param platform 分享平台
  */
-+ (void)shareMessage:(OSMessage *)message toPlatform:(XTSharePlatform)platform;
++ (void)shareMessage:(OSMessage *)message toPlatform:(XTSNSPlatform)platform;
 
 
 /**
@@ -40,7 +32,7 @@ typedef enum : NSUInteger {
  *  @param text     文本消息内容
  *  @param platform 所发送的平台
  */
-+ (void)shareText:(NSString *)text toPlatform:(XTSharePlatform)platform;
++ (void)shareText:(NSString *)text toPlatform:(XTSNSPlatform)platform;
 
 /**
  *  发送文本消息消息
@@ -49,7 +41,7 @@ typedef enum : NSUInteger {
  *  @param image    要分享的图片
  *  @param platform 所发送的平台
  */
-+ (void)shareText:(NSString *)text image:(UIImage *)image toPlatform:(XTSharePlatform)platform;
++ (void)shareText:(NSString *)text image:(UIImage *)image toPlatform:(XTSNSPlatform)platform;
 
 /**
  *  分享链接信息
@@ -60,6 +52,6 @@ typedef enum : NSUInteger {
  *  @param description 要分享的链接描述
  *  @param platform    需要分享的平台
  */
-+ (void)shareLink:(NSString *)linkUrl image:(UIImage *)image title:(NSString *)title description:(NSString *)description toPlatform:(XTSharePlatform)platform;
++ (void)shareLink:(NSString *)linkUrl image:(UIImage *)image title:(NSString *)title description:(NSString *)description toPlatform:(XTSNSPlatform)platform;
 
 @end

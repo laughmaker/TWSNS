@@ -15,7 +15,7 @@
     return [[[self class] alloc] init];
 }
 
-- (void)loginWithUserType:(XTUserType)userType prentViewController:(UIViewController *)viewController completionHandle:(void (^)(NSDictionary *, NSError *))completion
+- (void)loginWithUserType:(XTSNSPlatform)userType prentViewController:(UIViewController *)viewController completionHandle:(void (^)(NSDictionary *, NSError *))completion
 {
     
 }
