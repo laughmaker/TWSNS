@@ -7,8 +7,18 @@
 //
 
 #import "ViewController.h"
+#import "XTShare.h"
+#import "XTShareView.h"
+#import "FXBlurView.h"
+
+/// 程序中用到的第三方帐号的相关Key和SecretKey
+static NSString *const kWeChatAppId      = @"wxc070c02fb0a72487";
+static NSString *const kUmengKey         = @"53d763cf56240bceda037f5f";
+static NSString *const kQZoneID          = @"";
+static NSString *const kQZoneKey         = @"";
 
 @interface ViewController ()
+- (IBAction)share:(id)sender;
 
 @end
 
@@ -16,12 +26,16 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view, typically from a nib.
+    
 }
 
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+
+- (IBAction)share:(id)sender
+{
+    OSMessage *message = [[OSMessage alloc] init];
+    message.title = @"我爱我的因我觉得欢喜";
+    message.image = UIImageJPEGRepresentation([UIImage imageNamed:@"a"], 1);
+    [[XTShareView shareView] showShareViewWithMessage:message];
 }
 
 @end

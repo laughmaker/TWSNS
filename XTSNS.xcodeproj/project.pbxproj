@@ -7,14 +7,23 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1B3195D2BB5A7096390D2E95 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2D9D3B8FCB0DE141FD1077B1 /* libPods.a */; };
+		2831FFF01B9FC088008CDE10 /* share-qq@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2831FFEB1B9FC088008CDE10 /* share-qq@3x.png */; settings = {ASSET_TAGS = (); }; };
+		2831FFF11B9FC088008CDE10 /* share-qqzone@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2831FFEC1B9FC088008CDE10 /* share-qqzone@3x.png */; settings = {ASSET_TAGS = (); }; };
+		2831FFF21B9FC088008CDE10 /* share-weibo@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2831FFED1B9FC088008CDE10 /* share-weibo@3x.png */; settings = {ASSET_TAGS = (); }; };
+		2831FFF31B9FC088008CDE10 /* share-weixin-frends@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2831FFEE1B9FC088008CDE10 /* share-weixin-frends@3x.png */; settings = {ASSET_TAGS = (); }; };
+		2831FFF41B9FC088008CDE10 /* share-weixin@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2831FFEF1B9FC088008CDE10 /* share-weixin@3x.png */; settings = {ASSET_TAGS = (); }; };
+		2831FFF71B9FC09D008CDE10 /* XTShareView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2831FFF61B9FC09D008CDE10 /* XTShareView.m */; settings = {ASSET_TAGS = (); }; };
 		28371DDD1B9ED0100012CEF6 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 28371DDC1B9ED0100012CEF6 /* main.m */; };
 		28371DE01B9ED0100012CEF6 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 28371DDF1B9ED0100012CEF6 /* AppDelegate.m */; };
 		28371DE31B9ED0100012CEF6 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 28371DE21B9ED0100012CEF6 /* ViewController.m */; };
 		28371DE61B9ED0100012CEF6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 28371DE41B9ED0100012CEF6 /* Main.storyboard */; };
-		28371DE81B9ED0100012CEF6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 28371DE71B9ED0100012CEF6 /* Assets.xcassets */; };
 		28371DEB1B9ED0100012CEF6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 28371DE91B9ED0100012CEF6 /* LaunchScreen.storyboard */; };
 		28371DF61B9ED0100012CEF6 /* XTSNSTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 28371DF51B9ED0100012CEF6 /* XTSNSTests.m */; };
 		28371E011B9ED0100012CEF6 /* XTSNSUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 28371E001B9ED0100012CEF6 /* XTSNSUITests.m */; };
+		28371E131B9ED0370012CEF6 /* XTOAuth.m in Sources */ = {isa = PBXBuildFile; fileRef = 28371E101B9ED0370012CEF6 /* XTOAuth.m */; settings = {ASSET_TAGS = (); }; };
+		28371E141B9ED0370012CEF6 /* XTShare.m in Sources */ = {isa = PBXBuildFile; fileRef = 28371E121B9ED0370012CEF6 /* XTShare.m */; settings = {ASSET_TAGS = (); }; };
+		28371E161B9ED8D80012CEF6 /* a.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 28371E151B9ED8D80012CEF6 /* a.jpg */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,6 +44,13 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		2831FFEB1B9FC088008CDE10 /* share-qq@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "share-qq@3x.png"; sourceTree = "<group>"; };
+		2831FFEC1B9FC088008CDE10 /* share-qqzone@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "share-qqzone@3x.png"; sourceTree = "<group>"; };
+		2831FFED1B9FC088008CDE10 /* share-weibo@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "share-weibo@3x.png"; sourceTree = "<group>"; };
+		2831FFEE1B9FC088008CDE10 /* share-weixin-frends@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "share-weixin-frends@3x.png"; sourceTree = "<group>"; };
+		2831FFEF1B9FC088008CDE10 /* share-weixin@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "share-weixin@3x.png"; sourceTree = "<group>"; };
+		2831FFF51B9FC09D008CDE10 /* XTShareView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XTShareView.h; sourceTree = "<group>"; };
+		2831FFF61B9FC09D008CDE10 /* XTShareView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XTShareView.m; sourceTree = "<group>"; };
 		28371DD81B9ED0100012CEF6 /* XTSNS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = XTSNS.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		28371DDC1B9ED0100012CEF6 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		28371DDE1B9ED0100012CEF6 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -42,7 +58,6 @@
 		28371DE11B9ED0100012CEF6 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		28371DE21B9ED0100012CEF6 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		28371DE51B9ED0100012CEF6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		28371DE71B9ED0100012CEF6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		28371DEA1B9ED0100012CEF6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		28371DEC1B9ED0100012CEF6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		28371DF11B9ED0100012CEF6 /* XTSNSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = XTSNSTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -51,6 +66,14 @@
 		28371DFC1B9ED0100012CEF6 /* XTSNSUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = XTSNSUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		28371E001B9ED0100012CEF6 /* XTSNSUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XTSNSUITests.m; sourceTree = "<group>"; };
 		28371E021B9ED0100012CEF6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		28371E0F1B9ED0370012CEF6 /* XTOAuth.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XTOAuth.h; sourceTree = "<group>"; };
+		28371E101B9ED0370012CEF6 /* XTOAuth.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XTOAuth.m; sourceTree = "<group>"; };
+		28371E111B9ED0370012CEF6 /* XTShare.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XTShare.h; sourceTree = "<group>"; };
+		28371E121B9ED0370012CEF6 /* XTShare.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XTShare.m; sourceTree = "<group>"; };
+		28371E151B9ED8D80012CEF6 /* a.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = a.jpg; path = "../../../../../Pictures/壁纸/a.jpg"; sourceTree = "<group>"; };
+		2D9D3B8FCB0DE141FD1077B1 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		3AA2F1963C44EE9616719555 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
+		F3BFB7681AE3954A6F4C9BCC /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +81,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1B3195D2BB5A7096390D2E95 /* libPods.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -78,6 +102,18 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2831FFEA1B9FC088008CDE10 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				2831FFEB1B9FC088008CDE10 /* share-qq@3x.png */,
+				2831FFEC1B9FC088008CDE10 /* share-qqzone@3x.png */,
+				2831FFED1B9FC088008CDE10 /* share-weibo@3x.png */,
+				2831FFEE1B9FC088008CDE10 /* share-weixin-frends@3x.png */,
+				2831FFEF1B9FC088008CDE10 /* share-weixin@3x.png */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
 		28371DCF1B9ED0100012CEF6 = {
 			isa = PBXGroup;
 			children = (
@@ -85,6 +121,8 @@
 				28371DF41B9ED0100012CEF6 /* XTSNSTests */,
 				28371DFF1B9ED0100012CEF6 /* XTSNSUITests */,
 				28371DD91B9ED0100012CEF6 /* Products */,
+				3958C5CB25E58C445F566572 /* Pods */,
+				C33ABBBFF5E6D9D283154A0F /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -101,12 +139,12 @@
 		28371DDA1B9ED0100012CEF6 /* XTSNS */ = {
 			isa = PBXGroup;
 			children = (
+				28371E0E1B9ED0370012CEF6 /* SNS */,
 				28371DDE1B9ED0100012CEF6 /* AppDelegate.h */,
 				28371DDF1B9ED0100012CEF6 /* AppDelegate.m */,
 				28371DE11B9ED0100012CEF6 /* ViewController.h */,
 				28371DE21B9ED0100012CEF6 /* ViewController.m */,
 				28371DE41B9ED0100012CEF6 /* Main.storyboard */,
-				28371DE71B9ED0100012CEF6 /* Assets.xcassets */,
 				28371DE91B9ED0100012CEF6 /* LaunchScreen.storyboard */,
 				28371DEC1B9ED0100012CEF6 /* Info.plist */,
 				28371DDB1B9ED0100012CEF6 /* Supporting Files */,
@@ -117,6 +155,7 @@
 		28371DDB1B9ED0100012CEF6 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				28371E151B9ED8D80012CEF6 /* a.jpg */,
 				28371DDC1B9ED0100012CEF6 /* main.m */,
 			);
 			name = "Supporting Files";
@@ -140,6 +179,37 @@
 			path = XTSNSUITests;
 			sourceTree = "<group>";
 		};
+		28371E0E1B9ED0370012CEF6 /* SNS */ = {
+			isa = PBXGroup;
+			children = (
+				2831FFEA1B9FC088008CDE10 /* Resources */,
+				28371E0F1B9ED0370012CEF6 /* XTOAuth.h */,
+				28371E101B9ED0370012CEF6 /* XTOAuth.m */,
+				28371E111B9ED0370012CEF6 /* XTShare.h */,
+				28371E121B9ED0370012CEF6 /* XTShare.m */,
+				2831FFF51B9FC09D008CDE10 /* XTShareView.h */,
+				2831FFF61B9FC09D008CDE10 /* XTShareView.m */,
+			);
+			path = SNS;
+			sourceTree = SOURCE_ROOT;
+		};
+		3958C5CB25E58C445F566572 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				3AA2F1963C44EE9616719555 /* Pods.debug.xcconfig */,
+				F3BFB7681AE3954A6F4C9BCC /* Pods.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		C33ABBBFF5E6D9D283154A0F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				2D9D3B8FCB0DE141FD1077B1 /* libPods.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -147,9 +217,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 28371E051B9ED0100012CEF6 /* Build configuration list for PBXNativeTarget "XTSNS" */;
 			buildPhases = (
+				BC56EAC1C7D8FA3ED4AF53F9 /* Check Pods Manifest.lock */,
 				28371DD41B9ED0100012CEF6 /* Sources */,
 				28371DD51B9ED0100012CEF6 /* Frameworks */,
 				28371DD61B9ED0100012CEF6 /* Resources */,
+				ECE6B6B30FC33F0CCAD1FA6A /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -243,8 +315,13 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2831FFF21B9FC088008CDE10 /* share-weibo@3x.png in Resources */,
+				2831FFF01B9FC088008CDE10 /* share-qq@3x.png in Resources */,
+				2831FFF11B9FC088008CDE10 /* share-qqzone@3x.png in Resources */,
+				2831FFF31B9FC088008CDE10 /* share-weixin-frends@3x.png in Resources */,
 				28371DEB1B9ED0100012CEF6 /* LaunchScreen.storyboard in Resources */,
-				28371DE81B9ED0100012CEF6 /* Assets.xcassets in Resources */,
+				28371E161B9ED8D80012CEF6 /* a.jpg in Resources */,
+				2831FFF41B9FC088008CDE10 /* share-weixin@3x.png in Resources */,
 				28371DE61B9ED0100012CEF6 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -265,12 +342,48 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		BC56EAC1C7D8FA3ED4AF53F9 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		ECE6B6B30FC33F0CCAD1FA6A /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		28371DD41B9ED0100012CEF6 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2831FFF71B9FC09D008CDE10 /* XTShareView.m in Sources */,
 				28371DE31B9ED0100012CEF6 /* ViewController.m in Sources */,
+				28371E141B9ED0370012CEF6 /* XTShare.m in Sources */,
+				28371E131B9ED0370012CEF6 /* XTOAuth.m in Sources */,
 				28371DE01B9ED0100012CEF6 /* AppDelegate.m in Sources */,
 				28371DDD1B9ED0100012CEF6 /* main.m in Sources */,
 			);
@@ -409,9 +522,11 @@
 		};
 		28371E061B9ED0100012CEF6 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3AA2F1963C44EE9616719555 /* Pods.debug.xcconfig */;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ENABLE_BITCODE = NO;
 				INFOPLIST_FILE = XTSNS/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.lza.XTSNS;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -420,9 +535,11 @@
 		};
 		28371E071B9ED0100012CEF6 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F3BFB7681AE3954A6F4C9BCC /* Pods.release.xcconfig */;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ENABLE_BITCODE = NO;
 				INFOPLIST_FILE = XTSNS/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.lza.XTSNS;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -496,6 +613,7 @@
 				28371E071B9ED0100012CEF6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		28371E081B9ED0100012CEF6 /* Build configuration list for PBXNativeTarget "XTSNSTests" */ = {
 			isa = XCConfigurationList;
@@ -504,6 +622,7 @@
 				28371E0A1B9ED0100012CEF6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		28371E0B1B9ED0100012CEF6 /* Build configuration list for PBXNativeTarget "XTSNSUITests" */ = {
 			isa = XCConfigurationList;
@@ -512,6 +631,7 @@
 				28371E0D1B9ED0100012CEF6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
