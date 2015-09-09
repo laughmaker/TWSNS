@@ -24,6 +24,7 @@
 		28371E131B9ED0370012CEF6 /* XTOAuth.m in Sources */ = {isa = PBXBuildFile; fileRef = 28371E101B9ED0370012CEF6 /* XTOAuth.m */; settings = {ASSET_TAGS = (); }; };
 		28371E141B9ED0370012CEF6 /* XTShare.m in Sources */ = {isa = PBXBuildFile; fileRef = 28371E121B9ED0370012CEF6 /* XTShare.m */; settings = {ASSET_TAGS = (); }; };
 		28371E161B9ED8D80012CEF6 /* a.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 28371E151B9ED8D80012CEF6 /* a.jpg */; settings = {ASSET_TAGS = (); }; };
+		285E89741BA00C1600B85127 /* XTSNS.m in Sources */ = {isa = PBXBuildFile; fileRef = 285E89731BA00C1600B85127 /* XTSNS.m */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -71,6 +72,8 @@
 		28371E111B9ED0370012CEF6 /* XTShare.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XTShare.h; sourceTree = "<group>"; };
 		28371E121B9ED0370012CEF6 /* XTShare.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XTShare.m; sourceTree = "<group>"; };
 		28371E151B9ED8D80012CEF6 /* a.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = a.jpg; path = "../../../../../Pictures/壁纸/a.jpg"; sourceTree = "<group>"; };
+		285E89721BA00C1600B85127 /* XTSNS.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XTSNS.h; sourceTree = "<group>"; };
+		285E89731BA00C1600B85127 /* XTSNS.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XTSNS.m; sourceTree = "<group>"; };
 		2D9D3B8FCB0DE141FD1077B1 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		3AA2F1963C44EE9616719555 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 		F3BFB7681AE3954A6F4C9BCC /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
@@ -189,6 +192,8 @@
 				28371E121B9ED0370012CEF6 /* XTShare.m */,
 				2831FFF51B9FC09D008CDE10 /* XTShareView.h */,
 				2831FFF61B9FC09D008CDE10 /* XTShareView.m */,
+				285E89721BA00C1600B85127 /* XTSNS.h */,
+				285E89731BA00C1600B85127 /* XTSNS.m */,
 			);
 			path = SNS;
 			sourceTree = SOURCE_ROOT;
@@ -380,6 +385,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				285E89741BA00C1600B85127 /* XTSNS.m in Sources */,
 				2831FFF71B9FC09D008CDE10 /* XTShareView.m in Sources */,
 				28371DE31B9ED0100012CEF6 /* ViewController.m in Sources */,
 				28371E141B9ED0370012CEF6 /* XTShare.m in Sources */,

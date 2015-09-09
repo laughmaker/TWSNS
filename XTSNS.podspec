@@ -11,5 +11,6 @@ Pod::Spec.new do |s|
   s.source_files = "SNS/**"
   s.dependency  'OpenShare', '~> 0.0.1'
   s.dependency  'FXBlurView', '~> 1.6.4'
+  s.resources = "SNS/Resources/*.png"
 
 end

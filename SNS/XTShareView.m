@@ -104,7 +104,6 @@ static CGFloat const kSpace = 10.0;
 {
     if (!_contentView) {
         _contentView = [[FXBlurView alloc] init];
-//        _contentView.dynamic = YES;
     }
     return _contentView;
 }
