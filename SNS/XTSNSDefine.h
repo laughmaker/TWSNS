@@ -8,11 +8,20 @@
 
 #import <Foundation/Foundation.h>
 
-// 定义分类平台类型
+// 定义社交平台类型
 typedef enum : NSUInteger {
-    XTSNSPlatformWXSceneSession = 1,  // 分享到微信会话
-    XTSNSPlatformWXSceneTimeline,     // 分享到微信朋友圈
-    XTSNSPlatformQQ,                  // 分享到QQ好友
-    XTSNSPlatformQQZone,              // 分享到QQ空间
-    XTSNSPlatformWeibo,               // 分享到新浪微博
+    XTSNSPlatformWeiXin = 1,
+    XTSNSPlatformQQ,
+    XTSNSPlatformWeibo,
 } XTSNSPlatform;
+
+
+// 定义分享类型
+typedef enum : NSUInteger {
+    XTSNSShareTypeWXSceneSession = 1,  // 分享到微信会话
+    XTSNSShareTypeWXSceneTimeline,     // 分享到微信朋友圈
+    XTSNSShareTypeQQ,                  // 分享到QQ好友
+    XTSNSShareTypeQQZone,              // 分享到QQ空间
+    XTSNSShareTypeWeibo,               // 分享到新浪微博
+} XTSNSShareType;
+

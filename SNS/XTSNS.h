@@ -13,17 +13,18 @@
 #import "OpenShareHeader.h"
 #import "OpenShare.h"
 
-static NSString *const kSNSPlatformWeixinKey = @"sns_weixin";
-static NSString *const kSNSPlatformWeiboKey = @"sns_weixin";
-static NSString *const kSNSPlatformQQKey = @"sns_qq";
+static NSString *const kSNSPlatformWeixinIdKey         = @"kSNSPlatformWeixinIdKey";
+static NSString *const kSNSPlatformWeiboIdKey          = @"kSNSPlatformWeiboIdKey";
+static NSString *const kSNSPlatformQQIdKey             = @"kSNSPlatformQQIdKey";
+static NSString *const kSNSPlatformWeixinSecretKey     = @"kSNSPlatformWeixinSecretKey";
+static NSString *const kSNSPlatformWeiboSecretKey      = @"kSNSPlatformWeiboSecretKey";
+static NSString *const kSNSPlatformWeiboRedirectURIKey = @"kSNSPlatformWeiboRedirectURIKey";
+static NSString *const kSNSPlatformQQSecretKey         = @"kSNSPlatformQQSecretKey";
 
 @interface XTSNS : NSObject
 
-/**
- *  注册各个平台的Appid
- *
- *  @param appIds Key为头文件顶部定义的字符串
- */
-+ (void)registerAppIds:(NSDictionary *)appIds;
++ (void)registerWeiboAppId:(NSString *)appId secret:(NSString *)secret redirectURI:(NSString *)redirectURI;
++ (void)registerQQAppId:(NSString *)appId secret:(NSString *)secret;
++ (void)registerWeiXinAppId:(NSString *)appId secret:(NSString *)secret;
 
 @end

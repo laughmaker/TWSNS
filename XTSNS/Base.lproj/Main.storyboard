@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8187.4" systemVersion="15A279b" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8191" systemVersion="15A282b" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8151.3"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
@@ -30,6 +30,33 @@
                                 </state>
                                 <connections>
                                     <action selector="share:" destination="BYZ-38-t0r" eventType="touchUpInside" id="BBh-Ee-xig"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="89S-FH-vXv">
+                                <rect key="frame" x="63" y="353" width="34" height="33"/>
+                                <animations/>
+                                <color key="backgroundColor" red="0.95294117649999999" green="0.93725490199999995" blue="0.90980392160000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="QQ"/>
+                                <connections>
+                                    <action selector="qqLogin:" destination="BYZ-38-t0r" eventType="touchUpInside" id="QU5-eO-4YG"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pLo-RS-kbe">
+                                <rect key="frame" x="189" y="353" width="34" height="34"/>
+                                <animations/>
+                                <color key="backgroundColor" red="0.95294117649999999" green="0.93725490199999995" blue="0.90980392160000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="微信"/>
+                                <connections>
+                                    <action selector="weixinLogin:" destination="BYZ-38-t0r" eventType="touchUpInside" id="oAa-7F-65e"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9Xk-zq-5j4">
+                                <rect key="frame" x="127" y="354" width="31" height="33"/>
+                                <animations/>
+                                <color key="backgroundColor" red="0.95294117649999999" green="0.93725490199999995" blue="0.90980392160000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="微博"/>
+                                <connections>
+                                    <action selector="weiboLogin:" destination="BYZ-38-t0r" eventType="touchUpInside" id="8ZY-Le-Yc6"/>
                                 </connections>
                             </button>
                         </subviews>

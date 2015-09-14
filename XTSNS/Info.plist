@@ -24,22 +24,48 @@
 			<key>CFBundleTypeRole</key>
 			<string>Editor</string>
 			<key>CFBundleURLName</key>
-			<string>XTSNS</string>
+			<string>weixin</string>
 			<key>CFBundleURLSchemes</key>
 			<array>
-				<string>XTSNS</string>
-				<string>wxd930ea5d5a258f4f</string>
-				<string>tencent1103194207</string>
-				<string>tencent1103194207.content</string>
-				<string>QQ41C1685F</string>
-				<string>wb402180334</string>
-				<string>renrenshare228525</string>
-				<string>fb776442542471056</string>
+				<string>wxd41b2ec423a3ea58</string>
+			</array>
+		</dict>
+		<dict>
+			<key>CFBundleTypeRole</key>
+			<string>Editor</string>
+			<key>CFBundleURLName</key>
+			<string>weibo.com</string>
+			<key>CFBundleURLSchemes</key>
+			<array>
+				<string>wb1066360212</string>
+			</array>
+		</dict>
+		<dict>
+			<key>CFBundleTypeRole</key>
+			<string>Editor</string>
+			<key>CFBundleURLName</key>
+			<string>tencent</string>
+			<key>CFBundleURLSchemes</key>
+			<array>
+				<string>tencent1104505542</string>
+			</array>
+		</dict>
+		<dict>
+			<key>CFBundleTypeRole</key>
+			<string>Editor</string>
+			<key>CFBundleURLSchemes</key>
+			<array>
+				<string>QQ1104505542</string>
 			</array>
 		</dict>
 	</array>
 	<key>CFBundleVersion</key>
 	<string>1</string>
+	<key>LSApplicationQueriesSchemes</key>
+	<array>
+		<string>weixin</string>
+		<string>wechat</string>
+	</array>
 	<key>LSRequiresIPhoneOS</key>
 	<true/>
 	<key>NSAppTransportSecurity</key>

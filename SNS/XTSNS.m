@@ -10,20 +10,33 @@
 
 @implementation XTSNS
 
-+ (void)registerAppIds:(NSDictionary *)appIds
++ (void)registerWeiboAppId:(NSString *)appId secret:(NSString *)secret redirectURI:(NSString *)redirectURI
 {
-    static dispatch_once_t onceToken;
-    dispatch_once(&onceToken, ^{
-        if (appIds[kSNSPlatformQQKey]) {
-            [OpenShare connectQQWithAppId:appIds[kSNSPlatformQQKey]];
-        }
-        if (appIds[kSNSPlatformWeiboKey]) {
-            [OpenShare connectWeiboWithAppKey:appIds[kSNSPlatformWeiboKey]];
-        }
-        if (appIds[kSNSPlatformWeixinKey]) {
-            [OpenShare connectWeixinWithAppId:appIds[kSNSPlatformWeixinKey]];
-        }
-    });
+    [OpenShare connectWeiboWithAppKey:appId];
+    
+    [[NSUserDefaults standardUserDefaults] setObject:appId forKey:kSNSPlatformWeiboIdKey];
+    [[NSUserDefaults standardUserDefaults] setObject:secret forKey:kSNSPlatformWeiboSecretKey];
+    [[NSUserDefaults standardUserDefaults] setObject:redirectURI forKey:kSNSPlatformWeiboRedirectURIKey];
+    [[NSUserDefaults standardUserDefaults] synchronize];
 }
+
++ (void)registerQQAppId:(NSString *)appId secret:(NSString *)secret
+{
+    [OpenShare connectQQWithAppId:appId];
+    
+    [[NSUserDefaults standardUserDefaults] setObject:appId forKey:kSNSPlatformQQIdKey];
+    [[NSUserDefaults standardUserDefaults] setObject:secret forKey:kSNSPlatformQQSecretKey];
+    [[NSUserDefaults standardUserDefaults] synchronize];
+}
+
++ (void)registerWeiXinAppId:(NSString *)appId secret:(NSString *)secret
+{
+    [OpenShare connectWeixinWithAppId:appId];
+    
+    [[NSUserDefaults standardUserDefaults] setObject:appId forKey:kSNSPlatformWeixinIdKey];
+    [[NSUserDefaults standardUserDefaults] setObject:secret forKey:kSNSPlatformWeixinSecretKey];
+    [[NSUserDefaults standardUserDefaults] synchronize];
+}
+
 
 @end

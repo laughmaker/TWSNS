@@ -1,0 +1,419 @@
+# Overline 0.2.0
+
+Objective-C utilities and shorthands.
+
+Overline is not clone of other language features.
+Simple and clean Objective-C.
+
+## Usage
+
+setup with cocoapods.
+```
+pod 'Overline'
+```
+
+import `Overline.h`
+```objective-c
+#import "Overline.h"
+```
+
+### with BlocksKit
+
+```
+pod 'BlocksKit'
+pod 'Overline-BlocksKit'
+```
+
+Ignored duplicate methods: `each` `map` `reduce` `filter` `reject`
+
+## Features
+
+### NSArray
+
+#### NSArray+Initialize
+
+```objective-c
+NSArray *array = [NSArray arrayWithRangeFrom:0 to:10];
+// @[@0, @1, @2, @3, @4, @5, @6, @7, @8, @9]
+
+NSArray *array2 = [NSArray arrayWithRangeFrom:0 to:-10 step:2];
+// @[@0, @-2, @-4, @-6, @-8]
+```
+
+* `arrayWithRangeFrom:to:`
+* `arrayWithRangeFrom:to:step:`
+
+#### NSArray+Enumeration
+
+```objective-c
+NSArray *mapped = [@[@1,@2,@3,@4,@5,@6] mappedArrayUsingBlock:^id(id obj, NSUInteger idx) {
+    if ([obj integerValue] % 2 == 0) {
+        return obj;
+    }
+    return nil;
+}];
+// @[@2,@4,@6]
+```
+
+* `each`
+* `map` `mappedArrayUsingBlock`
+* `reduce` `reducedObjectByBlock`
+* `find` `objectUsingBlock`
+* `filter` `filteredArrayUsingBlock`
+* `reject` `rejectedArrayUsingBlock`
+
+#### NSArray+Random
+
+```objective-c
+NSArray *shuffled = [@[@1,@2,@3,@4,@5,@6] shuffledArray];
+```
+
+* `shuffle` `shuffledArray`
+* `anyObject`
+
+#### NSArray+Reverse
+
+```objective-c
+NSArray *reversed = [@[@1,@2,@3,@4,@5,@6] reversedArray]; 
+// @[@6,@5,@4,@3,@2,@1]
+```
+
+* `reverse` `reversedArray`
+* `objectAtReversedIndex`
+
+#### NSArray+Selector
+
+* `firstObject`
+
+#### NSArray+SubArray
+
+* `subarrayFromIndex:`
+* `subarrayFromIndex:length:`
+* `subarrayToIndex:`
+* `uniqueObjects`
+* `uniqueObjectsUsingEqualsBlock`
+
+#### NSArray+Difference
+
+* `difference` `arrayDifferenceWithArray`
+* `unionise` `arrayByUnionisingArray`
+
+#### NSArray+Shorthand
+
+* `isEmpty`
+
+
+#### NSArray+Sorting
+
+* `arraySortedDescending:`
+* `arraySortedAsc`
+* `arraySortedDesc`
+
+### NSMutableArray
+#### NSMutableArray+Shorthands
+
+```objective-c
+NSMutableArray *marray = [NSMutableArray arrayWithArray:@[@1,@2,@3]];
+[marray insertObjects:@[@4,@5,@6] atIndex:1];
+```
+* `insertObjects:atIndex:`
+
+#### NSMutableArray+Sorting
+
+* `sortDescending:`
+* `sortAsc`
+* `sortDesc`
+
+### NSDate
+
+#### NSDate+Components
+
+##### Class Methods
+
+* `currentWeekday`
+* `currentHour`
+* `currentMinute`
+* `currentSecond`
+* `currentDay`
+* `currentMonth`
+* `currentYear`
+* `commonDateComponentsForNow`
+* `timeComponentsForNow`
+
+##### Instance Methods
+
+* `weekday`
+* `hour`
+* `minute`
+* `second`
+* `day`
+* `month`
+* `year`
+* `commonDateComponents`
+* `timeComponents`
+
+
+### NSDictionary
+
+#### NSDictionary+Selector
+
+```objective-c
+NSDate *date = [JSON objectForKey:@"date8601" transformBlock:^id(id obj) {
+    NSDateFormatter *formatter = [[NSDateFormatter alloc] init];
+    [formatter setDateFormat:@"yyyy/MM/dd HH:mm:ss Z"];
+    return [formatter dateFromString:obj];
+}];
+```
+
+* `objectForKey:transformBlock:`
+* `numberForKey:`
+* `stringForKey:`
+* `arrayForKey:`
+* `dictionaryForKey:`
+* `dateForKey:`
+* `dateForKey:usingFormat:`
+* `since1970DateForKey:`
+* `timestampForKey:`
+* `boolObjectForKey:withTrueValue:`
+* `boolForKey:withTureValue:`
+* `boolForKey:`
+* `intForKey:`
+* `integerForKey:`
+* `unsignedIntForKey:`
+* `unsignedIntegerForKey:`
+* `longForKey:`
+* `unsignedLongForKey:`
+* `longLongForKey:`
+* `unsignedLongLongForKey:`
+* `doubleForKey:`
+* `floatForKey:`
+
+#### NSDictionary+Enumeration
+
+```objective-c
+NSDictionary *dic = @{
+        @"a" : @1,
+        @"b" : @2,
+        @"c" : @3,
+        @"d" : @4
+};
+
+NSDictionary *filtered = [dic dictionaryFilteredByKeyUsingBlock:^BOOL(NSString *key) {
+    return [key isEqualToString:@"a"];
+}]; // @{@"a":@1}
+ ```
+
+* `each:`
+* `map` `mappedDictionaryUsingBlock`
+* `arrayMap` `mappedArrayUsingBlock`
+* `filterKey` `dictionaryFilteredByKeyUsingBlock`
+* `rejectKey` `dictionaryRejectedByKeyUsingBlock`
+* `filterObject` `dictionaryFilteredByObjectUsingBlock`
+* `rejectObject` `dictionaryRejectedByObjectUsingBlock`
+* `merge` `dictionaryByMergingDictionary`
+* `reduce:` `reducedObjectUsingBlock:memo:`
+* `queryString` `stringByFormattingQuery`
+
+
+#### NSDictionary+Path
+
+```objective-c
+/*
+@{
+    @"error" : @{
+        @"message" : @"msg"
+    }
+}
+*/
+NSString *s = [dic objectForPath:@"error.message"];
+```
+
+* `objectForPath:`
+
+### NSSet
+#### NSSet+Enumeration
+
+```objective-c
+NSSet *set = [NSSet setWithArray:@[@1,@2,@3,@4,@5,@6]];
+NSSet *mapped = [set mappedSetUsingBlock:^id(id obj, NSUInteger idx) {
+    if ([obj integerValue] % 2 == 0) {
+        return obj;
+    }
+    return nil;
+}];
+```
+
+* `each`
+* `map` `mappedSetUsingBlock`
+* `reduce` `reducedObjectByBlock`
+* `filter` `filteredSetUsingBlock`
+* `reject` `rejectedSetUsingBlock`
+
+### NSString 
+
+#### NSString+Components
+
+```objective-c
+[@"hoge=fuga&piyo=foo" componentsSeparatedByInnerString:@"=" andOuterString:@"&"];
+/* 
+@{
+    @"hoge" : @"fuga",
+    @"piyo" : @"foo"
+};
+*/
+```
+
+* `componentsSeparatedByInnerString:andOuterString:`
+
+#### NSString+RegularExpression
+
+```objective-c
+[@"https?" testInString:urlString];
+```
+* `rangeOfFirstMatchInString:`
+* `rangeOfFirstMatchInString:options:`
+* `matchesInString:`
+* `matchesInString:options:`
+* `testInString:`
+* `testInString:options:`
+* `replace:newString:` `stringByReplacingOccurrencesOfRegExpPattern:withString`
+* `replace:newString:options:` `stringByReplacingOccurrencesOfRegExpPattern:withString:options:`
+* `replace:template:` `stringByReplacingOccurrencesOfRegExpPattern:withTemplate:`
+* `replace:template:options:` `stringByReplacingOccurrencesOfRegExpPattern:withTemplate:options:`
+
+#### NSString+Hash
+
+```objective-c
+[@"hoge" md5]; // @"ea703e7aa1efda0064eaa507d9e8ab7e"
+```
+
+* `sha256`
+* `stringByHashingSha256`
+* `md5`
+* `stringByHashingMD5`
+
+#### NSString+URLEncode
+* `URLEncode`
+* `stringByEncodingURL`
+* `URLDecode`
+* `stringByDecodingURL`
+
+#### NSString+Shorthand
+* `trim`
+* `trim:` - Trim character set in a given string
+
+#### NSString+JSON
+```objective-c
+NSString *JSONString = @"{\"hoge\" : \"fuga\" }";
+id json = [JSONString jsonObject];
+```
+* `JSON` `jsonObject`
+
+#### NSString+Base64Encode
+```objective-c
+[@"a" stringByEncodingBase64]; // @"YQ=="
+[@"YQ==" stringByDecodingBase64]; // @"a"
+```
+
+* `encodeBase64` `stringByEncodingBase64`
+* `decodeBase64` `stringByDecodingBase64`
+* `dataUsingDecodingBase64`
+
+### NSData
+#### NSData+Base64Encode
+
+* `base64Encode` `stringUsingEncodingBase64`
+
+### NSURL
+
+#### NSURL+Components
+* `queryComponents`
+
+#### NSURL+Directories
+```objective-c
+NSURL *pdfURL = [NSURL URLForUserDirectoryWithAppendedPath:@"myDoc.pdf"];
+NSURL *userImageFolderURL = [NSURL URLForUserDirectoryWithAppendedPath:@"images"];
+```
+
+* `URLForDirectory:domainMask:`
+* `URLForApplicationSupportDataDirectory`
+* `URLForApplicationSupportWithAppendedPath:`
+* `URLForUserDirectory`
+* `URLForUserDirectoryWithAppendedPath:`
+* `URLForDocumentDirectory`;
+* `URLForDocumentDirectoryWithAppendedPath:`;
+
+### NSBundle
+
+#### NSBundle+Shorthand
+* `JSONForResourceName`
+
+### NSNumber 
+
+#### NSNumber+Equals
+
+```objective-c
+[@1 isEqualToInteger:1];
+```
+
+* `isEqualToInt:`
+* `isEqualToInteger:`
+* `isEqualToUnsignedInt:`
+* `isEqualToUnsignedInteger:`
+* `isEqualToLong:`
+* `isEqualToLongLong:`
+* `isEqualToUnsignedLong:`
+* `isEqualToUnsignedLongLong:`
+* `isEqualToDouble:`
+* `isEqualToFloat:`
+
+### NSDateFormatter
+
+#### NSDateFormatter+Shothand
+
+* `userDefaultFormatter`
+* `dateFormatterWithCalendarIndetifiter:localeIdentifiter:timeZoneAbbreviation:`
+
+### NSObject
+
+#### NSObject+Equals
+```objective-c
+[[NSNull null] isNullObject]; // YES
+[[NSArray array] isNullObject]; // NO
+```
+* `isNullObject`
+* `isArray`
+* `isDictionary`
+* `isSet`
+* `isString`
+* `isNumber`
+
+### NSNull
+
+#### NSNull+Natural
+Provide `NSNull` like `nil`
+```objective-c
+NSDictionary *dic = @{
+        @"null-key" : [NSNull null]
+};
+[[dic objectForKey:@"null-key"] objectForKey:@"empty"]; // nil
+```
+
+※ This feature disable on default. Define `OV_USE_NATURAL_NULL`, if use this feature.
+```objective-c
+#define OV_USE_NATURAL_NULL
+#import "Overline.h"
+```
+
+## Credits
+
+Be sure to thank these contributors:
+
+* Kazuma Ukyo (Creator, http://yaakaito.org)
+* Hari Karam Singh (Contributor, http://soundwandapp.com)
+
+### Coding rules
+
+* Write tests.
+* Objective-C style naming.
+  * and shorthands.

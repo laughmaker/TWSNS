@@ -15,22 +15,26 @@
     return [[[self class] alloc] init];
 }
 
-+ (void)shareMessage:(OSMessage *)message toPlatform:(XTSNSPlatform)platform
++ (void)shareMessage:(OSMessage *)message withShareType:(XTSNSShareType)shareType
 {
-    switch (platform) {
-        case XTSNSPlatformWeibo:
+    switch (shareType) {
+        case XTSNSShareTypeWeibo:
             [OpenShare shareToWeibo:message Success:nil Fail:nil];
             break;
-        case XTSNSPlatformQQZone:
+        case XTSNSShareTypeQQZone:
             [OpenShare shareToQQZone:message Success:nil Fail:nil];
             break;
-        case XTSNSPlatformQQ:
+        case XTSNSShareTypeQQ:
             [OpenShare shareToQQFriends:message Success:nil Fail:nil];
             break;
-        case XTSNSPlatformWXSceneTimeline:
-            [OpenShare shareToWeixinTimeline:message Success:nil Fail:nil];
+        case XTSNSShareTypeWXSceneTimeline:
+            [OpenShare shareToWeixinTimeline:message Success:^(OSMessage *message) {
+                
+            } Fail:^(OSMessage *message, NSError *error) {
+                
+            }];
             break;
-        case XTSNSPlatformWXSceneSession:
+        case XTSNSShareTypeWXSceneSession:
             [OpenShare shareToWeixinSession:message Success:nil Fail:nil];
             break;
         default:
@@ -38,28 +42,5 @@
     }
 }
 
-+ (void)shareText:(NSString *)text toPlatform:(XTSNSPlatform)platform
-{
-    OSMessage *message = [[OSMessage alloc] init];
-    message.title = text;
-    [[self class] shareMessage:message toPlatform:platform];
-}
-
-+ (void)shareText:(NSString *)text image:(UIImage *)image toPlatform:(XTSNSPlatform)platform
-{
-    OSMessage *message = [[OSMessage alloc] init];
-    message.title = text;
-    message.image = UIImageJPEGRepresentation(image, 1);
-    [[self class] shareMessage:message toPlatform:platform];
-}
-
-+ (void)shareLink:(NSString *)linkUrl image:(UIImage *)image title:(NSString *)title description:(NSString *)description toPlatform:(XTSNSPlatform)platform
-{
-    OSMessage *message = [[OSMessage alloc] init];
-    message.title = title;
-    message.link = linkUrl;
-    message.image = UIImageJPEGRepresentation(image, 1);
-    [[self class] shareMessage:message toPlatform:platform];
-}
 
 @end

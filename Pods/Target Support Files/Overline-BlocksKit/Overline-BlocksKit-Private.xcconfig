@@ -1,0 +1,5 @@
+#include "Overline-BlocksKit.xcconfig"
+GCC_PREPROCESSOR_DEFINITIONS = $(inherited) COCOAPODS=1
+HEADER_SEARCH_PATHS = "${PODS_ROOT}/Headers/Private" "${PODS_ROOT}/Headers/Private/Overline-BlocksKit" "${PODS_ROOT}/Headers/Public" "${PODS_ROOT}/Headers/Public/FXBlurView" "${PODS_ROOT}/Headers/Public/OpenShare" "${PODS_ROOT}/Headers/Public/Overline-BlocksKit" "${PODS_ROOT}/Headers/Public/XTNetwork"
+PODS_ROOT = ${SRCROOT}
+SKIP_INSTALL = YES

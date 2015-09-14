@@ -25,6 +25,8 @@
 		28371E141B9ED0370012CEF6 /* XTShare.m in Sources */ = {isa = PBXBuildFile; fileRef = 28371E121B9ED0370012CEF6 /* XTShare.m */; settings = {ASSET_TAGS = (); }; };
 		28371E161B9ED8D80012CEF6 /* a.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 28371E151B9ED8D80012CEF6 /* a.jpg */; settings = {ASSET_TAGS = (); }; };
 		285E89741BA00C1600B85127 /* XTSNS.m in Sources */ = {isa = PBXBuildFile; fileRef = 285E89731BA00C1600B85127 /* XTSNS.m */; settings = {ASSET_TAGS = (); }; };
+		28F51AC61BA70BF8008639C3 /* XTRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 28F51AC51BA70BF8008639C3 /* XTRequest.m */; settings = {ASSET_TAGS = (); }; };
+		28F51ACC1BA714BA008639C3 /* NSString+URL.m in Sources */ = {isa = PBXBuildFile; fileRef = 28F51ACB1BA714BA008639C3 /* NSString+URL.m */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -75,6 +77,10 @@
 		285E89721BA00C1600B85127 /* XTSNS.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XTSNS.h; sourceTree = "<group>"; };
 		285E89731BA00C1600B85127 /* XTSNS.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XTSNS.m; sourceTree = "<group>"; };
 		285E89751BA0224200B85127 /* XTSNSDefine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XTSNSDefine.h; sourceTree = "<group>"; };
+		28F51AC41BA70BF8008639C3 /* XTRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XTRequest.h; sourceTree = "<group>"; };
+		28F51AC51BA70BF8008639C3 /* XTRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XTRequest.m; sourceTree = "<group>"; };
+		28F51ACA1BA714BA008639C3 /* NSString+URL.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+URL.h"; sourceTree = "<group>"; };
+		28F51ACB1BA714BA008639C3 /* NSString+URL.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+URL.m"; sourceTree = "<group>"; };
 		2D9D3B8FCB0DE141FD1077B1 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		3AA2F1963C44EE9616719555 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 		F3BFB7681AE3954A6F4C9BCC /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
@@ -196,6 +202,10 @@
 				285E89721BA00C1600B85127 /* XTSNS.h */,
 				285E89731BA00C1600B85127 /* XTSNS.m */,
 				285E89751BA0224200B85127 /* XTSNSDefine.h */,
+				28F51AC41BA70BF8008639C3 /* XTRequest.h */,
+				28F51AC51BA70BF8008639C3 /* XTRequest.m */,
+				28F51ACA1BA714BA008639C3 /* NSString+URL.h */,
+				28F51ACB1BA714BA008639C3 /* NSString+URL.m */,
 			);
 			path = SNS;
 			sourceTree = SOURCE_ROOT;
@@ -390,9 +400,11 @@
 				285E89741BA00C1600B85127 /* XTSNS.m in Sources */,
 				2831FFF71B9FC09D008CDE10 /* XTShareView.m in Sources */,
 				28371DE31B9ED0100012CEF6 /* ViewController.m in Sources */,
+				28F51AC61BA70BF8008639C3 /* XTRequest.m in Sources */,
 				28371E141B9ED0370012CEF6 /* XTShare.m in Sources */,
 				28371E131B9ED0370012CEF6 /* XTOAuth.m in Sources */,
 				28371DE01B9ED0100012CEF6 /* AppDelegate.m in Sources */,
+				28F51ACC1BA714BA008639C3 /* NSString+URL.m in Sources */,
 				28371DDD1B9ED0100012CEF6 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -536,7 +548,7 @@
 				INFOPLIST_FILE = XTSNS/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.lza.XTSNS;
+				PRODUCT_BUNDLE_IDENTIFIER = com.shy.chuanqing;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -549,7 +561,7 @@
 				INFOPLIST_FILE = XTSNS/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.lza.XTSNS;
+				PRODUCT_BUNDLE_IDENTIFIER = com.shy.chuanqing;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
