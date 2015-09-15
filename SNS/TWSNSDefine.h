@@ -10,20 +10,20 @@
 
 // 定义社交平台类型
 typedef enum : NSUInteger {
-    XTSNSPlatformWeiXin = 1,
-    XTSNSPlatformQQ,
-    XTSNSPlatformWeibo,
-} XTSNSPlatform;
+    TWSNSPlatformWeiXin = 1,
+    TWSNSPlatformQQ,
+    TWSNSPlatformWeibo,
+} TWSNSPlatform;
 
 
 // 定义分享类型
 typedef enum : NSUInteger {
-    XTSNSShareTypeWXSceneSession = 1,  // 分享到微信会话
-    XTSNSShareTypeWXSceneTimeline,     // 分享到微信朋友圈
-    XTSNSShareTypeQQ,                  // 分享到QQ好友
-    XTSNSShareTypeQQZone,              // 分享到QQ空间
-    XTSNSShareTypeWeibo,               // 分享到新浪微博
-} XTSNSShareType;
+    TWSNSShareTypeWXSceneSession = 1,  // 分享到微信会话
+    TWSNSShareTypeWXSceneTimeline,     // 分享到微信朋友圈
+    TWSNSShareTypeQQ,                  // 分享到QQ好友
+    TWSNSShareTypeQQZone,              // 分享到QQ空间
+    TWSNSShareTypeWeibo,               // 分享到新浪微博
+} TWSNSShareType;
 
 
 // 定义相关常量定义Key
