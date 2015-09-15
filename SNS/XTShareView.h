@@ -7,7 +7,8 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "XTShare.h"
+#import "XTSNS.h"
+#import "OpenShareHeader.h"
 
 @interface XTShareView : UIControl
 
@@ -15,7 +16,7 @@
 + (instancetype)shareView;
 
 /// 显示分享视图
-- (void)showShareViewWithMessage:(OSMessage *)message;
+- (void)showShareViewWithMessage:(OSMessage *)message completionHandler:(void (^)(OSMessage *message, NSError *error))completionHandler;
 
 
 @end

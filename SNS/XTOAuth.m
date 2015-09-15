@@ -7,6 +7,7 @@
 //
 
 #import "XTOAuth.h"
+#import "NSString+Addition.h"
 
 @implementation XTOAuth
 
@@ -18,19 +19,25 @@
         [OpenShare WeiboAuth:@"all" redirectURI:redirectURI Success:^(NSDictionary *message) {
             [XTOAuth weiboOAuthWithMessage:message completionHandle:completionHandler];
         } Fail:^(NSDictionary *message, NSError *error) {
-            completionHandler(message, error);
+            if (completionHandler) {
+                completionHandler(message, error);
+            }
         }];
     } else if (platform == XTSNSPlatformQQ) {
         [OpenShare QQAuth:@"get_user_info" Success:^(NSDictionary *message) {
             [XTOAuth qqOAuthWithMessage:message completionHandle:completionHandler];
         } Fail:^(NSDictionary *message, NSError *error) {
-            completionHandler(message, error);
+            if (completionHandler) {
+                completionHandler(message, error);
+            }
         }];
     } else if (platform == XTSNSPlatformWeiXin) {
         [OpenShare WeixinAuth:@"snsapi_userinfo" Success:^(NSDictionary *message) {
             [XTOAuth weixinOAuthWithMessage:message completionHandle:completionHandler];
         } Fail:^(NSDictionary *message, NSError *error) {
-            completionHandler(message, error);
+            if (completionHandler) {
+                completionHandler(message, error);
+            }
         }];
     }
 }
@@ -49,7 +56,9 @@
         [XTRequest get:userInfoUrl completionHandler:^(NSDictionary *userInfo, NSError *error) {
             NSMutableDictionary *dict = userInfo.mutableCopy;
             [dict addEntriesFromDictionary:message];
-            completionHandler(dict, error);
+            if (completionHandler) {
+                completionHandler(dict, error);
+            }
         }];
     }];
 }
@@ -64,7 +73,9 @@
     [XTRequest get:url params:params completionHandler:^(NSDictionary *data, NSError *error) {
         NSMutableDictionary *dict = data.mutableCopy;
         [dict addEntriesFromDictionary:message];
-        completionHandler(dict, error);
+        if (completionHandler) {
+            completionHandler(dict, error);
+        }
     }];
 }
 
@@ -102,7 +113,9 @@
     [XTRequest get:requestUrl completionHandler:^(NSDictionary *data, NSError *error) {
         NSMutableDictionary *dict = data.mutableCopy;
         [dict addEntriesFromDictionary:message];
-        completionHandler(dict, error);
+        if (completionHandler) {
+            completionHandler(dict, error);
+        }
     }];
 }
 

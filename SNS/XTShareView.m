@@ -8,15 +8,21 @@
 
 #import "XTShareView.h"
 #import "FXBlurView.h"
+#import "XTSNSDefine.h"
+#import "XTShare.h"
 
-static CGFloat const kRankNum = 5.0;
-static CGFloat const kSpace = 10.0;
+static NSUInteger const kRankNum = 5;
+static CGFloat const kSpace = 10;
+static CGFloat const kTopMargin = 25;
 
-#define kWidth  ((self.bounds.size.width - kSpace * (kRankNum + 1))/kRankNum)
+
+#define kWidth (self.bounds.size.width - kSpace * (kRankNum + 1))/kRankNum
 
 @interface XTShareView ()
 @property (strong, nonatomic) FXBlurView *contentView;
 @property (strong, nonatomic) OSMessage *message;
+
+@property (nonatomic, copy) void (^shareCompletionHandler) (OSMessage *message, NSError *error);
 
 @end
 
@@ -37,15 +43,15 @@ static CGFloat const kSpace = 10.0;
         
         [self addSubview:self.contentView];
 
-        NSArray *images = @[[UIImage imageNamed:@"share-weixin@3x"],
-                            [UIImage imageNamed:@"share-weixin-frends@3x"],
+        NSArray *images = @[[UIImage imageNamed:@"share-weixin"],
+                            [UIImage imageNamed:@"share-weixin-frends"],
                             [UIImage imageNamed:@"share-qq@3x"],
-                            [UIImage imageNamed:@"share-qqzone@3x"],
-                            [UIImage imageNamed:@"share-weibo@3x"]];
+                            [UIImage imageNamed:@"share-qqzone"],
+                            [UIImage imageNamed:@"share-weibo"]];
         NSInteger rank = 0;
         for (int i = 0; i < images.count; i++) {
             NSInteger row = floor(i / kRankNum);
-            CGRect rect = CGRectMake(kSpace + (kSpace + kWidth) * rank, kSpace + 5 + (kWidth + kSpace) * row, kWidth, kWidth);
+            CGRect rect = CGRectMake(kSpace + (kSpace + kWidth) * rank, kTopMargin + (kWidth + kTopMargin) * row, kWidth, kWidth);
             rank++;
             if (rank >= kRankNum) {
                 rank = 0;
@@ -65,14 +71,15 @@ static CGFloat const kSpace = 10.0;
 - (void)shareButtonClickEvent:(UIButton *)sender
 {
     XTSNSShareType shareType = sender.tag;
-    [XTShare shareMessage:self.message withShareType:shareType];
+    [XTShare shareMessage:self.message withShareType:shareType completionHandler:self.shareCompletionHandler];
     
     [self hideSelf:self];
 }
 
-- (void)showShareViewWithMessage:(OSMessage *)message
+- (void)showShareViewWithMessage:(OSMessage *)message completionHandler:(void (^)(OSMessage *message, NSError *error))completionHandler
 {
     self.message = message;
+    self.shareCompletionHandler = completionHandler;
     
     __weak XTShareView *weakSelf = self;
 
@@ -82,7 +89,7 @@ static CGFloat const kSpace = 10.0;
     self.contentView.underlyingView = window;
 
     [UIView animateWithDuration:0.75 delay:0 usingSpringWithDamping:0.5 initialSpringVelocity:0.3 options:UIViewAnimationOptionCurveEaseInOut animations:^{
-        weakSelf.contentView.frame = CGRectMake(0, weakSelf.bounds.size.height - kWidth - (kSpace + 5) * 2, weakSelf.bounds.size.width, 120);
+        weakSelf.contentView.frame = CGRectMake(0, weakSelf.bounds.size.height - kWidth - kTopMargin * 2 - 5, weakSelf.bounds.size.width, 400);
     } completion:nil];
 }
 

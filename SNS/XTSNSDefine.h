@@ -25,3 +25,12 @@ typedef enum : NSUInteger {
     XTSNSShareTypeWeibo,               // 分享到新浪微博
 } XTSNSShareType;
 
+
+// 定义相关常量定义Key
+static NSString *const kSNSPlatformWeixinIdKey         = @"kSNSPlatformWeixinIdKey";
+static NSString *const kSNSPlatformWeiboIdKey          = @"kSNSPlatformWeiboIdKey";
+static NSString *const kSNSPlatformQQIdKey             = @"kSNSPlatformQQIdKey";
+static NSString *const kSNSPlatformWeixinSecretKey     = @"kSNSPlatformWeixinSecretKey";
+static NSString *const kSNSPlatformWeiboSecretKey      = @"kSNSPlatformWeiboSecretKey";
+static NSString *const kSNSPlatformWeiboRedirectURIKey = @"kSNSPlatformWeiboRedirectURIKey";
+static NSString *const kSNSPlatformQQSecretKey         = @"kSNSPlatformQQSecretKey";

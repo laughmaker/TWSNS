@@ -7,14 +7,13 @@
 //
 
 #import <Foundation/Foundation.h>
-#include <CommonCrypto/CommonDigest.h>
-#include <CommonCrypto/CommonHMAC.h>
 
-@interface NSString (URL)
+@interface NSString (Addition)
 
-
+/// 将字符串进行Url编码
 - (NSString *)encodeURL;
 
+/// 将字符串进行Hash
 - (NSString *)hmacSha1WithKey:(NSString *)key;
 
 @end

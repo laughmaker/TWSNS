@@ -37,31 +37,38 @@ static NSString *const kQZoneKey         = @"";
 {
     OSMessage *message = [[OSMessage alloc] init];
     message.title = @"我爱我的因我觉得欢喜~~~测试中，请忽略";
-//    message.image = UIImageJPEGRepresentation([UIImage imageNamed:@"a"], 1);
-//    message.desc = @"哈哈，这里是描述";
-    [[XTShareView shareView] showShareViewWithMessage:message];
+    message.image = UIImageJPEGRepresentation([UIImage imageNamed:@"a.jpg"], 0.1);
+    message.thumbnail = UIImageJPEGRepresentation([UIImage imageNamed:@"a.jpg"], 0.1);
+    message.desc = @"哈哈，这里是描述";
+    message.link = @"http://www.baidu.com";
+    [[XTShareView shareView] showShareViewWithMessage:message completionHandler:^(OSMessage *message, NSError *error) {
+        NSLog(@"message:%@", message);
+        NSLog(@"error:%@", error);
+    }];
 }
 
 - (IBAction)qqLogin:(id)sender {
     [XTOAuth loginToPlatform:XTSNSPlatformQQ completionHandle:^(NSDictionary *data, NSError *error)
      {
-         
+         NSLog(@"data:%@", data);
+         NSLog(@"error:%@", error);
      }];
 }
 
 - (IBAction)weiboLogin:(id)sender {
     [XTOAuth  loginToPlatform:XTSNSPlatformWeibo completionHandle:^(NSDictionary *data, NSError *error)
     {
-        
+        NSLog(@"data:%@", data);
+        NSLog(@"error:%@", error);
     }];
 }
 
 - (IBAction)weixinLogin:(id)sender {
     [XTOAuth loginToPlatform:XTSNSPlatformWeiXin completionHandle:^(NSDictionary *data, NSError *error)
      {
-         
+         NSLog(@"data:%@", data);
+         NSLog(@"error:%@", error);
      }];
-
 }
 
 @end

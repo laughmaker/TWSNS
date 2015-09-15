@@ -14,17 +14,7 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
-		<key>Overline-BlocksKit.xcscheme</key>
-		<dict>
-			<key>isShown</key>
-			<false/>
-		</dict>
 		<key>Pods.xcscheme</key>
-		<dict>
-			<key>isShown</key>
-			<false/>
-		</dict>
-		<key>XTNetwork.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
@@ -32,27 +22,17 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>0C703CC9575BA55DBB1DEE39386ED212</key>
+		<key>1CECC4F11CBA5DFA396ADA0E6635DD80</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>BA9AD6FF33146CE65D8FF0A767A45359</key>
+		<key>D61FF3F35B31986825ACD199A7FCE638</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>DE44182005120E009CCC7B7AD876FF4B</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>EF7F68B36F20F5927BF4FD49125318F2</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>FC300317A5322B9887A9D1F906357444</key>
+		<key>F7CA2435EFEF7EF26D6A12030C8AFE33</key>
 		<dict>
 			<key>primary</key>
 			<true/>

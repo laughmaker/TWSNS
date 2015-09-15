@@ -7,6 +7,8 @@
 //
 
 #import "XTShare.h"
+#import "OpenShareHeader.h"
+#import "OpenShare.h"
 
 @implementation XTShare
 
@@ -15,30 +17,58 @@
     return [[[self class] alloc] init];
 }
 
-+ (void)shareMessage:(OSMessage *)message withShareType:(XTSNSShareType)shareType
++ (void)shareMessage:(OSMessage *)message withShareType:(XTSNSShareType)shareType completionHandler:(void (^)(OSMessage *message, NSError *error))completionHandler
 {
-    switch (shareType) {
-        case XTSNSShareTypeWeibo:
-            [OpenShare shareToWeibo:message Success:nil Fail:nil];
-            break;
-        case XTSNSShareTypeQQZone:
-            [OpenShare shareToQQZone:message Success:nil Fail:nil];
-            break;
-        case XTSNSShareTypeQQ:
-            [OpenShare shareToQQFriends:message Success:nil Fail:nil];
-            break;
-        case XTSNSShareTypeWXSceneTimeline:
-            [OpenShare shareToWeixinTimeline:message Success:^(OSMessage *message) {
-                
-            } Fail:^(OSMessage *message, NSError *error) {
-                
-            }];
-            break;
-        case XTSNSShareTypeWXSceneSession:
-            [OpenShare shareToWeixinSession:message Success:nil Fail:nil];
-            break;
-        default:
-            break;
+    if (shareType == XTSNSShareTypeWeibo) {
+        [OpenShare shareToWeibo:message Success:^(OSMessage *message) {
+            if (completionHandler) {
+                completionHandler(message, nil);
+            }
+        } Fail:^(OSMessage *message, NSError *error) {
+            if (completionHandler) {
+                completionHandler(message, error);
+            }
+        }];
+    } else if (shareType == XTSNSShareTypeQQZone) {
+        [OpenShare shareToQQZone:message Success:^(OSMessage *message) {
+            if (completionHandler) {
+                completionHandler(message, nil);
+            }
+        } Fail:^(OSMessage *message, NSError *error) {
+            if (completionHandler) {
+                completionHandler(message, error);
+            }
+        }];
+    } else if (shareType == XTSNSShareTypeQQ) {
+        [OpenShare shareToQQFriends:message Success:^(OSMessage *message) {
+            if (completionHandler) {
+                completionHandler(message, nil);
+            }
+        } Fail:^(OSMessage *message, NSError *error) {
+            if (completionHandler) {
+                completionHandler(message, error);
+            }
+        }];
+    } else if (shareType == XTSNSShareTypeWXSceneTimeline) {
+        [OpenShare shareToWeixinTimeline:message Success:^(OSMessage *message) {
+            if (completionHandler) {
+                completionHandler(message, nil);
+            }
+        } Fail:^(OSMessage *message, NSError *error) {
+            if (completionHandler) {
+                completionHandler(message, error);
+            }
+        }];
+    } else if (shareType == XTSNSShareTypeWXSceneSession) {
+        [OpenShare shareToWeixinSession:message Success:^(OSMessage *message) {
+            if (completionHandler) {
+                completionHandler(message, nil);
+            }
+        } Fail:^(OSMessage *message, NSError *error) {
+            if (completionHandler) {
+                completionHandler(message, error);
+            }
+        }];
     }
 }
 

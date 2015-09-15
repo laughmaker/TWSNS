@@ -1,19 +1,13 @@
 PODS:
   - FXBlurView (1.6.3)
   - OpenShare (0.0.1)
-  - Overline-BlocksKit (0.4.0)
-  - XTNetwork (1.0.1)
 
 DEPENDENCIES:
   - FXBlurView (= 1.6.3)
   - OpenShare (~> 0.0.1)
-  - Overline-BlocksKit (= 0.4.0)
-  - XTNetwork (~> 1.0.1)
 
 SPEC CHECKSUMS:
   FXBlurView: c6d23f3d35af2c6282296a2930f61c6e2c788d01
   OpenShare: a560580dbb729d5c0c3cc1ee84cd6aa4a07e94c6
-  Overline-BlocksKit: 8bda4f80ee14793ad78cd4d53a80351c345ee337
-  XTNetwork: b6ef7f6369e1d60a5558b4faaac400e2a7589ab6
 
 COCOAPODS: 0.38.2

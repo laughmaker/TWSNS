@@ -12,17 +12,11 @@
 #import "XTOAuth.h"
 #import "OpenShareHeader.h"
 #import "OpenShare.h"
-
-static NSString *const kSNSPlatformWeixinIdKey         = @"kSNSPlatformWeixinIdKey";
-static NSString *const kSNSPlatformWeiboIdKey          = @"kSNSPlatformWeiboIdKey";
-static NSString *const kSNSPlatformQQIdKey             = @"kSNSPlatformQQIdKey";
-static NSString *const kSNSPlatformWeixinSecretKey     = @"kSNSPlatformWeixinSecretKey";
-static NSString *const kSNSPlatformWeiboSecretKey      = @"kSNSPlatformWeiboSecretKey";
-static NSString *const kSNSPlatformWeiboRedirectURIKey = @"kSNSPlatformWeiboRedirectURIKey";
-static NSString *const kSNSPlatformQQSecretKey         = @"kSNSPlatformQQSecretKey";
+#import "XTSNSDefine.h"
 
 @interface XTSNS : NSObject
 
+//注册相应平台的信息
 + (void)registerWeiboAppId:(NSString *)appId secret:(NSString *)secret redirectURI:(NSString *)redirectURI;
 + (void)registerQQAppId:(NSString *)appId secret:(NSString *)secret;
 + (void)registerWeiXinAppId:(NSString *)appId secret:(NSString *)secret;

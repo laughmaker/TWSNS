@@ -6,10 +6,11 @@
 //  Copyright © 2015年 LZA. All rights reserved.
 //
 
-#import "NSString+URL.h"
+#import "NSString+Addition.h"
+#include <CommonCrypto/CommonDigest.h>
+#include <CommonCrypto/CommonHMAC.h>
 
-@implementation NSString (URL)
-
+@implementation NSString (Addition)
 
 - (NSString *)encodeURL
 {

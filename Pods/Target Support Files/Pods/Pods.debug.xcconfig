@@ -1,5 +1,5 @@
 GCC_PREPROCESSOR_DEFINITIONS = $(inherited) COCOAPODS=1
-HEADER_SEARCH_PATHS = $(inherited) "${PODS_ROOT}/Headers/Public" "${PODS_ROOT}/Headers/Public/FXBlurView" "${PODS_ROOT}/Headers/Public/OpenShare" "${PODS_ROOT}/Headers/Public/Overline-BlocksKit" "${PODS_ROOT}/Headers/Public/XTNetwork"
-OTHER_CFLAGS = $(inherited) -isystem "${PODS_ROOT}/Headers/Public" -isystem "${PODS_ROOT}/Headers/Public/FXBlurView" -isystem "${PODS_ROOT}/Headers/Public/OpenShare" -isystem "${PODS_ROOT}/Headers/Public/Overline-BlocksKit" -isystem "${PODS_ROOT}/Headers/Public/XTNetwork"
-OTHER_LDFLAGS = $(inherited) -ObjC -l"FXBlurView" -l"OpenShare" -l"Overline-BlocksKit" -l"XTNetwork" -framework "Accelerate" -framework "CoreGraphics" -framework "QuartzCore" -framework "UIKit"
+HEADER_SEARCH_PATHS = $(inherited) "${PODS_ROOT}/Headers/Public" "${PODS_ROOT}/Headers/Public/FXBlurView" "${PODS_ROOT}/Headers/Public/OpenShare"
+OTHER_CFLAGS = $(inherited) -isystem "${PODS_ROOT}/Headers/Public" -isystem "${PODS_ROOT}/Headers/Public/FXBlurView" -isystem "${PODS_ROOT}/Headers/Public/OpenShare"
+OTHER_LDFLAGS = $(inherited) -ObjC -l"FXBlurView" -l"OpenShare" -framework "Accelerate" -framework "QuartzCore"
 PODS_ROOT = ${SRCROOT}/Pods

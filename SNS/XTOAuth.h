@@ -8,18 +8,21 @@
 
 #import <Foundation/Foundation.h>
 #import <UIKit/UIKit.h>
-#import "XTSNSDefine.h"
-#import "OpenShareHeader.h"
-//#import "Overline+BlocksKit.h"
 #import "XTRequest.h"
 #import "XTSNS.h"
-#import "NSString+URL.h"
+#import "XTSNSDefine.h"
 
 /**
  *  第三方登录封装接口，提供登录，获取用户信息等
  */
 @interface XTOAuth : NSObject
 
+/**
+ *  登录到第三方平台
+ *
+ *  @param platform          平台类型
+ *  @param completionHandler 完成后的代理，成功后会返回用户信息，失败后会返回失败信息
+ */
 + (void)loginToPlatform:(XTSNSPlatform)platform completionHandle:(void (^)(NSDictionary *data, NSError *error))completionHandler;
 
 @end
