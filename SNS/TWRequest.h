@@ -8,7 +8,7 @@
 
 #import <Foundation/Foundation.h>
 
-@interface XTRequest : NSObject
+@interface TWRequest : NSObject
 
 + (void)get:(NSString *)urlPath completionHandler:(void (^)(id data, NSError *error))completionHandler;
 + (void)get:(NSString *)urlPath params:(NSDictionary *)params completionHandler:(void (^)(id, NSError *))completionHandler;

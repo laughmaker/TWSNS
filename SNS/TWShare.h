@@ -8,14 +8,14 @@
 
 #import <Foundation/Foundation.h>
 #import <UIKit/UIKit.h>
-#import "XTSNS.h"
+#import "TWSNS.h"
 #import "OpenShare.h"
-#import "XTSNSDefine.h"
+#import "TWSNSDefine.h"
 
 /**
  *  分享控制类
  */
-@interface XTShare : NSObject
+@interface TWShare : NSObject
 
 /**
  *  分享消息的内容到相应平台

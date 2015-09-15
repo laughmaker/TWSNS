@@ -6,9 +6,9 @@
 //  Copyright © 2015年 LZA. All rights reserved.
 //
 
-#import "XTSNS.h"
+#import "TWSNS.h"
 
-@implementation XTSNS
+@implementation TWSNS
 
 + (void)registerWeiboAppId:(NSString *)appId secret:(NSString *)secret redirectURI:(NSString *)redirectURI
 {

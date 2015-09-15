@@ -6,10 +6,10 @@
 //
 //
 
-#import "XTOAuth.h"
+#import "TWOAuth.h"
 #import "NSString+Addition.h"
 
-@implementation XTOAuth
+@implementation TWOAuth
 
 + (void)loginToPlatform:(XTSNSPlatform)platform completionHandle:(void (^)(NSDictionary *, NSError *))completionHandler
 {
@@ -17,7 +17,7 @@
     if (platform == XTSNSPlatformWeibo) {
         NSString *redirectURI = [[NSUserDefaults standardUserDefaults] objectForKey:kSNSPlatformWeiboRedirectURIKey];
         [OpenShare WeiboAuth:@"all" redirectURI:redirectURI Success:^(NSDictionary *message) {
-            [XTOAuth weiboOAuthWithMessage:message completionHandle:completionHandler];
+            [TWOAuth weiboOAuthWithMessage:message completionHandle:completionHandler];
         } Fail:^(NSDictionary *message, NSError *error) {
             if (completionHandler) {
                 completionHandler(message, error);
@@ -25,7 +25,7 @@
         }];
     } else if (platform == XTSNSPlatformQQ) {
         [OpenShare QQAuth:@"get_user_info" Success:^(NSDictionary *message) {
-            [XTOAuth qqOAuthWithMessage:message completionHandle:completionHandler];
+            [TWOAuth qqOAuthWithMessage:message completionHandle:completionHandler];
         } Fail:^(NSDictionary *message, NSError *error) {
             if (completionHandler) {
                 completionHandler(message, error);
@@ -33,7 +33,7 @@
         }];
     } else if (platform == XTSNSPlatformWeiXin) {
         [OpenShare WeixinAuth:@"snsapi_userinfo" Success:^(NSDictionary *message) {
-            [XTOAuth weixinOAuthWithMessage:message completionHandle:completionHandler];
+            [TWOAuth weixinOAuthWithMessage:message completionHandle:completionHandler];
         } Fail:^(NSDictionary *message, NSError *error) {
             if (completionHandler) {
                 completionHandler(message, error);
@@ -48,12 +48,12 @@
     NSString *appId = [ud objectForKey:kSNSPlatformWeixinIdKey];
     NSString *secret = [ud objectForKey:kSNSPlatformWeixinSecretKey];
     NSString *url = [NSString stringWithFormat:@"https://api.weixin.qq.com/sns/oauth2/access_token?appid=%@&secret=%@&code=%@&grant_type=authorization_code", appId, secret, message[@"code"]];
-    [XTRequest get:url completionHandler:^(NSDictionary *data, NSError *error) {
+    [TWRequest get:url completionHandler:^(NSDictionary *data, NSError *error) {
         NSString *accessToken = data[@"access_token"];
         NSString *openid = data[@"openid"];
         
         NSString *userInfoUrl = [NSString stringWithFormat:@"https://api.weixin.qq.com/sns/userinfo?access_token=%@&openid=%@&lang=zh_CN", accessToken, openid];
-        [XTRequest get:userInfoUrl completionHandler:^(NSDictionary *userInfo, NSError *error) {
+        [TWRequest get:userInfoUrl completionHandler:^(NSDictionary *userInfo, NSError *error) {
             NSMutableDictionary *dict = userInfo.mutableCopy;
             [dict addEntriesFromDictionary:message];
             if (completionHandler) {
@@ -70,7 +70,7 @@
     NSDictionary *params = @{@"source": [ud objectForKey:kSNSPlatformWeiboIdKey],
                              @"access_token": message[@"accessToken"],
                              @"uid": message[@"userID"]};
-    [XTRequest get:url params:params completionHandler:^(NSDictionary *data, NSError *error) {
+    [TWRequest get:url params:params completionHandler:^(NSDictionary *data, NSError *error) {
         NSMutableDictionary *dict = data.mutableCopy;
         [dict addEntriesFromDictionary:message];
         if (completionHandler) {
@@ -110,7 +110,7 @@
     NSString *requestUrl = [NSString stringWithFormat:@"%@%@", url, urlString];
     requestUrl = [requestUrl substringToIndex:requestUrl.length - 1];
     
-    [XTRequest get:requestUrl completionHandler:^(NSDictionary *data, NSError *error) {
+    [TWRequest get:requestUrl completionHandler:^(NSDictionary *data, NSError *error) {
         NSMutableDictionary *dict = data.mutableCopy;
         [dict addEntriesFromDictionary:message];
         if (completionHandler) {

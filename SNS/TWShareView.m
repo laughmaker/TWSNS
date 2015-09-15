@@ -6,10 +6,10 @@
 //  Copyright © 2015年 LZA. All rights reserved.
 //
 
-#import "XTShareView.h"
+#import "TWShareView.h"
 #import "FXBlurView.h"
-#import "XTSNSDefine.h"
-#import "XTShare.h"
+#import "TWSNSDefine.h"
+#import "TWShare.h"
 
 static NSUInteger const kRankNum = 5;
 static CGFloat const kSpace = 10;
@@ -18,7 +18,7 @@ static CGFloat const kTopMargin = 25;
 
 #define kWidth (self.bounds.size.width - kSpace * (kRankNum + 1))/kRankNum
 
-@interface XTShareView ()
+@interface TWShareView ()
 @property (strong, nonatomic) FXBlurView *contentView;
 @property (strong, nonatomic) OSMessage *message;
 
@@ -26,12 +26,12 @@ static CGFloat const kTopMargin = 25;
 
 @end
 
-@implementation XTShareView
+@implementation TWShareView
 
 
 + (instancetype)shareView
 {
-    return [[XTShareView alloc] initWithFrame:[UIApplication sharedApplication].keyWindow.bounds];
+    return [[TWShareView alloc] initWithFrame:[UIApplication sharedApplication].keyWindow.bounds];
 }
 
 - (instancetype)initWithFrame:(CGRect)frame
@@ -71,7 +71,7 @@ static CGFloat const kTopMargin = 25;
 - (void)shareButtonClickEvent:(UIButton *)sender
 {
     XTSNSShareType shareType = sender.tag;
-    [XTShare shareMessage:self.message withShareType:shareType completionHandler:self.shareCompletionHandler];
+    [TWShare shareMessage:self.message withShareType:shareType completionHandler:self.shareCompletionHandler];
     
     [self hideSelf:self];
 }
@@ -81,7 +81,7 @@ static CGFloat const kTopMargin = 25;
     self.message = message;
     self.shareCompletionHandler = completionHandler;
     
-    __weak XTShareView *weakSelf = self;
+    __weak TWShareView *weakSelf = self;
 
     UIView *window = [[UIApplication sharedApplication].keyWindow.subviews lastObject];
     self.contentView.frame = CGRectMake(0, self.bounds.size.height, self.bounds.size.width, 120);
@@ -95,7 +95,7 @@ static CGFloat const kTopMargin = 25;
 
 - (void)hideSelf:(id)sender
 {
-    __weak XTShareView *weakSelf = self;
+    __weak TWShareView *weakSelf = self;
     [UIView animateWithDuration:0.75 delay:0 usingSpringWithDamping:0.5 initialSpringVelocity:0.7 options:UIViewAnimationOptionCurveEaseInOut animations:^{
         weakSelf.contentView.center = CGPointMake(weakSelf.contentView.center.x, weakSelf.bounds.size.height + weakSelf.contentView.bounds.size.height);
         weakSelf.alpha = 0;

@@ -7,7 +7,7 @@
 //
 
 #import "ViewController.h"
-#import "XTSNS.h"
+#import "TWSNS.h"
 
 /// 程序中用到的第三方帐号的相关Key和SecretKey
 static NSString *const kWeChatAppId      = @"wxc070c02fb0a72487";
@@ -41,14 +41,14 @@ static NSString *const kQZoneKey         = @"";
     message.thumbnail = UIImageJPEGRepresentation([UIImage imageNamed:@"a.jpg"], 0.1);
     message.desc = @"哈哈，这里是描述";
     message.link = @"http://www.baidu.com";
-    [[XTShareView shareView] showShareViewWithMessage:message completionHandler:^(OSMessage *message, NSError *error) {
+    [[TWShareView shareView] showShareViewWithMessage:message completionHandler:^(OSMessage *message, NSError *error) {
         NSLog(@"message:%@", message);
         NSLog(@"error:%@", error);
     }];
 }
 
 - (IBAction)qqLogin:(id)sender {
-    [XTOAuth loginToPlatform:XTSNSPlatformQQ completionHandle:^(NSDictionary *data, NSError *error)
+    [TWOAuth loginToPlatform:XTSNSPlatformQQ completionHandle:^(NSDictionary *data, NSError *error)
      {
          NSLog(@"data:%@", data);
          NSLog(@"error:%@", error);
@@ -56,7 +56,7 @@ static NSString *const kQZoneKey         = @"";
 }
 
 - (IBAction)weiboLogin:(id)sender {
-    [XTOAuth  loginToPlatform:XTSNSPlatformWeibo completionHandle:^(NSDictionary *data, NSError *error)
+    [TWOAuth  loginToPlatform:XTSNSPlatformWeibo completionHandle:^(NSDictionary *data, NSError *error)
     {
         NSLog(@"data:%@", data);
         NSLog(@"error:%@", error);
@@ -64,7 +64,7 @@ static NSString *const kQZoneKey         = @"";
 }
 
 - (IBAction)weixinLogin:(id)sender {
-    [XTOAuth loginToPlatform:XTSNSPlatformWeiXin completionHandle:^(NSDictionary *data, NSError *error)
+    [TWOAuth loginToPlatform:XTSNSPlatformWeiXin completionHandle:^(NSDictionary *data, NSError *error)
      {
          NSLog(@"data:%@", data);
          NSLog(@"error:%@", error);

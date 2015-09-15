@@ -7,10 +7,10 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "XTSNS.h"
+#import "TWSNS.h"
 #import "OpenShareHeader.h"
 
-@interface XTShareView : UIControl
+@interface TWShareView : UIControl
 
 /// 便利方法获取分享视图
 + (instancetype)shareView;

@@ -6,11 +6,11 @@
 //
 //
 
-#import "XTShare.h"
+#import "TWShare.h"
 #import "OpenShareHeader.h"
 #import "OpenShare.h"
 
-@implementation XTShare
+@implementation TWShare
 
 + (instancetype)share
 {

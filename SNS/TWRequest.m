@@ -6,9 +6,9 @@
 //  Copyright © 2015年 LZA. All rights reserved.
 //
 
-#import "XTRequest.h"
+#import "TWRequest.h"
 
-@implementation XTRequest
+@implementation TWRequest
 
 + (void)get:(NSString *)urlPath completionHandler:(void (^)(id data, NSError *error))completionHandler
 {

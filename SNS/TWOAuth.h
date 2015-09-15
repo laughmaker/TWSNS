@@ -8,14 +8,14 @@
 
 #import <Foundation/Foundation.h>
 #import <UIKit/UIKit.h>
-#import "XTRequest.h"
-#import "XTSNS.h"
-#import "XTSNSDefine.h"
+#import "TWRequest.h"
+#import "TWSNS.h"
+#import "TWSNSDefine.h"
 
 /**
  *  第三方登录封装接口，提供登录，获取用户信息等
  */
-@interface XTOAuth : NSObject
+@interface TWOAuth : NSObject
 
 /**
  *  登录到第三方平台

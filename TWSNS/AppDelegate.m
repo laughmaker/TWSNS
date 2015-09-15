@@ -7,7 +7,7 @@
 //
 
 #import "AppDelegate.h"
-#import "XTSNS.h"
+#import "TWSNS.h"
 
 ///微信第三方登录(传情)
 static NSString *const kWeiXinAppId         = @"wxd41b2ec423a3ea58";
@@ -32,9 +32,9 @@ static NSString *const kQQAppSecret      = @"FSluzJHctKTy0NmQ";
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
-    [XTSNS registerQQAppId:kQQAppId secret:kQQAppSecret];
-    [XTSNS registerWeiboAppId:kWeiBoAppId secret:kWeiBoAppSecret redirectURI:kWeiBoAppRedirectURL];
-    [XTSNS registerWeiXinAppId:kWeiXinAppId secret:kWeiXinAppSecret];
+    [TWSNS registerQQAppId:kQQAppId secret:kQQAppSecret];
+    [TWSNS registerWeiboAppId:kWeiBoAppId secret:kWeiBoAppSecret redirectURI:kWeiBoAppRedirectURL];
+    [TWSNS registerWeiXinAppId:kWeiXinAppId secret:kWeiXinAppSecret];
     
     return YES;
 }

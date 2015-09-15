@@ -7,14 +7,14 @@
 //
 
 #import <Foundation/Foundation.h>
-#import "XTShare.h"
-#import "XTShareView.h"
-#import "XTOAuth.h"
+#import "TWShare.h"
+#import "TWShareView.h"
+#import "TWOAuth.h"
 #import "OpenShareHeader.h"
 #import "OpenShare.h"
-#import "XTSNSDefine.h"
+#import "TWSNSDefine.h"
 
-@interface XTSNS : NSObject
+@interface TWSNS : NSObject
 
 //注册相应平台的信息
 + (void)registerWeiboAppId:(NSString *)appId secret:(NSString *)secret redirectURI:(NSString *)redirectURI;

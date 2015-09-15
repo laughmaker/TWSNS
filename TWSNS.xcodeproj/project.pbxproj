@@ -13,19 +13,17 @@
 		2831FFF21B9FC088008CDE10 /* share-weibo@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2831FFED1B9FC088008CDE10 /* share-weibo@3x.png */; settings = {ASSET_TAGS = (); }; };
 		2831FFF31B9FC088008CDE10 /* share-weixin-frends@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2831FFEE1B9FC088008CDE10 /* share-weixin-frends@3x.png */; settings = {ASSET_TAGS = (); }; };
 		2831FFF41B9FC088008CDE10 /* share-weixin@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2831FFEF1B9FC088008CDE10 /* share-weixin@3x.png */; settings = {ASSET_TAGS = (); }; };
-		2831FFF71B9FC09D008CDE10 /* XTShareView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2831FFF61B9FC09D008CDE10 /* XTShareView.m */; settings = {ASSET_TAGS = (); }; };
+		2831FFF71B9FC09D008CDE10 /* TWShareView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2831FFF61B9FC09D008CDE10 /* TWShareView.m */; settings = {ASSET_TAGS = (); }; };
 		28371DDD1B9ED0100012CEF6 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 28371DDC1B9ED0100012CEF6 /* main.m */; };
 		28371DE01B9ED0100012CEF6 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 28371DDF1B9ED0100012CEF6 /* AppDelegate.m */; };
 		28371DE31B9ED0100012CEF6 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 28371DE21B9ED0100012CEF6 /* ViewController.m */; };
 		28371DE61B9ED0100012CEF6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 28371DE41B9ED0100012CEF6 /* Main.storyboard */; };
 		28371DEB1B9ED0100012CEF6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 28371DE91B9ED0100012CEF6 /* LaunchScreen.storyboard */; };
-		28371DF61B9ED0100012CEF6 /* XTSNSTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 28371DF51B9ED0100012CEF6 /* XTSNSTests.m */; };
-		28371E011B9ED0100012CEF6 /* XTSNSUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 28371E001B9ED0100012CEF6 /* XTSNSUITests.m */; };
-		28371E131B9ED0370012CEF6 /* XTOAuth.m in Sources */ = {isa = PBXBuildFile; fileRef = 28371E101B9ED0370012CEF6 /* XTOAuth.m */; settings = {ASSET_TAGS = (); }; };
-		28371E141B9ED0370012CEF6 /* XTShare.m in Sources */ = {isa = PBXBuildFile; fileRef = 28371E121B9ED0370012CEF6 /* XTShare.m */; settings = {ASSET_TAGS = (); }; };
+		28371E131B9ED0370012CEF6 /* TWOAuth.m in Sources */ = {isa = PBXBuildFile; fileRef = 28371E101B9ED0370012CEF6 /* TWOAuth.m */; settings = {ASSET_TAGS = (); }; };
+		28371E141B9ED0370012CEF6 /* TWShare.m in Sources */ = {isa = PBXBuildFile; fileRef = 28371E121B9ED0370012CEF6 /* TWShare.m */; settings = {ASSET_TAGS = (); }; };
 		28371E161B9ED8D80012CEF6 /* a.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 28371E151B9ED8D80012CEF6 /* a.jpg */; settings = {ASSET_TAGS = (); }; };
-		285E89741BA00C1600B85127 /* XTSNS.m in Sources */ = {isa = PBXBuildFile; fileRef = 285E89731BA00C1600B85127 /* XTSNS.m */; settings = {ASSET_TAGS = (); }; };
-		28F51AC61BA70BF8008639C3 /* XTRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 28F51AC51BA70BF8008639C3 /* XTRequest.m */; settings = {ASSET_TAGS = (); }; };
+		285E89741BA00C1600B85127 /* TWSNS.m in Sources */ = {isa = PBXBuildFile; fileRef = 285E89731BA00C1600B85127 /* TWSNS.m */; settings = {ASSET_TAGS = (); }; };
+		28F51AC61BA70BF8008639C3 /* TWRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 28F51AC51BA70BF8008639C3 /* TWRequest.m */; settings = {ASSET_TAGS = (); }; };
 		28F51ACC1BA714BA008639C3 /* NSString+Addition.m in Sources */ = {isa = PBXBuildFile; fileRef = 28F51ACB1BA714BA008639C3 /* NSString+Addition.m */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
@@ -52,9 +50,9 @@
 		2831FFED1B9FC088008CDE10 /* share-weibo@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "share-weibo@3x.png"; sourceTree = "<group>"; };
 		2831FFEE1B9FC088008CDE10 /* share-weixin-frends@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "share-weixin-frends@3x.png"; sourceTree = "<group>"; };
 		2831FFEF1B9FC088008CDE10 /* share-weixin@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "share-weixin@3x.png"; sourceTree = "<group>"; };
-		2831FFF51B9FC09D008CDE10 /* XTShareView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XTShareView.h; sourceTree = "<group>"; };
-		2831FFF61B9FC09D008CDE10 /* XTShareView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XTShareView.m; sourceTree = "<group>"; };
-		28371DD81B9ED0100012CEF6 /* XTSNS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = XTSNS.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		2831FFF51B9FC09D008CDE10 /* TWShareView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TWShareView.h; sourceTree = "<group>"; };
+		2831FFF61B9FC09D008CDE10 /* TWShareView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TWShareView.m; sourceTree = "<group>"; };
+		28371DD81B9ED0100012CEF6 /* TWSNS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TWSNS.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		28371DDC1B9ED0100012CEF6 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		28371DDE1B9ED0100012CEF6 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		28371DDF1B9ED0100012CEF6 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -63,22 +61,18 @@
 		28371DE51B9ED0100012CEF6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		28371DEA1B9ED0100012CEF6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		28371DEC1B9ED0100012CEF6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		28371DF11B9ED0100012CEF6 /* XTSNSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = XTSNSTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		28371DF51B9ED0100012CEF6 /* XTSNSTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XTSNSTests.m; sourceTree = "<group>"; };
-		28371DF71B9ED0100012CEF6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		28371DFC1B9ED0100012CEF6 /* XTSNSUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = XTSNSUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		28371E001B9ED0100012CEF6 /* XTSNSUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XTSNSUITests.m; sourceTree = "<group>"; };
-		28371E021B9ED0100012CEF6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		28371E0F1B9ED0370012CEF6 /* XTOAuth.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XTOAuth.h; sourceTree = "<group>"; };
-		28371E101B9ED0370012CEF6 /* XTOAuth.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XTOAuth.m; sourceTree = "<group>"; };
-		28371E111B9ED0370012CEF6 /* XTShare.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XTShare.h; sourceTree = "<group>"; };
-		28371E121B9ED0370012CEF6 /* XTShare.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XTShare.m; sourceTree = "<group>"; };
+		28371DF11B9ED0100012CEF6 /* TWSNS.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TWSNS.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		28371DFC1B9ED0100012CEF6 /* TWSNS.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TWSNS.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		28371E0F1B9ED0370012CEF6 /* TWOAuth.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TWOAuth.h; sourceTree = "<group>"; };
+		28371E101B9ED0370012CEF6 /* TWOAuth.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TWOAuth.m; sourceTree = "<group>"; };
+		28371E111B9ED0370012CEF6 /* TWShare.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TWShare.h; sourceTree = "<group>"; };
+		28371E121B9ED0370012CEF6 /* TWShare.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TWShare.m; sourceTree = "<group>"; };
 		28371E151B9ED8D80012CEF6 /* a.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = a.jpg; path = "../../../../../Pictures/壁纸/a.jpg"; sourceTree = "<group>"; };
-		285E89721BA00C1600B85127 /* XTSNS.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XTSNS.h; sourceTree = "<group>"; };
-		285E89731BA00C1600B85127 /* XTSNS.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XTSNS.m; sourceTree = "<group>"; };
-		285E89751BA0224200B85127 /* XTSNSDefine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XTSNSDefine.h; sourceTree = "<group>"; };
-		28F51AC41BA70BF8008639C3 /* XTRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XTRequest.h; sourceTree = "<group>"; };
-		28F51AC51BA70BF8008639C3 /* XTRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XTRequest.m; sourceTree = "<group>"; };
+		285E89721BA00C1600B85127 /* TWSNS.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TWSNS.h; sourceTree = "<group>"; };
+		285E89731BA00C1600B85127 /* TWSNS.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TWSNS.m; sourceTree = "<group>"; };
+		285E89751BA0224200B85127 /* TWSNSDefine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TWSNSDefine.h; sourceTree = "<group>"; };
+		28F51AC41BA70BF8008639C3 /* TWRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TWRequest.h; sourceTree = "<group>"; };
+		28F51AC51BA70BF8008639C3 /* TWRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TWRequest.m; sourceTree = "<group>"; };
 		28F51ACA1BA714BA008639C3 /* NSString+Addition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+Addition.h"; sourceTree = "<group>"; };
 		28F51ACB1BA714BA008639C3 /* NSString+Addition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+Addition.m"; sourceTree = "<group>"; };
 		2D9D3B8FCB0DE141FD1077B1 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -127,9 +121,7 @@
 		28371DCF1B9ED0100012CEF6 = {
 			isa = PBXGroup;
 			children = (
-				28371DDA1B9ED0100012CEF6 /* XTSNS */,
-				28371DF41B9ED0100012CEF6 /* XTSNSTests */,
-				28371DFF1B9ED0100012CEF6 /* XTSNSUITests */,
+				28371DDA1B9ED0100012CEF6 /* TWSNS */,
 				28371DD91B9ED0100012CEF6 /* Products */,
 				3958C5CB25E58C445F566572 /* Pods */,
 				C33ABBBFF5E6D9D283154A0F /* Frameworks */,
@@ -139,14 +131,14 @@
 		28371DD91B9ED0100012CEF6 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				28371DD81B9ED0100012CEF6 /* XTSNS.app */,
-				28371DF11B9ED0100012CEF6 /* XTSNSTests.xctest */,
-				28371DFC1B9ED0100012CEF6 /* XTSNSUITests.xctest */,
+				28371DD81B9ED0100012CEF6 /* TWSNS.app */,
+				28371DF11B9ED0100012CEF6 /* TWSNS.xctest */,
+				28371DFC1B9ED0100012CEF6 /* TWSNS.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		28371DDA1B9ED0100012CEF6 /* XTSNS */ = {
+		28371DDA1B9ED0100012CEF6 /* TWSNS */ = {
 			isa = PBXGroup;
 			children = (
 				28371E0E1B9ED0370012CEF6 /* SNS */,
@@ -159,7 +151,7 @@
 				28371DEC1B9ED0100012CEF6 /* Info.plist */,
 				28371DDB1B9ED0100012CEF6 /* Supporting Files */,
 			);
-			path = XTSNS;
+			path = TWSNS;
 			sourceTree = "<group>";
 		};
 		28371DDB1B9ED0100012CEF6 /* Supporting Files */ = {
@@ -171,39 +163,21 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		28371DF41B9ED0100012CEF6 /* XTSNSTests */ = {
-			isa = PBXGroup;
-			children = (
-				28371DF51B9ED0100012CEF6 /* XTSNSTests.m */,
-				28371DF71B9ED0100012CEF6 /* Info.plist */,
-			);
-			path = XTSNSTests;
-			sourceTree = "<group>";
-		};
-		28371DFF1B9ED0100012CEF6 /* XTSNSUITests */ = {
-			isa = PBXGroup;
-			children = (
-				28371E001B9ED0100012CEF6 /* XTSNSUITests.m */,
-				28371E021B9ED0100012CEF6 /* Info.plist */,
-			);
-			path = XTSNSUITests;
-			sourceTree = "<group>";
-		};
 		28371E0E1B9ED0370012CEF6 /* SNS */ = {
 			isa = PBXGroup;
 			children = (
 				2831FFEA1B9FC088008CDE10 /* Resources */,
-				28371E0F1B9ED0370012CEF6 /* XTOAuth.h */,
-				28371E101B9ED0370012CEF6 /* XTOAuth.m */,
-				28371E111B9ED0370012CEF6 /* XTShare.h */,
-				28371E121B9ED0370012CEF6 /* XTShare.m */,
-				2831FFF51B9FC09D008CDE10 /* XTShareView.h */,
-				2831FFF61B9FC09D008CDE10 /* XTShareView.m */,
-				285E89721BA00C1600B85127 /* XTSNS.h */,
-				285E89731BA00C1600B85127 /* XTSNS.m */,
-				285E89751BA0224200B85127 /* XTSNSDefine.h */,
-				28F51AC41BA70BF8008639C3 /* XTRequest.h */,
-				28F51AC51BA70BF8008639C3 /* XTRequest.m */,
+				28371E0F1B9ED0370012CEF6 /* TWOAuth.h */,
+				28371E101B9ED0370012CEF6 /* TWOAuth.m */,
+				28371E111B9ED0370012CEF6 /* TWShare.h */,
+				28371E121B9ED0370012CEF6 /* TWShare.m */,
+				2831FFF51B9FC09D008CDE10 /* TWShareView.h */,
+				2831FFF61B9FC09D008CDE10 /* TWShareView.m */,
+				285E89721BA00C1600B85127 /* TWSNS.h */,
+				285E89731BA00C1600B85127 /* TWSNS.m */,
+				285E89751BA0224200B85127 /* TWSNSDefine.h */,
+				28F51AC41BA70BF8008639C3 /* TWRequest.h */,
+				28F51AC51BA70BF8008639C3 /* TWRequest.m */,
 				28F51ACA1BA714BA008639C3 /* NSString+Addition.h */,
 				28F51ACB1BA714BA008639C3 /* NSString+Addition.m */,
 			);
@@ -230,9 +204,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		28371DD71B9ED0100012CEF6 /* XTSNS */ = {
+		28371DD71B9ED0100012CEF6 /* TWSNS */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 28371E051B9ED0100012CEF6 /* Build configuration list for PBXNativeTarget "XTSNS" */;
+			buildConfigurationList = 28371E051B9ED0100012CEF6 /* Build configuration list for PBXNativeTarget "TWSNS" */;
 			buildPhases = (
 				BC56EAC1C7D8FA3ED4AF53F9 /* Check Pods Manifest.lock */,
 				28371DD41B9ED0100012CEF6 /* Sources */,
@@ -244,14 +218,14 @@
 			);
 			dependencies = (
 			);
-			name = XTSNS;
+			name = TWSNS;
 			productName = XTSNS;
-			productReference = 28371DD81B9ED0100012CEF6 /* XTSNS.app */;
+			productReference = 28371DD81B9ED0100012CEF6 /* TWSNS.app */;
 			productType = "com.apple.product-type.application";
 		};
-		28371DF01B9ED0100012CEF6 /* XTSNSTests */ = {
+		28371DF01B9ED0100012CEF6 /* TWSNSTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 28371E081B9ED0100012CEF6 /* Build configuration list for PBXNativeTarget "XTSNSTests" */;
+			buildConfigurationList = 28371E081B9ED0100012CEF6 /* Build configuration list for PBXNativeTarget "TWSNSTests" */;
 			buildPhases = (
 				28371DED1B9ED0100012CEF6 /* Sources */,
 				28371DEE1B9ED0100012CEF6 /* Frameworks */,
@@ -262,14 +236,14 @@
 			dependencies = (
 				28371DF31B9ED0100012CEF6 /* PBXTargetDependency */,
 			);
-			name = XTSNSTests;
+			name = TWSNSTests;
 			productName = XTSNSTests;
-			productReference = 28371DF11B9ED0100012CEF6 /* XTSNSTests.xctest */;
+			productReference = 28371DF11B9ED0100012CEF6 /* TWSNS.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		28371DFB1B9ED0100012CEF6 /* XTSNSUITests */ = {
+		28371DFB1B9ED0100012CEF6 /* TWSNSUITests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 28371E0B1B9ED0100012CEF6 /* Build configuration list for PBXNativeTarget "XTSNSUITests" */;
+			buildConfigurationList = 28371E0B1B9ED0100012CEF6 /* Build configuration list for PBXNativeTarget "TWSNSUITests" */;
 			buildPhases = (
 				28371DF81B9ED0100012CEF6 /* Sources */,
 				28371DF91B9ED0100012CEF6 /* Frameworks */,
@@ -280,9 +254,9 @@
 			dependencies = (
 				28371DFE1B9ED0100012CEF6 /* PBXTargetDependency */,
 			);
-			name = XTSNSUITests;
+			name = TWSNSUITests;
 			productName = XTSNSUITests;
-			productReference = 28371DFC1B9ED0100012CEF6 /* XTSNSUITests.xctest */;
+			productReference = 28371DFC1B9ED0100012CEF6 /* TWSNS.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
 /* End PBXNativeTarget section */
@@ -307,7 +281,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 28371DD31B9ED0100012CEF6 /* Build configuration list for PBXProject "XTSNS" */;
+			buildConfigurationList = 28371DD31B9ED0100012CEF6 /* Build configuration list for PBXProject "TWSNS" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -320,9 +294,9 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				28371DD71B9ED0100012CEF6 /* XTSNS */,
-				28371DF01B9ED0100012CEF6 /* XTSNSTests */,
-				28371DFB1B9ED0100012CEF6 /* XTSNSUITests */,
+				28371DD71B9ED0100012CEF6 /* TWSNS */,
+				28371DF01B9ED0100012CEF6 /* TWSNSTests */,
+				28371DFB1B9ED0100012CEF6 /* TWSNSUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -397,12 +371,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				285E89741BA00C1600B85127 /* XTSNS.m in Sources */,
-				2831FFF71B9FC09D008CDE10 /* XTShareView.m in Sources */,
+				285E89741BA00C1600B85127 /* TWSNS.m in Sources */,
+				2831FFF71B9FC09D008CDE10 /* TWShareView.m in Sources */,
 				28371DE31B9ED0100012CEF6 /* ViewController.m in Sources */,
-				28F51AC61BA70BF8008639C3 /* XTRequest.m in Sources */,
-				28371E141B9ED0370012CEF6 /* XTShare.m in Sources */,
-				28371E131B9ED0370012CEF6 /* XTOAuth.m in Sources */,
+				28F51AC61BA70BF8008639C3 /* TWRequest.m in Sources */,
+				28371E141B9ED0370012CEF6 /* TWShare.m in Sources */,
+				28371E131B9ED0370012CEF6 /* TWOAuth.m in Sources */,
 				28371DE01B9ED0100012CEF6 /* AppDelegate.m in Sources */,
 				28F51ACC1BA714BA008639C3 /* NSString+Addition.m in Sources */,
 				28371DDD1B9ED0100012CEF6 /* main.m in Sources */,
@@ -413,7 +387,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				28371DF61B9ED0100012CEF6 /* XTSNSTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -421,7 +394,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				28371E011B9ED0100012CEF6 /* XTSNSUITests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -430,12 +402,12 @@
 /* Begin PBXTargetDependency section */
 		28371DF31B9ED0100012CEF6 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 28371DD71B9ED0100012CEF6 /* XTSNS */;
+			target = 28371DD71B9ED0100012CEF6 /* TWSNS */;
 			targetProxy = 28371DF21B9ED0100012CEF6 /* PBXContainerItemProxy */;
 		};
 		28371DFE1B9ED0100012CEF6 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 28371DD71B9ED0100012CEF6 /* XTSNS */;
+			target = 28371DD71B9ED0100012CEF6 /* TWSNS */;
 			targetProxy = 28371DFD1B9ED0100012CEF6 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -545,11 +517,11 @@
 			baseConfigurationReference = 3AA2F1963C44EE9616719555 /* Pods.debug.xcconfig */;
 			buildSettings = {
 				ENABLE_BITCODE = NO;
-				INFOPLIST_FILE = XTSNS/Info.plist;
+				INFOPLIST_FILE = TWSNS/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.shy.chuanqing;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = TWSNS;
 			};
 			name = Debug;
 		};
@@ -558,11 +530,11 @@
 			baseConfigurationReference = F3BFB7681AE3954A6F4C9BCC /* Pods.release.xcconfig */;
 			buildSettings = {
 				ENABLE_BITCODE = NO;
-				INFOPLIST_FILE = XTSNS/Info.plist;
+				INFOPLIST_FILE = TWSNS/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.shy.chuanqing;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = TWSNS;
 			};
 			name = Release;
 		};
@@ -573,8 +545,8 @@
 				INFOPLIST_FILE = XTSNSTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.lza.XTSNSTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/XTSNS.app/XTSNS";
+				PRODUCT_NAME = TWSNS;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TWSNS.app/TWSNS";
 			};
 			name = Debug;
 		};
@@ -585,8 +557,8 @@
 				INFOPLIST_FILE = XTSNSTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.lza.XTSNSTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/XTSNS.app/XTSNS";
+				PRODUCT_NAME = TWSNS;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TWSNS.app/TWSNS";
 			};
 			name = Release;
 		};
@@ -596,7 +568,7 @@
 				INFOPLIST_FILE = XTSNSUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.lza.XTSNSUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = TWSNS;
 				TEST_TARGET_NAME = XTSNS;
 				USES_XCTRUNNER = YES;
 			};
@@ -608,7 +580,7 @@
 				INFOPLIST_FILE = XTSNSUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.lza.XTSNSUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = TWSNS;
 				TEST_TARGET_NAME = XTSNS;
 				USES_XCTRUNNER = YES;
 			};
@@ -617,7 +589,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		28371DD31B9ED0100012CEF6 /* Build configuration list for PBXProject "XTSNS" */ = {
+		28371DD31B9ED0100012CEF6 /* Build configuration list for PBXProject "TWSNS" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				28371E031B9ED0100012CEF6 /* Debug */,
@@ -626,7 +598,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		28371E051B9ED0100012CEF6 /* Build configuration list for PBXNativeTarget "XTSNS" */ = {
+		28371E051B9ED0100012CEF6 /* Build configuration list for PBXNativeTarget "TWSNS" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				28371E061B9ED0100012CEF6 /* Debug */,
@@ -635,7 +607,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		28371E081B9ED0100012CEF6 /* Build configuration list for PBXNativeTarget "XTSNSTests" */ = {
+		28371E081B9ED0100012CEF6 /* Build configuration list for PBXNativeTarget "TWSNSTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				28371E091B9ED0100012CEF6 /* Debug */,
@@ -644,7 +616,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		28371E0B1B9ED0100012CEF6 /* Build configuration list for PBXNativeTarget "XTSNSUITests" */ = {
+		28371E0B1B9ED0100012CEF6 /* Build configuration list for PBXNativeTarget "TWSNSUITests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				28371E0C1B9ED0100012CEF6 /* Debug */,
