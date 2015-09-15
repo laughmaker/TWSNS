@@ -23,6 +23,6 @@
  *  @param platform          平台类型
  *  @param completionHandler 完成后的代理，成功后会返回用户信息，失败后会返回失败信息
  */
-+ (void)loginToPlatform:(XTSNSPlatform)platform completionHandle:(void (^)(NSDictionary *data, NSError *error))completionHandler;
++ (void)loginToPlatform:(TWSNSPlatform)platform completionHandle:(void (^)(NSDictionary *data, NSError *error))completionHandler;
 
 @end

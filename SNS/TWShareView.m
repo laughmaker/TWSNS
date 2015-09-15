@@ -70,7 +70,7 @@ static CGFloat const kTopMargin = 25;
 
 - (void)shareButtonClickEvent:(UIButton *)sender
 {
-    XTSNSShareType shareType = sender.tag;
+    TWSNSShareType shareType = sender.tag;
     [TWShare shareMessage:self.message withShareType:shareType completionHandler:self.shareCompletionHandler];
     
     [self hideSelf:self];

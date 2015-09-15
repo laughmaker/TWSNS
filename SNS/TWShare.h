@@ -24,7 +24,7 @@
  *  @param shareType         分享类型
  *  @param completionHandler 成功失败代理
  */
-+ (void)shareMessage:(OSMessage *)message withShareType:(XTSNSShareType)shareType completionHandler:(void (^)(OSMessage *message, NSError *error))completionHandler;
++ (void)shareMessage:(OSMessage *)message withShareType:(TWSNSShareType)shareType completionHandler:(void (^)(OSMessage *message, NSError *error))completionHandler;
 
 
 @end

@@ -11,10 +11,10 @@
 
 @implementation TWOAuth
 
-+ (void)loginToPlatform:(XTSNSPlatform)platform completionHandle:(void (^)(NSDictionary *, NSError *))completionHandler
++ (void)loginToPlatform:(TWSNSPlatform)platform completionHandle:(void (^)(NSDictionary *, NSError *))completionHandler
 {
 
-    if (platform == XTSNSPlatformWeibo) {
+    if (platform == TWSNSPlatformWeibo) {
         NSString *redirectURI = [[NSUserDefaults standardUserDefaults] objectForKey:kSNSPlatformWeiboRedirectURIKey];
         [OpenShare WeiboAuth:@"all" redirectURI:redirectURI Success:^(NSDictionary *message) {
             [TWOAuth weiboOAuthWithMessage:message completionHandle:completionHandler];
@@ -23,7 +23,7 @@
                 completionHandler(message, error);
             }
         }];
-    } else if (platform == XTSNSPlatformQQ) {
+    } else if (platform == TWSNSPlatformQQ) {
         [OpenShare QQAuth:@"get_user_info" Success:^(NSDictionary *message) {
             [TWOAuth qqOAuthWithMessage:message completionHandle:completionHandler];
         } Fail:^(NSDictionary *message, NSError *error) {
@@ -31,7 +31,7 @@
                 completionHandler(message, error);
             }
         }];
-    } else if (platform == XTSNSPlatformWeiXin) {
+    } else if (platform == TWSNSPlatformWeiXin) {
         [OpenShare WeixinAuth:@"snsapi_userinfo" Success:^(NSDictionary *message) {
             [TWOAuth weixinOAuthWithMessage:message completionHandle:completionHandler];
         } Fail:^(NSDictionary *message, NSError *error) {

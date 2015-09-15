@@ -17,9 +17,9 @@
     return [[[self class] alloc] init];
 }
 
-+ (void)shareMessage:(OSMessage *)message withShareType:(XTSNSShareType)shareType completionHandler:(void (^)(OSMessage *message, NSError *error))completionHandler
++ (void)shareMessage:(OSMessage *)message withShareType:(TWSNSShareType)shareType completionHandler:(void (^)(OSMessage *message, NSError *error))completionHandler
 {
-    if (shareType == XTSNSShareTypeWeibo) {
+    if (shareType == TWSNSShareTypeWeibo) {
         [OpenShare shareToWeibo:message Success:^(OSMessage *message) {
             if (completionHandler) {
                 completionHandler(message, nil);
@@ -29,7 +29,7 @@
                 completionHandler(message, error);
             }
         }];
-    } else if (shareType == XTSNSShareTypeQQZone) {
+    } else if (shareType == TWSNSShareTypeQQZone) {
         [OpenShare shareToQQZone:message Success:^(OSMessage *message) {
             if (completionHandler) {
                 completionHandler(message, nil);
@@ -39,7 +39,7 @@
                 completionHandler(message, error);
             }
         }];
-    } else if (shareType == XTSNSShareTypeQQ) {
+    } else if (shareType == TWSNSShareTypeQQ) {
         [OpenShare shareToQQFriends:message Success:^(OSMessage *message) {
             if (completionHandler) {
                 completionHandler(message, nil);
@@ -49,7 +49,7 @@
                 completionHandler(message, error);
             }
         }];
-    } else if (shareType == XTSNSShareTypeWXSceneTimeline) {
+    } else if (shareType == TWSNSShareTypeWXSceneTimeline) {
         [OpenShare shareToWeixinTimeline:message Success:^(OSMessage *message) {
             if (completionHandler) {
                 completionHandler(message, nil);
@@ -59,7 +59,7 @@
                 completionHandler(message, error);
             }
         }];
-    } else if (shareType == XTSNSShareTypeWXSceneSession) {
+    } else if (shareType == TWSNSShareTypeWXSceneSession) {
         [OpenShare shareToWeixinSession:message Success:^(OSMessage *message) {
             if (completionHandler) {
                 completionHandler(message, nil);

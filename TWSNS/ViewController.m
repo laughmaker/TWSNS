@@ -9,11 +9,6 @@
 #import "ViewController.h"
 #import "TWSNS.h"
 
-/// 程序中用到的第三方帐号的相关Key和SecretKey
-static NSString *const kWeChatAppId      = @"wxc070c02fb0a72487";
-static NSString *const kUmengKey         = @"53d763cf56240bceda037f5f";
-static NSString *const kQZoneID          = @"";
-static NSString *const kQZoneKey         = @"";
 
 @interface ViewController ()
 - (IBAction)share:(id)sender;
@@ -40,7 +35,7 @@ static NSString *const kQZoneKey         = @"";
     message.image = UIImageJPEGRepresentation([UIImage imageNamed:@"a.jpg"], 0.1);
     message.thumbnail = UIImageJPEGRepresentation([UIImage imageNamed:@"a.jpg"], 0.1);
     message.desc = @"哈哈，这里是描述";
-    message.link = @"http://www.baidu.com";
+    message.link = @"http://www.3water3.com";
     [[TWShareView shareView] showShareViewWithMessage:message completionHandler:^(OSMessage *message, NSError *error) {
         NSLog(@"message:%@", message);
         NSLog(@"error:%@", error);
@@ -48,7 +43,7 @@ static NSString *const kQZoneKey         = @"";
 }
 
 - (IBAction)qqLogin:(id)sender {
-    [TWOAuth loginToPlatform:XTSNSPlatformQQ completionHandle:^(NSDictionary *data, NSError *error)
+    [TWOAuth loginToPlatform:TWSNSPlatformQQ completionHandle:^(NSDictionary *data, NSError *error)
      {
          NSLog(@"data:%@", data);
          NSLog(@"error:%@", error);
@@ -56,7 +51,7 @@ static NSString *const kQZoneKey         = @"";
 }
 
 - (IBAction)weiboLogin:(id)sender {
-    [TWOAuth  loginToPlatform:XTSNSPlatformWeibo completionHandle:^(NSDictionary *data, NSError *error)
+    [TWOAuth  loginToPlatform:TWSNSPlatformWeibo completionHandle:^(NSDictionary *data, NSError *error)
     {
         NSLog(@"data:%@", data);
         NSLog(@"error:%@", error);
@@ -64,7 +59,7 @@ static NSString *const kQZoneKey         = @"";
 }
 
 - (IBAction)weixinLogin:(id)sender {
-    [TWOAuth loginToPlatform:XTSNSPlatformWeiXin completionHandle:^(NSDictionary *data, NSError *error)
+    [TWOAuth loginToPlatform:TWSNSPlatformWeiXin completionHandle:^(NSDictionary *data, NSError *error)
      {
          NSLog(@"data:%@", data);
          NSLog(@"error:%@", error);
