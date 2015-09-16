@@ -5,6 +5,9 @@
 * 分享部分主要是做了一些小封装，方便调用。
 * 第三方登录，在原[openshare](https://github.com/100apps/openshare)里，登录成功后，并没有获取用户信息，这里做了扩展，登录成功后，再去读取用户的相关信息
 
+pod安装方式
+
+  pod 'TWSNS', '~> 1.0.5'
 
 微信的获取用户信息接口：http://mp.weixin.qq.com/wiki/17/c0f37d5704f0b64713d5d2c37b468d75.html
 
