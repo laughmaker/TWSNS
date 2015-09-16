@@ -31,7 +31,7 @@
 - (IBAction)share:(id)sender
 {
     OSMessage *message = [[OSMessage alloc] init];
-    message.title = @"我爱我的因我觉得欢喜~~~测试中，请忽略";
+    message.title = @"我爱我的因我觉得欢喜~~~这里是你要分享的内容";
     message.image = UIImageJPEGRepresentation([UIImage imageNamed:@"a.jpg"], 0.1);
     message.thumbnail = UIImageJPEGRepresentation([UIImage imageNamed:@"a.jpg"], 0.1);
     message.desc = @"哈哈，这里是描述";

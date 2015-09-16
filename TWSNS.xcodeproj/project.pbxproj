@@ -23,6 +23,7 @@
 		28371E141B9ED0370012CEF6 /* TWShare.m in Sources */ = {isa = PBXBuildFile; fileRef = 28371E121B9ED0370012CEF6 /* TWShare.m */; settings = {ASSET_TAGS = (); }; };
 		28371E161B9ED8D80012CEF6 /* a.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 28371E151B9ED8D80012CEF6 /* a.jpg */; settings = {ASSET_TAGS = (); }; };
 		285E89741BA00C1600B85127 /* TWSNS.m in Sources */ = {isa = PBXBuildFile; fileRef = 285E89731BA00C1600B85127 /* TWSNS.m */; settings = {ASSET_TAGS = (); }; };
+		28A60EFD1BA90EAA0008CE93 /* libcommonCrypto.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 28A60EFC1BA90EAA0008CE93 /* libcommonCrypto.tbd */; };
 		28F51AC61BA70BF8008639C3 /* TWRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 28F51AC51BA70BF8008639C3 /* TWRequest.m */; settings = {ASSET_TAGS = (); }; };
 		28F51ACC1BA714BA008639C3 /* NSString+Addition.m in Sources */ = {isa = PBXBuildFile; fileRef = 28F51ACB1BA714BA008639C3 /* NSString+Addition.m */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
@@ -71,6 +72,7 @@
 		285E89721BA00C1600B85127 /* TWSNS.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TWSNS.h; sourceTree = "<group>"; };
 		285E89731BA00C1600B85127 /* TWSNS.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TWSNS.m; sourceTree = "<group>"; };
 		285E89751BA0224200B85127 /* TWSNSDefine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TWSNSDefine.h; sourceTree = "<group>"; };
+		28A60EFC1BA90EAA0008CE93 /* libcommonCrypto.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libcommonCrypto.tbd; path = usr/lib/system/libcommonCrypto.tbd; sourceTree = SDKROOT; };
 		28F51AC41BA70BF8008639C3 /* TWRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TWRequest.h; sourceTree = "<group>"; };
 		28F51AC51BA70BF8008639C3 /* TWRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TWRequest.m; sourceTree = "<group>"; };
 		28F51ACA1BA714BA008639C3 /* NSString+Addition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+Addition.h"; sourceTree = "<group>"; };
@@ -85,6 +87,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				28A60EFD1BA90EAA0008CE93 /* libcommonCrypto.tbd in Frameworks */,
 				1B3195D2BB5A7096390D2E95 /* libPods.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -196,6 +199,7 @@
 		C33ABBBFF5E6D9D283154A0F /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				28A60EFC1BA90EAA0008CE93 /* libcommonCrypto.tbd */,
 				2D9D3B8FCB0DE141FD1077B1 /* libPods.a */,
 			);
 			name = Frameworks;
@@ -520,6 +524,10 @@
 				INFOPLIST_FILE = TWSNS/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(SDKROOT)/usr/lib/system",
+				);
 				ONLY_ACTIVE_ARCH = NO;
 				PRODUCT_BUNDLE_IDENTIFIER = com.shy.chuanqing;
 				PRODUCT_NAME = TWSNS;
@@ -534,6 +542,10 @@
 				INFOPLIST_FILE = TWSNS/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(SDKROOT)/usr/lib/system",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.shy.chuanqing;
 				PRODUCT_NAME = TWSNS;
 			};
