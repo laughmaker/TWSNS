@@ -7,7 +7,7 @@
 //
 
 #import "TWOAuth.h"
-#import "NSString+Addition.h"
+#import "NSString+SNSAddition.h"
 
 @implementation TWOAuth
 
@@ -48,12 +48,12 @@
     NSString *appId = [ud objectForKey:kSNSPlatformWeixinIdKey];
     NSString *secret = [ud objectForKey:kSNSPlatformWeixinSecretKey];
     NSString *url = [NSString stringWithFormat:@"https://api.weixin.qq.com/sns/oauth2/access_token?appid=%@&secret=%@&code=%@&grant_type=authorization_code", appId, secret, message[@"code"]];
-    [TWRequest get:url completionHandler:^(NSDictionary *data, NSError *error) {
+    [TWSNSRequest get:url completionHandler:^(NSDictionary *data, NSError *error) {
         NSString *accessToken = data[@"access_token"];
         NSString *openid = data[@"openid"];
         
         NSString *userInfoUrl = [NSString stringWithFormat:@"https://api.weixin.qq.com/sns/userinfo?access_token=%@&openid=%@&lang=zh_CN", accessToken, openid];
-        [TWRequest get:userInfoUrl completionHandler:^(NSDictionary *userInfo, NSError *error) {
+        [TWSNSRequest get:userInfoUrl completionHandler:^(NSDictionary *userInfo, NSError *error) {
             NSMutableDictionary *dict = userInfo.mutableCopy;
             [dict addEntriesFromDictionary:message];
             if (completionHandler) {
@@ -70,7 +70,7 @@
     NSDictionary *params = @{@"source": [ud objectForKey:kSNSPlatformWeiboIdKey],
                              @"access_token": message[@"accessToken"],
                              @"uid": message[@"userID"]};
-    [TWRequest get:url params:params completionHandler:^(NSDictionary *data, NSError *error) {
+    [TWSNSRequest get:url params:params completionHandler:^(NSDictionary *data, NSError *error) {
         NSMutableDictionary *dict = data.mutableCopy;
         [dict addEntriesFromDictionary:message];
         if (completionHandler) {
@@ -110,7 +110,7 @@
     NSString *requestUrl = [NSString stringWithFormat:@"%@%@", url, urlString];
     requestUrl = [requestUrl substringToIndex:requestUrl.length - 1];
     
-    [TWRequest get:requestUrl completionHandler:^(NSDictionary *data, NSError *error) {
+    [TWSNSRequest get:requestUrl completionHandler:^(NSDictionary *data, NSError *error) {
         NSMutableDictionary *dict = data.mutableCopy;
         [dict addEntriesFromDictionary:message];
         if (completionHandler) {

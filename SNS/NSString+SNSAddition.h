@@ -8,7 +8,7 @@
 
 #import <Foundation/Foundation.h>
 
-@interface NSString (Addition)
+@interface NSString (SNSAddition)
 
 /// 将字符串进行Url编码
 - (NSString *)encodeURL;

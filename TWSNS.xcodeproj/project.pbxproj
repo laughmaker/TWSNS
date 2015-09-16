@@ -23,8 +23,8 @@
 		28371E141B9ED0370012CEF6 /* TWShare.m in Sources */ = {isa = PBXBuildFile; fileRef = 28371E121B9ED0370012CEF6 /* TWShare.m */; settings = {ASSET_TAGS = (); }; };
 		28371E161B9ED8D80012CEF6 /* a.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 28371E151B9ED8D80012CEF6 /* a.jpg */; settings = {ASSET_TAGS = (); }; };
 		285E89741BA00C1600B85127 /* TWSNS.m in Sources */ = {isa = PBXBuildFile; fileRef = 285E89731BA00C1600B85127 /* TWSNS.m */; settings = {ASSET_TAGS = (); }; };
-		28F51AC61BA70BF8008639C3 /* TWRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 28F51AC51BA70BF8008639C3 /* TWRequest.m */; settings = {ASSET_TAGS = (); }; };
-		28F51ACC1BA714BA008639C3 /* NSString+Addition.m in Sources */ = {isa = PBXBuildFile; fileRef = 28F51ACB1BA714BA008639C3 /* NSString+Addition.m */; settings = {ASSET_TAGS = (); }; };
+		28F51AC61BA70BF8008639C3 /* TWSNSRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 28F51AC51BA70BF8008639C3 /* TWSNSRequest.m */; settings = {ASSET_TAGS = (); }; };
+		28F51ACC1BA714BA008639C3 /* NSString+SNSAddition.m in Sources */ = {isa = PBXBuildFile; fileRef = 28F51ACB1BA714BA008639C3 /* NSString+SNSAddition.m */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -71,10 +71,10 @@
 		285E89721BA00C1600B85127 /* TWSNS.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TWSNS.h; sourceTree = "<group>"; };
 		285E89731BA00C1600B85127 /* TWSNS.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TWSNS.m; sourceTree = "<group>"; };
 		285E89751BA0224200B85127 /* TWSNSDefine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TWSNSDefine.h; sourceTree = "<group>"; };
-		28F51AC41BA70BF8008639C3 /* TWRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TWRequest.h; sourceTree = "<group>"; };
-		28F51AC51BA70BF8008639C3 /* TWRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TWRequest.m; sourceTree = "<group>"; };
-		28F51ACA1BA714BA008639C3 /* NSString+Addition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+Addition.h"; sourceTree = "<group>"; };
-		28F51ACB1BA714BA008639C3 /* NSString+Addition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+Addition.m"; sourceTree = "<group>"; };
+		28F51AC41BA70BF8008639C3 /* TWSNSRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TWSNSRequest.h; sourceTree = "<group>"; };
+		28F51AC51BA70BF8008639C3 /* TWSNSRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TWSNSRequest.m; sourceTree = "<group>"; };
+		28F51ACA1BA714BA008639C3 /* NSString+SNSAddition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+SNSAddition.h"; sourceTree = "<group>"; };
+		28F51ACB1BA714BA008639C3 /* NSString+SNSAddition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+SNSAddition.m"; sourceTree = "<group>"; };
 		2D9D3B8FCB0DE141FD1077B1 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		3AA2F1963C44EE9616719555 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 		F3BFB7681AE3954A6F4C9BCC /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
@@ -176,10 +176,10 @@
 				285E89721BA00C1600B85127 /* TWSNS.h */,
 				285E89731BA00C1600B85127 /* TWSNS.m */,
 				285E89751BA0224200B85127 /* TWSNSDefine.h */,
-				28F51AC41BA70BF8008639C3 /* TWRequest.h */,
-				28F51AC51BA70BF8008639C3 /* TWRequest.m */,
-				28F51ACA1BA714BA008639C3 /* NSString+Addition.h */,
-				28F51ACB1BA714BA008639C3 /* NSString+Addition.m */,
+				28F51AC41BA70BF8008639C3 /* TWSNSRequest.h */,
+				28F51AC51BA70BF8008639C3 /* TWSNSRequest.m */,
+				28F51ACA1BA714BA008639C3 /* NSString+SNSAddition.h */,
+				28F51ACB1BA714BA008639C3 /* NSString+SNSAddition.m */,
 			);
 			path = SNS;
 			sourceTree = SOURCE_ROOT;
@@ -374,11 +374,11 @@
 				285E89741BA00C1600B85127 /* TWSNS.m in Sources */,
 				2831FFF71B9FC09D008CDE10 /* TWShareView.m in Sources */,
 				28371DE31B9ED0100012CEF6 /* ViewController.m in Sources */,
-				28F51AC61BA70BF8008639C3 /* TWRequest.m in Sources */,
+				28F51AC61BA70BF8008639C3 /* TWSNSRequest.m in Sources */,
 				28371E141B9ED0370012CEF6 /* TWShare.m in Sources */,
 				28371E131B9ED0370012CEF6 /* TWOAuth.m in Sources */,
 				28371DE01B9ED0100012CEF6 /* AppDelegate.m in Sources */,
-				28F51ACC1BA714BA008639C3 /* NSString+Addition.m in Sources */,
+				28F51ACC1BA714BA008639C3 /* NSString+SNSAddition.m in Sources */,
 				28371DDD1B9ED0100012CEF6 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

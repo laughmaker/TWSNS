@@ -8,7 +8,7 @@
 
 #import <Foundation/Foundation.h>
 #import <UIKit/UIKit.h>
-#import "TWRequest.h"
+#import "TWSNSRequest.h"
 #import "TWSNS.h"
 #import "TWSNSDefine.h"
 

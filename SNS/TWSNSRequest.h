@@ -8,7 +8,7 @@
 
 #import <Foundation/Foundation.h>
 
-@interface TWRequest : NSObject
+@interface TWSNSRequest : NSObject
 
 + (void)get:(NSString *)urlPath completionHandler:(void (^)(id data, NSError *error))completionHandler;
 + (void)get:(NSString *)urlPath params:(NSDictionary *)params completionHandler:(void (^)(id, NSError *))completionHandler;
