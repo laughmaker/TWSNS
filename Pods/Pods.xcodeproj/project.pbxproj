@@ -7,88 +7,97 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		032A3BC60FB6849257F0B716360239AB /* OpenShare+Alipay.h in Headers */ = {isa = PBXBuildFile; fileRef = AC103A608FAEE692F3AB5A71B725E3C8 /* OpenShare+Alipay.h */; };
+		00EB009236A8B7CBD481F16AF8E2C781 /* OpenShare.m in Sources */ = {isa = PBXBuildFile; fileRef = 166FFEAB05008A4E34B414C927224C59 /* OpenShare.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0 -w -Xanalyzer -analyzer-disable-all-checks"; }; };
 		03A0A82F1B1AC06895FC1CC0924624D5 /* Pods-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 84EAD34985B45EB9514045E56BFCAED3 /* Pods-dummy.m */; };
-		03A9E19185871FD9AE77FBDEBCE609FF /* OpenShare+QQ.h in Headers */ = {isa = PBXBuildFile; fileRef = 9EEF5F6E1E5CC577584B2657D524DC72 /* OpenShare+QQ.h */; };
-		0647CBD3F0962B0C2E5265E5152825CC /* Accelerate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F9AA3AAC9A6E9813B5C11F2DBB7BF83B /* Accelerate.framework */; };
-		08B21E85796AFE11673C97C8FC95F252 /* OpenShare+Weixin.m in Sources */ = {isa = PBXBuildFile; fileRef = 36E6BD100B37C4B977024FC2FDF419B9 /* OpenShare+Weixin.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0 -w -Xanalyzer -analyzer-disable-all-checks"; }; };
-		0E334BF51D084CC15284FAF9E3F2F0FA /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 702920B15AEEE0B7FC45223865FE50CD /* QuartzCore.framework */; };
-		228A677BD3691291FEA95491CE89E05D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 92EC12DCDAEF9BE357C580C5DE627C43 /* Foundation.framework */; };
-		56A8865769DB452276F2625E501548DF /* FXBlurView.h in Headers */ = {isa = PBXBuildFile; fileRef = 0116D1C57503FBA0BE3B578FB00948DE /* FXBlurView.h */; };
-		6A5A3FD0368CF94C55EFFBD603BA19AE /* OpenShare+Renren.h in Headers */ = {isa = PBXBuildFile; fileRef = EE8463654782D6AF55D444747C043DF5 /* OpenShare+Renren.h */; };
-		701013240879D458AE7204F92EDF5212 /* OpenShare+Renren.m in Sources */ = {isa = PBXBuildFile; fileRef = 30CA9BA188629D33E46F51E4A45E0CED /* OpenShare+Renren.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0 -w -Xanalyzer -analyzer-disable-all-checks"; }; };
-		70E94DAA927382D5F14FB0F32315DF38 /* OpenShareHeader.h in Headers */ = {isa = PBXBuildFile; fileRef = 9BE1CCDA57152267E072B3CFD9BB44AE /* OpenShareHeader.h */; };
-		82998BE6FFC231FA4416FEC8C010B549 /* OpenShare+Alipay.m in Sources */ = {isa = PBXBuildFile; fileRef = 520BF5C14597798289BDDA652C4887D3 /* OpenShare+Alipay.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0 -w -Xanalyzer -analyzer-disable-all-checks"; }; };
-		8569B3A37BB32A88A016914D5C8638BB /* OpenShare.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F6AF65D1D95EC8B98D6BFEE0DF8E415 /* OpenShare.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0 -w -Xanalyzer -analyzer-disable-all-checks"; }; };
-		8E946AD16B7068798D2BC8D6D0C65A42 /* OpenShare+Weibo.m in Sources */ = {isa = PBXBuildFile; fileRef = 9868828B93B9DA36ECC1262C158866B7 /* OpenShare+Weibo.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0 -w -Xanalyzer -analyzer-disable-all-checks"; }; };
-		9D561953355E69DBD7D3A89903565CF9 /* OpenShare.h in Headers */ = {isa = PBXBuildFile; fileRef = 072E19B6C4D0CA19D80F4272D6BA28BE /* OpenShare.h */; };
-		B033104365A8E2CE59B778430066B1AE /* OpenShare+Weibo.h in Headers */ = {isa = PBXBuildFile; fileRef = A9E1E1D3EF251A1EE06CA3A0579A010E /* OpenShare+Weibo.h */; };
-		B354AF9E85ACEC4FC3F155ED9B8478A8 /* FXBlurView.m in Sources */ = {isa = PBXBuildFile; fileRef = FA7086CFEA952C99C6E1128747F9AFD9 /* FXBlurView.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0 -w -Xanalyzer -analyzer-disable-all-checks"; }; };
-		BD8ECBCD8CC5D59A1EF784E9148DFB0A /* OpenShare+QQ.m in Sources */ = {isa = PBXBuildFile; fileRef = 43D46B6460BDA7A2CB108F5238E098D3 /* OpenShare+QQ.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0 -w -Xanalyzer -analyzer-disable-all-checks"; }; };
-		C1CB8F7375D4A00F49F23F39E42245A5 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 92EC12DCDAEF9BE357C580C5DE627C43 /* Foundation.framework */; };
-		C583F5D7EA6077B660E065E9058A6705 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 92EC12DCDAEF9BE357C580C5DE627C43 /* Foundation.framework */; };
-		C92D675D07E84259AFC97FB820BC88DA /* FXBlurView-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 7D4C261685D3227B4612695304DD65F4 /* FXBlurView-dummy.m */; };
-		CDB2CFB1A2EC526E9F7B18A650F85FE7 /* OpenShare+Weixin.h in Headers */ = {isa = PBXBuildFile; fileRef = 00E69032283C7CF1FF69DC208EC0E149 /* OpenShare+Weixin.h */; };
-		E2714C17730CE0B1A8EC7837DE07144F /* OpenShare-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = A978A97C1BC13A86EA56C578977D1B69 /* OpenShare-dummy.m */; };
+		0848CF67F0CB7829C3A83F36C1DCA409 /* OpenShare.h in Headers */ = {isa = PBXBuildFile; fileRef = A689327C405E7DABDD9176B1AB64A9AE /* OpenShare.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		18A6CBB64F2EAD28D8662070BD64144F /* OpenShare+Alipay.m in Sources */ = {isa = PBXBuildFile; fileRef = 94FC460AAB46F1DF16F78929AEB77815 /* OpenShare+Alipay.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0 -w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		1AB86CEC80A92EFCB67B4FA57C834941 /* OpenShareHeader.h in Headers */ = {isa = PBXBuildFile; fileRef = DBE14A4B2D946B6902EA70BD41BBF798 /* OpenShareHeader.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		228A677BD3691291FEA95491CE89E05D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E1C1BC233971A7AF6C642FA530226EE3 /* Foundation.framework */; };
+		3D9E63DDC6D473146D419F427C23D9CB /* OpenShare-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 251D35B19E86E41DC64B82208B1CE9B1 /* OpenShare-dummy.m */; };
+		46D67717A26044C0A05F817288F593C5 /* FXBlurView.m in Sources */ = {isa = PBXBuildFile; fileRef = F76626FE079B013EE8E057E59F1DE5A8 /* FXBlurView.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0 -w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		49907EF887A2F92BEFD086AF12819D74 /* Accelerate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9D16F7F5FC2747164D1B78E5F7B83C74 /* Accelerate.framework */; };
+		4E6BE2D69D9318B4B57EAA419149506D /* OpenShare+Alipay.h in Headers */ = {isa = PBXBuildFile; fileRef = C84CB7C32FEB58207D0AEF0CF7792464 /* OpenShare+Alipay.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		6A9052FF62F7088787895F2B96950B50 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E1C1BC233971A7AF6C642FA530226EE3 /* Foundation.framework */; };
+		6B249F2E41F3AE425A166B4166168A7A /* OpenShare+Weibo.h in Headers */ = {isa = PBXBuildFile; fileRef = A09C12E9C29AD02C271667E4CF503B07 /* OpenShare+Weibo.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		87CB1F188495283855E37FBF377A6D57 /* OpenShare+QQ.h in Headers */ = {isa = PBXBuildFile; fileRef = A19EE5F3BB2A36B67C13DCDA171A4D88 /* OpenShare+QQ.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A0C58E6064CE3B6AC6D10B732B932E75 /* OpenShare+Weibo.m in Sources */ = {isa = PBXBuildFile; fileRef = 88B134CBBDF69E88BF7572B7F87066BC /* OpenShare+Weibo.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0 -w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		C5353842F64A3E6F8DFAEF4447D7D4FB /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E1C1BC233971A7AF6C642FA530226EE3 /* Foundation.framework */; };
+		D096662B526E4BA41CF7A6C64EDA20DB /* OpenShare+Renren.m in Sources */ = {isa = PBXBuildFile; fileRef = EBA6081D0D4887F8CD7620815B02971F /* OpenShare+Renren.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0 -w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		D26014EF6688601B7FF7A96431C780B5 /* OpenShare+Renren.h in Headers */ = {isa = PBXBuildFile; fileRef = 05587CA4E07D98184939E2C9741F633D /* OpenShare+Renren.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D563DD5019FA5E634A2ABE7872CC6366 /* OpenShare+Weixin.h in Headers */ = {isa = PBXBuildFile; fileRef = AC304AAC9876B84BD161BF4FB6B48162 /* OpenShare+Weixin.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D63F43EFD83833F9D72F0221C59F613B /* OpenShare+Weixin.m in Sources */ = {isa = PBXBuildFile; fileRef = 401948A962D14AFE8C7439816C247E1F /* OpenShare+Weixin.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0 -w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		D92BAFB36AF75A024D2906922B03B4C7 /* FXBlurView-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 76C856A5E25C738B332210BBA2C7CE75 /* FXBlurView-dummy.m */; };
+		DFBE91C00E46C484A769E102FBEF05C2 /* FXBlurView.h in Headers */ = {isa = PBXBuildFile; fileRef = 0E8319DA89A5CABB19220D5757208BC5 /* FXBlurView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E27A0A8739044446C90E210446D484C2 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C5E8153A4CCC052265B39764710C69C9 /* QuartzCore.framework */; };
+		F1C109E7DF014FB76AE964FAA99408FA /* OpenShare+QQ.m in Sources */ = {isa = PBXBuildFile; fileRef = 776CBC000E6B7410A7E37CAB0E3D40DF /* OpenShare+QQ.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0 -w -Xanalyzer -analyzer-disable-all-checks"; }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		D16F77F10E643685879105938C72C374 /* PBXContainerItemProxy */ = {
+		0D86D2D2F2E4CB958E9504A6725C6EE2 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 1CECC4F11CBA5DFA396ADA0E6635DD80;
-			remoteInfo = FXBlurView;
-		};
-		D1D92E2325B2B9862D22E9DC0D682881 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = D61FF3F35B31986825ACD199A7FCE638;
+			remoteGlobalIDString = 70AB80C0C741B0B5E645DC125C212CF2;
 			remoteInfo = OpenShare;
+		};
+		800CBD78BF11C796AA9298F97838E78C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = EF8E10A002DBB05039ECDD5DE995E6CF;
+			remoteInfo = FXBlurView;
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		00E69032283C7CF1FF69DC208EC0E149 /* OpenShare+Weixin.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "OpenShare+Weixin.h"; path = "openshare/OpenShare+Weixin.h"; sourceTree = "<group>"; };
-		0116D1C57503FBA0BE3B578FB00948DE /* FXBlurView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FXBlurView.h; path = FXBlurView/FXBlurView.h; sourceTree = "<group>"; };
-		072E19B6C4D0CA19D80F4272D6BA28BE /* OpenShare.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = OpenShare.h; path = openshare/OpenShare.h; sourceTree = "<group>"; };
-		12317671F9AB03924321FD6E5CAF8803 /* FXBlurView-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "FXBlurView-prefix.pch"; sourceTree = "<group>"; };
-		15A529C27057E4A57D259CBC6E6CE49C /* Pods-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-acknowledgements.markdown"; sourceTree = "<group>"; };
-		1F2B31085DD3098643EC68B81ECF0FB0 /* OpenShare.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = OpenShare.xcconfig; sourceTree = "<group>"; };
-		30CA9BA188629D33E46F51E4A45E0CED /* OpenShare+Renren.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "OpenShare+Renren.m"; path = "openshare/OpenShare+Renren.m"; sourceTree = "<group>"; };
-		36E6BD100B37C4B977024FC2FDF419B9 /* OpenShare+Weixin.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "OpenShare+Weixin.m"; path = "openshare/OpenShare+Weixin.m"; sourceTree = "<group>"; };
-		3D905B929BCBE246721C1E4C15A88269 /* OpenShare-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "OpenShare-prefix.pch"; sourceTree = "<group>"; };
-		43D46B6460BDA7A2CB108F5238E098D3 /* OpenShare+QQ.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "OpenShare+QQ.m"; path = "openshare/OpenShare+QQ.m"; sourceTree = "<group>"; };
-		520BF5C14597798289BDDA652C4887D3 /* OpenShare+Alipay.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "OpenShare+Alipay.m"; path = "openshare/OpenShare+Alipay.m"; sourceTree = "<group>"; };
-		641AE05DD55E5E6AC1590CD7B4A18F97 /* Pods-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-resources.sh"; sourceTree = "<group>"; };
-		6F1BEF4027B19C9B9E8C476B2ACB6772 /* FXBlurView.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = FXBlurView.xcconfig; sourceTree = "<group>"; };
-		702920B15AEEE0B7FC45223865FE50CD /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS8.3.sdk/System/Library/Frameworks/QuartzCore.framework; sourceTree = DEVELOPER_DIR; };
+		0010526644B78FF71A1E23835D927B4D /* OpenShare.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = OpenShare.xcconfig; sourceTree = "<group>"; };
+		05587CA4E07D98184939E2C9741F633D /* OpenShare+Renren.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "OpenShare+Renren.h"; path = "openshare/OpenShare+Renren.h"; sourceTree = "<group>"; };
+		0E8319DA89A5CABB19220D5757208BC5 /* FXBlurView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FXBlurView.h; path = FXBlurView/FXBlurView.h; sourceTree = "<group>"; };
+		10834806BD7B412BC24F347361FA2C8E /* Pods-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-acknowledgements.plist"; sourceTree = "<group>"; };
+		158DF0A8DEF4B0381ED80988C37FB2CE /* libFXBlurView.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libFXBlurView.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		166FFEAB05008A4E34B414C927224C59 /* OpenShare.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = OpenShare.m; path = openshare/OpenShare.m; sourceTree = "<group>"; };
+		251D35B19E86E41DC64B82208B1CE9B1 /* OpenShare-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "OpenShare-dummy.m"; sourceTree = "<group>"; };
+		37DB56D75062CC75FCB0966E1C6E8A8E /* Pods-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-acknowledgements.markdown"; sourceTree = "<group>"; };
+		3C9EF8DBC9C7D7BD2E6B1AF12EECBB83 /* FXBlurView.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = FXBlurView.xcconfig; sourceTree = "<group>"; };
+		401948A962D14AFE8C7439816C247E1F /* OpenShare+Weixin.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "OpenShare+Weixin.m"; path = "openshare/OpenShare+Weixin.m"; sourceTree = "<group>"; };
+		66869B5DC068C6FBC8DB2B9E6951722F /* FXBlurView-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "FXBlurView-prefix.pch"; sourceTree = "<group>"; };
+		6911BECA35E7518D864239B7E898EEF3 /* Pods-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-frameworks.sh"; sourceTree = "<group>"; };
 		703FAF8A868A7720FEBCA4DD05D8E1B3 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Pods.debug.xcconfig; sourceTree = "<group>"; };
-		7B87C849C53EE8EAEB81834E3730D107 /* OpenShare-Private.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "OpenShare-Private.xcconfig"; sourceTree = "<group>"; };
-		7D4C261685D3227B4612695304DD65F4 /* FXBlurView-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "FXBlurView-dummy.m"; sourceTree = "<group>"; };
+		76C856A5E25C738B332210BBA2C7CE75 /* FXBlurView-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "FXBlurView-dummy.m"; sourceTree = "<group>"; };
+		776CBC000E6B7410A7E37CAB0E3D40DF /* OpenShare+QQ.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "OpenShare+QQ.m"; path = "openshare/OpenShare+QQ.m"; sourceTree = "<group>"; };
+		7A76B6FB3B9E68A2548AB87C33BBE1FC /* OpenShare-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "OpenShare-prefix.pch"; sourceTree = "<group>"; };
 		84EAD34985B45EB9514045E56BFCAED3 /* Pods-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-dummy.m"; sourceTree = "<group>"; };
 		88A6BCCD627355428188ADF6954FAEAB /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Pods.release.xcconfig; sourceTree = "<group>"; };
-		92EC12DCDAEF9BE357C580C5DE627C43 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS8.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
-		9868828B93B9DA36ECC1262C158866B7 /* OpenShare+Weibo.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "OpenShare+Weibo.m"; path = "openshare/OpenShare+Weibo.m"; sourceTree = "<group>"; };
-		9BE1CCDA57152267E072B3CFD9BB44AE /* OpenShareHeader.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = OpenShareHeader.h; path = openshare/OpenShareHeader.h; sourceTree = "<group>"; };
-		9EEF5F6E1E5CC577584B2657D524DC72 /* OpenShare+QQ.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "OpenShare+QQ.h"; path = "openshare/OpenShare+QQ.h"; sourceTree = "<group>"; };
-		9F6AF65D1D95EC8B98D6BFEE0DF8E415 /* OpenShare.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = OpenShare.m; path = openshare/OpenShare.m; sourceTree = "<group>"; };
-		A978A97C1BC13A86EA56C578977D1B69 /* OpenShare-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "OpenShare-dummy.m"; sourceTree = "<group>"; };
-		A9E1E1D3EF251A1EE06CA3A0579A010E /* OpenShare+Weibo.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "OpenShare+Weibo.h"; path = "openshare/OpenShare+Weibo.h"; sourceTree = "<group>"; };
-		ABC4276DCA0C2585322A7543FED6FA2C /* libFXBlurView.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libFXBlurView.a; sourceTree = BUILT_PRODUCTS_DIR; };
-		AC103A608FAEE692F3AB5A71B725E3C8 /* OpenShare+Alipay.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "OpenShare+Alipay.h"; path = "openshare/OpenShare+Alipay.h"; sourceTree = "<group>"; };
+		88B134CBBDF69E88BF7572B7F87066BC /* OpenShare+Weibo.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "OpenShare+Weibo.m"; path = "openshare/OpenShare+Weibo.m"; sourceTree = "<group>"; };
+		94FC460AAB46F1DF16F78929AEB77815 /* OpenShare+Alipay.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "OpenShare+Alipay.m"; path = "openshare/OpenShare+Alipay.m"; sourceTree = "<group>"; };
+		9D16F7F5FC2747164D1B78E5F7B83C74 /* Accelerate.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accelerate.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS8.3.sdk/System/Library/Frameworks/Accelerate.framework; sourceTree = DEVELOPER_DIR; };
+		A09C12E9C29AD02C271667E4CF503B07 /* OpenShare+Weibo.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "OpenShare+Weibo.h"; path = "openshare/OpenShare+Weibo.h"; sourceTree = "<group>"; };
+		A19EE5F3BB2A36B67C13DCDA171A4D88 /* OpenShare+QQ.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "OpenShare+QQ.h"; path = "openshare/OpenShare+QQ.h"; sourceTree = "<group>"; };
+		A1A36D34413696BE466E2CA0AFF194DA /* Pods-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-resources.sh"; sourceTree = "<group>"; };
+		A689327C405E7DABDD9176B1AB64A9AE /* OpenShare.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = OpenShare.h; path = openshare/OpenShare.h; sourceTree = "<group>"; };
+		A9B24B8A9CFDFD1ECFE016E95DA4F98F /* libOpenShare.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libOpenShare.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		AC304AAC9876B84BD161BF4FB6B48162 /* OpenShare+Weixin.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "OpenShare+Weixin.h"; path = "openshare/OpenShare+Weixin.h"; sourceTree = "<group>"; };
 		B66F2649DB2E06351CF8529903330399 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		BA6428E9F66FD5A23C0A2E06ED26CD2F /* Podfile */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		BF59BC15D23E1E1912C8F334E7236813 /* Pods-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-acknowledgements.plist"; sourceTree = "<group>"; };
-		CA22055E97D07BD7533DAD1D67E40026 /* FXBlurView-Private.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "FXBlurView-Private.xcconfig"; sourceTree = "<group>"; };
-		D236A98A20963F6BBE99D6683949B1A0 /* libOpenShare.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libOpenShare.a; sourceTree = BUILT_PRODUCTS_DIR; };
-		EE8463654782D6AF55D444747C043DF5 /* OpenShare+Renren.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "OpenShare+Renren.h"; path = "openshare/OpenShare+Renren.h"; sourceTree = "<group>"; };
-		F9AA3AAC9A6E9813B5C11F2DBB7BF83B /* Accelerate.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accelerate.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS8.3.sdk/System/Library/Frameworks/Accelerate.framework; sourceTree = DEVELOPER_DIR; };
-		FA7086CFEA952C99C6E1128747F9AFD9 /* FXBlurView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FXBlurView.m; path = FXBlurView/FXBlurView.m; sourceTree = "<group>"; };
+		C5E8153A4CCC052265B39764710C69C9 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS8.3.sdk/System/Library/Frameworks/QuartzCore.framework; sourceTree = DEVELOPER_DIR; };
+		C84CB7C32FEB58207D0AEF0CF7792464 /* OpenShare+Alipay.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "OpenShare+Alipay.h"; path = "openshare/OpenShare+Alipay.h"; sourceTree = "<group>"; };
+		DBE14A4B2D946B6902EA70BD41BBF798 /* OpenShareHeader.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = OpenShareHeader.h; path = openshare/OpenShareHeader.h; sourceTree = "<group>"; };
+		E1C1BC233971A7AF6C642FA530226EE3 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS8.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		EBA6081D0D4887F8CD7620815B02971F /* OpenShare+Renren.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "OpenShare+Renren.m"; path = "openshare/OpenShare+Renren.m"; sourceTree = "<group>"; };
+		F76626FE079B013EE8E057E59F1DE5A8 /* FXBlurView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FXBlurView.m; path = FXBlurView/FXBlurView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		173A0C98030A9047F455987D1C9F0A83 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				49907EF887A2F92BEFD086AF12819D74 /* Accelerate.framework in Frameworks */,
+				6A9052FF62F7088787895F2B96950B50 /* Foundation.framework in Frameworks */,
+				E27A0A8739044446C90E210446D484C2 /* QuartzCore.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		97BCA5CA34331C4E19A310FEBBD59F07 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -97,27 +106,35 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		E4C5DE6E31B8732129E3136E8C1EBEA6 /* Frameworks */ = {
+		A92CA0577D05165467ED403F0A2608B7 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C583F5D7EA6077B660E065E9058A6705 /* Foundation.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		FC8018D388313D165A0343FBEF905D34 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				0647CBD3F0962B0C2E5265E5152825CC /* Accelerate.framework in Frameworks */,
-				C1CB8F7375D4A00F49F23F39E42245A5 /* Foundation.framework in Frameworks */,
-				0E334BF51D084CC15284FAF9E3F2F0FA /* QuartzCore.framework in Frameworks */,
+				C5353842F64A3E6F8DFAEF4447D7D4FB /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		037C0CA694176A3C0915F62C9D20B3E6 /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				B3D1D13E0C6553800746CB8FD61CF946 /* Pods */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		107225032B5FD1AE1CA747C265446860 /* FXBlurView */ = {
+			isa = PBXGroup;
+			children = (
+				0E8319DA89A5CABB19220D5757208BC5 /* FXBlurView.h */,
+				F76626FE079B013EE8E057E59F1DE5A8 /* FXBlurView.m */,
+				35B45D292FE80CCC37C823FBFC771361 /* Support Files */,
+			);
+			path = FXBlurView;
+			sourceTree = "<group>";
+		};
 		122DA2E5084A4393C29BE363C764795C /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -126,32 +143,42 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		1493F501D7FCD2EAAEAA36282BFA07BF /* FXBlurView */ = {
+		2106C92B09A1259BE6F31B8A2968D526 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				0116D1C57503FBA0BE3B578FB00948DE /* FXBlurView.h */,
-				FA7086CFEA952C99C6E1128747F9AFD9 /* FXBlurView.m */,
-				FFAF5BEBC4E9AD859CA5CE1AF7786EA5 /* Support Files */,
+				158DF0A8DEF4B0381ED80988C37FB2CE /* libFXBlurView.a */,
+				A9B24B8A9CFDFD1ECFE016E95DA4F98F /* libOpenShare.a */,
+				B66F2649DB2E06351CF8529903330399 /* libPods.a */,
 			);
-			path = FXBlurView;
+			name = Products;
+			sourceTree = "<group>";
+		};
+		35B45D292FE80CCC37C823FBFC771361 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				3C9EF8DBC9C7D7BD2E6B1AF12EECBB83 /* FXBlurView.xcconfig */,
+				76C856A5E25C738B332210BBA2C7CE75 /* FXBlurView-dummy.m */,
+				66869B5DC068C6FBC8DB2B9E6951722F /* FXBlurView-prefix.pch */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/FXBlurView";
 			sourceTree = "<group>";
 		};
 		4336A717FE9B2E4A22B012D74398A7F4 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				1493F501D7FCD2EAAEAA36282BFA07BF /* FXBlurView */,
-				F132CF31EA8BBF2ED4F23E8EA758F0DC /* OpenShare */,
+				107225032B5FD1AE1CA747C265446860 /* FXBlurView */,
+				DFFBD6AA5907D2053DB4ABF8E831CD98 /* OpenShare */,
 			);
 			name = Pods;
 			sourceTree = "<group>";
 		};
-		678160C0FB41D3E6A8A4FE8BE7956FFB /* Support Files */ = {
+		5CAB2DCACD40C32ABB55B28E23C2A655 /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				1F2B31085DD3098643EC68B81ECF0FB0 /* OpenShare.xcconfig */,
-				7B87C849C53EE8EAEB81834E3730D107 /* OpenShare-Private.xcconfig */,
-				A978A97C1BC13A86EA56C578977D1B69 /* OpenShare-dummy.m */,
-				3D905B929BCBE246721C1E4C15A88269 /* OpenShare-prefix.pch */,
+				0010526644B78FF71A1E23835D927B4D /* OpenShare.xcconfig */,
+				251D35B19E86E41DC64B82208B1CE9B1 /* OpenShare-dummy.m */,
+				7A76B6FB3B9E68A2548AB87C33BBE1FC /* OpenShare-prefix.pch */,
 			);
 			name = "Support Files";
 			path = "../Target Support Files/OpenShare";
@@ -163,28 +190,29 @@
 				BA6428E9F66FD5A23C0A2E06ED26CD2F /* Podfile */,
 				122DA2E5084A4393C29BE363C764795C /* Frameworks */,
 				4336A717FE9B2E4A22B012D74398A7F4 /* Pods */,
-				CCA510CFBEA2D207524CDA0D73C3B561 /* Products */,
-				D2411A5FE7F7A004607BED49990C37F4 /* Targets Support Files */,
+				2106C92B09A1259BE6F31B8A2968D526 /* Products */,
+				037C0CA694176A3C0915F62C9D20B3E6 /* Targets Support Files */,
 			);
 			sourceTree = "<group>";
 		};
 		915B41D7CCE43493BEE08887182D9662 /* iOS */ = {
 			isa = PBXGroup;
 			children = (
-				F9AA3AAC9A6E9813B5C11F2DBB7BF83B /* Accelerate.framework */,
-				92EC12DCDAEF9BE357C580C5DE627C43 /* Foundation.framework */,
-				702920B15AEEE0B7FC45223865FE50CD /* QuartzCore.framework */,
+				9D16F7F5FC2747164D1B78E5F7B83C74 /* Accelerate.framework */,
+				E1C1BC233971A7AF6C642FA530226EE3 /* Foundation.framework */,
+				C5E8153A4CCC052265B39764710C69C9 /* QuartzCore.framework */,
 			);
 			name = iOS;
 			sourceTree = "<group>";
 		};
-		952EEBFAF8F7E620423C9F156F25A506 /* Pods */ = {
+		B3D1D13E0C6553800746CB8FD61CF946 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				15A529C27057E4A57D259CBC6E6CE49C /* Pods-acknowledgements.markdown */,
-				BF59BC15D23E1E1912C8F334E7236813 /* Pods-acknowledgements.plist */,
+				37DB56D75062CC75FCB0966E1C6E8A8E /* Pods-acknowledgements.markdown */,
+				10834806BD7B412BC24F347361FA2C8E /* Pods-acknowledgements.plist */,
 				84EAD34985B45EB9514045E56BFCAED3 /* Pods-dummy.m */,
-				641AE05DD55E5E6AC1590CD7B4A18F97 /* Pods-resources.sh */,
+				6911BECA35E7518D864239B7E898EEF3 /* Pods-frameworks.sh */,
+				A1A36D34413696BE466E2CA0AFF194DA /* Pods-resources.sh */,
 				703FAF8A868A7720FEBCA4DD05D8E1B3 /* Pods.debug.xcconfig */,
 				88A6BCCD627355428188ADF6954FAEAB /* Pods.release.xcconfig */,
 			);
@@ -192,109 +220,62 @@
 			path = "Target Support Files/Pods";
 			sourceTree = "<group>";
 		};
-		CCA510CFBEA2D207524CDA0D73C3B561 /* Products */ = {
+		DFFBD6AA5907D2053DB4ABF8E831CD98 /* OpenShare */ = {
 			isa = PBXGroup;
 			children = (
-				ABC4276DCA0C2585322A7543FED6FA2C /* libFXBlurView.a */,
-				D236A98A20963F6BBE99D6683949B1A0 /* libOpenShare.a */,
-				B66F2649DB2E06351CF8529903330399 /* libPods.a */,
-			);
-			name = Products;
-			sourceTree = "<group>";
-		};
-		D2411A5FE7F7A004607BED49990C37F4 /* Targets Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				952EEBFAF8F7E620423C9F156F25A506 /* Pods */,
-			);
-			name = "Targets Support Files";
-			sourceTree = "<group>";
-		};
-		F132CF31EA8BBF2ED4F23E8EA758F0DC /* OpenShare */ = {
-			isa = PBXGroup;
-			children = (
-				072E19B6C4D0CA19D80F4272D6BA28BE /* OpenShare.h */,
-				9F6AF65D1D95EC8B98D6BFEE0DF8E415 /* OpenShare.m */,
-				AC103A608FAEE692F3AB5A71B725E3C8 /* OpenShare+Alipay.h */,
-				520BF5C14597798289BDDA652C4887D3 /* OpenShare+Alipay.m */,
-				9EEF5F6E1E5CC577584B2657D524DC72 /* OpenShare+QQ.h */,
-				43D46B6460BDA7A2CB108F5238E098D3 /* OpenShare+QQ.m */,
-				EE8463654782D6AF55D444747C043DF5 /* OpenShare+Renren.h */,
-				30CA9BA188629D33E46F51E4A45E0CED /* OpenShare+Renren.m */,
-				A9E1E1D3EF251A1EE06CA3A0579A010E /* OpenShare+Weibo.h */,
-				9868828B93B9DA36ECC1262C158866B7 /* OpenShare+Weibo.m */,
-				00E69032283C7CF1FF69DC208EC0E149 /* OpenShare+Weixin.h */,
-				36E6BD100B37C4B977024FC2FDF419B9 /* OpenShare+Weixin.m */,
-				9BE1CCDA57152267E072B3CFD9BB44AE /* OpenShareHeader.h */,
-				678160C0FB41D3E6A8A4FE8BE7956FFB /* Support Files */,
+				A689327C405E7DABDD9176B1AB64A9AE /* OpenShare.h */,
+				166FFEAB05008A4E34B414C927224C59 /* OpenShare.m */,
+				C84CB7C32FEB58207D0AEF0CF7792464 /* OpenShare+Alipay.h */,
+				94FC460AAB46F1DF16F78929AEB77815 /* OpenShare+Alipay.m */,
+				A19EE5F3BB2A36B67C13DCDA171A4D88 /* OpenShare+QQ.h */,
+				776CBC000E6B7410A7E37CAB0E3D40DF /* OpenShare+QQ.m */,
+				05587CA4E07D98184939E2C9741F633D /* OpenShare+Renren.h */,
+				EBA6081D0D4887F8CD7620815B02971F /* OpenShare+Renren.m */,
+				A09C12E9C29AD02C271667E4CF503B07 /* OpenShare+Weibo.h */,
+				88B134CBBDF69E88BF7572B7F87066BC /* OpenShare+Weibo.m */,
+				AC304AAC9876B84BD161BF4FB6B48162 /* OpenShare+Weixin.h */,
+				401948A962D14AFE8C7439816C247E1F /* OpenShare+Weixin.m */,
+				DBE14A4B2D946B6902EA70BD41BBF798 /* OpenShareHeader.h */,
+				5CAB2DCACD40C32ABB55B28E23C2A655 /* Support Files */,
 			);
 			path = OpenShare;
-			sourceTree = "<group>";
-		};
-		FFAF5BEBC4E9AD859CA5CE1AF7786EA5 /* Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				6F1BEF4027B19C9B9E8C476B2ACB6772 /* FXBlurView.xcconfig */,
-				CA22055E97D07BD7533DAD1D67E40026 /* FXBlurView-Private.xcconfig */,
-				7D4C261685D3227B4612695304DD65F4 /* FXBlurView-dummy.m */,
-				12317671F9AB03924321FD6E5CAF8803 /* FXBlurView-prefix.pch */,
-			);
-			name = "Support Files";
-			path = "../Target Support Files/FXBlurView";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		65CA02FF9C5E2B9CF38D7585688A19F8 /* Headers */ = {
+		18382E7AAD73BFADE85E2591A61A8886 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				032A3BC60FB6849257F0B716360239AB /* OpenShare+Alipay.h in Headers */,
-				03A9E19185871FD9AE77FBDEBCE609FF /* OpenShare+QQ.h in Headers */,
-				6A5A3FD0368CF94C55EFFBD603BA19AE /* OpenShare+Renren.h in Headers */,
-				B033104365A8E2CE59B778430066B1AE /* OpenShare+Weibo.h in Headers */,
-				CDB2CFB1A2EC526E9F7B18A650F85FE7 /* OpenShare+Weixin.h in Headers */,
-				9D561953355E69DBD7D3A89903565CF9 /* OpenShare.h in Headers */,
-				70E94DAA927382D5F14FB0F32315DF38 /* OpenShareHeader.h in Headers */,
+				DFBE91C00E46C484A769E102FBEF05C2 /* FXBlurView.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		C4771E20F6117FABB2E1A55B4D39EE2A /* Headers */ = {
+		B7F52B0F84CC0BC8C7E6DD6905F1948F /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				56A8865769DB452276F2625E501548DF /* FXBlurView.h in Headers */,
+				4E6BE2D69D9318B4B57EAA419149506D /* OpenShare+Alipay.h in Headers */,
+				87CB1F188495283855E37FBF377A6D57 /* OpenShare+QQ.h in Headers */,
+				D26014EF6688601B7FF7A96431C780B5 /* OpenShare+Renren.h in Headers */,
+				6B249F2E41F3AE425A166B4166168A7A /* OpenShare+Weibo.h in Headers */,
+				D563DD5019FA5E634A2ABE7872CC6366 /* OpenShare+Weixin.h in Headers */,
+				0848CF67F0CB7829C3A83F36C1DCA409 /* OpenShare.h in Headers */,
+				1AB86CEC80A92EFCB67B4FA57C834941 /* OpenShareHeader.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		1CECC4F11CBA5DFA396ADA0E6635DD80 /* FXBlurView */ = {
+		70AB80C0C741B0B5E645DC125C212CF2 /* OpenShare */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = C8AF1E0617B042612B566AA6CD291AAF /* Build configuration list for PBXNativeTarget "FXBlurView" */;
+			buildConfigurationList = E9111BD3404333FFA63485012729D47B /* Build configuration list for PBXNativeTarget "OpenShare" */;
 			buildPhases = (
-				74AE711546C08A67E08E995188D63812 /* Sources */,
-				FC8018D388313D165A0343FBEF905D34 /* Frameworks */,
-				C4771E20F6117FABB2E1A55B4D39EE2A /* Headers */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = FXBlurView;
-			productName = FXBlurView;
-			productReference = ABC4276DCA0C2585322A7543FED6FA2C /* libFXBlurView.a */;
-			productType = "com.apple.product-type.library.static";
-		};
-		D61FF3F35B31986825ACD199A7FCE638 /* OpenShare */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 08AB648FD44625B2EAC4F811E4DB5640 /* Build configuration list for PBXNativeTarget "OpenShare" */;
-			buildPhases = (
-				1FC66B385B7CCF305DC5B5761A3CE41B /* Sources */,
-				E4C5DE6E31B8732129E3136E8C1EBEA6 /* Frameworks */,
-				65CA02FF9C5E2B9CF38D7585688A19F8 /* Headers */,
+				A044AC44D1B2D995A8B3C2EC7D7CBEEB /* Sources */,
+				A92CA0577D05165467ED403F0A2608B7 /* Frameworks */,
+				B7F52B0F84CC0BC8C7E6DD6905F1948F /* Headers */,
 			);
 			buildRules = (
 			);
@@ -302,7 +283,24 @@
 			);
 			name = OpenShare;
 			productName = OpenShare;
-			productReference = D236A98A20963F6BBE99D6683949B1A0 /* libOpenShare.a */;
+			productReference = A9B24B8A9CFDFD1ECFE016E95DA4F98F /* libOpenShare.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		EF8E10A002DBB05039ECDD5DE995E6CF /* FXBlurView */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B3A91E1A5CED0005108528B4F6E0F681 /* Build configuration list for PBXNativeTarget "FXBlurView" */;
+			buildPhases = (
+				AB64D04427A79DA72E74D85F65112CE9 /* Sources */,
+				173A0C98030A9047F455987D1C9F0A83 /* Frameworks */,
+				18382E7AAD73BFADE85E2591A61A8886 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = FXBlurView;
+			productName = FXBlurView;
+			productReference = 158DF0A8DEF4B0381ED80988C37FB2CE /* libFXBlurView.a */;
 			productType = "com.apple.product-type.library.static";
 		};
 		F7CA2435EFEF7EF26D6A12030C8AFE33 /* Pods */ = {
@@ -315,8 +313,8 @@
 			buildRules = (
 			);
 			dependencies = (
-				E1D0CC36724E5947EAA7C3223691BE10 /* PBXTargetDependency */,
-				1A90DCA76C7BD7F04FE133FCC75B490A /* PBXTargetDependency */,
+				CEBFBE39ABEF110DD6C614B03F052593 /* PBXTargetDependency */,
+				E46760981D217F821232104860A42C8E /* PBXTargetDependency */,
 			);
 			name = Pods;
 			productName = Pods;
@@ -340,32 +338,18 @@
 				en,
 			);
 			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
-			productRefGroup = CCA510CFBEA2D207524CDA0D73C3B561 /* Products */;
+			productRefGroup = 2106C92B09A1259BE6F31B8A2968D526 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				1CECC4F11CBA5DFA396ADA0E6635DD80 /* FXBlurView */,
-				D61FF3F35B31986825ACD199A7FCE638 /* OpenShare */,
+				EF8E10A002DBB05039ECDD5DE995E6CF /* FXBlurView */,
+				70AB80C0C741B0B5E645DC125C212CF2 /* OpenShare */,
 				F7CA2435EFEF7EF26D6A12030C8AFE33 /* Pods */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXSourcesBuildPhase section */
-		1FC66B385B7CCF305DC5B5761A3CE41B /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				82998BE6FFC231FA4416FEC8C010B549 /* OpenShare+Alipay.m in Sources */,
-				BD8ECBCD8CC5D59A1EF784E9148DFB0A /* OpenShare+QQ.m in Sources */,
-				701013240879D458AE7204F92EDF5212 /* OpenShare+Renren.m in Sources */,
-				8E946AD16B7068798D2BC8D6D0C65A42 /* OpenShare+Weibo.m in Sources */,
-				08B21E85796AFE11673C97C8FC95F252 /* OpenShare+Weixin.m in Sources */,
-				E2714C17730CE0B1A8EC7837DE07144F /* OpenShare-dummy.m in Sources */,
-				8569B3A37BB32A88A016914D5C8638BB /* OpenShare.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		27FC39D31031722955415149B75B472D /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -374,29 +358,43 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		74AE711546C08A67E08E995188D63812 /* Sources */ = {
+		A044AC44D1B2D995A8B3C2EC7D7CBEEB /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C92D675D07E84259AFC97FB820BC88DA /* FXBlurView-dummy.m in Sources */,
-				B354AF9E85ACEC4FC3F155ED9B8478A8 /* FXBlurView.m in Sources */,
+				18A6CBB64F2EAD28D8662070BD64144F /* OpenShare+Alipay.m in Sources */,
+				F1C109E7DF014FB76AE964FAA99408FA /* OpenShare+QQ.m in Sources */,
+				D096662B526E4BA41CF7A6C64EDA20DB /* OpenShare+Renren.m in Sources */,
+				A0C58E6064CE3B6AC6D10B732B932E75 /* OpenShare+Weibo.m in Sources */,
+				D63F43EFD83833F9D72F0221C59F613B /* OpenShare+Weixin.m in Sources */,
+				3D9E63DDC6D473146D419F427C23D9CB /* OpenShare-dummy.m in Sources */,
+				00EB009236A8B7CBD481F16AF8E2C781 /* OpenShare.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AB64D04427A79DA72E74D85F65112CE9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D92BAFB36AF75A024D2906922B03B4C7 /* FXBlurView-dummy.m in Sources */,
+				46D67717A26044C0A05F817288F593C5 /* FXBlurView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		1A90DCA76C7BD7F04FE133FCC75B490A /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = OpenShare;
-			target = D61FF3F35B31986825ACD199A7FCE638 /* OpenShare */;
-			targetProxy = D1D92E2325B2B9862D22E9DC0D682881 /* PBXContainerItemProxy */;
-		};
-		E1D0CC36724E5947EAA7C3223691BE10 /* PBXTargetDependency */ = {
+		CEBFBE39ABEF110DD6C614B03F052593 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = FXBlurView;
-			target = 1CECC4F11CBA5DFA396ADA0E6635DD80 /* FXBlurView */;
-			targetProxy = D16F77F10E643685879105938C72C374 /* PBXContainerItemProxy */;
+			target = EF8E10A002DBB05039ECDD5DE995E6CF /* FXBlurView */;
+			targetProxy = 800CBD78BF11C796AA9298F97838E78C /* PBXContainerItemProxy */;
+		};
+		E46760981D217F821232104860A42C8E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = OpenShare;
+			target = 70AB80C0C741B0B5E645DC125C212CF2 /* OpenShare */;
+			targetProxy = 0D86D2D2F2E4CB958E9504A6725C6EE2 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -435,25 +433,25 @@
 			};
 			name = Release;
 		};
-		29B4CACCF191F1186310B9D44BE67AA4 /* Release */ = {
+		0F362A3530B148F975B79F83DF6A211F /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 7B87C849C53EE8EAEB81834E3730D107 /* OpenShare-Private.xcconfig */;
+			baseConfigurationReference = 0010526644B78FF71A1E23835D927B4D /* OpenShare.xcconfig */;
 			buildSettings = {
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_PREFIX_HEADER = "Target Support Files/OpenShare/OpenShare-prefix.pch";
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
-				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_ENABLE_DEBUG_INFO = YES;
 				OTHER_LDFLAGS = "";
 				OTHER_LIBTOOLFLAGS = "";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 			};
-			name = Release;
+			name = Debug;
 		};
-		5B80784F2D0F3A3F7AB1773F3B92E14E /* Debug */ = {
+		3807FE77841D855462BB19BC235B48C5 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = CA22055E97D07BD7533DAD1D67E40026 /* FXBlurView-Private.xcconfig */;
+			baseConfigurationReference = 3C9EF8DBC9C7D7BD2E6B1AF12EECBB83 /* FXBlurView.xcconfig */;
 			buildSettings = {
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_PREFIX_HEADER = "Target Support Files/FXBlurView/FXBlurView-prefix.pch";
@@ -466,6 +464,22 @@
 				SKIP_INSTALL = YES;
 			};
 			name = Debug;
+		};
+		680FC6C9558CC494A489FF32DFBBEBE5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3C9EF8DBC9C7D7BD2E6B1AF12EECBB83 /* FXBlurView.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/FXBlurView/FXBlurView-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
 		};
 		8751FC49BA7D46E9B37ACA8ABC2B756D /* Release */ = {
 			isa = XCBuildConfiguration;
@@ -516,18 +530,18 @@
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
-				ONLY_ACTIVE_ARCH = NO;
+				ONLY_ACTIVE_ARCH = YES;
 				STRIP_INSTALLED_PRODUCT = NO;
 				SYMROOT = "${SRCROOT}/../build";
 			};
 			name = Debug;
 		};
-		CA415219F447D67648A0D78A95888750 /* Release */ = {
+		BBF2F8877E1702AAC00F225949D4C6A6 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = CA22055E97D07BD7533DAD1D67E40026 /* FXBlurView-Private.xcconfig */;
+			baseConfigurationReference = 0010526644B78FF71A1E23835D927B4D /* OpenShare.xcconfig */;
 			buildSettings = {
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/FXBlurView/FXBlurView-prefix.pch";
+				GCC_PREFIX_HEADER = "Target Support Files/OpenShare/OpenShare-prefix.pch";
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				OTHER_LDFLAGS = "";
@@ -537,22 +551,6 @@
 				SKIP_INSTALL = YES;
 			};
 			name = Release;
-		};
-		DA71DEF14F8179FF81863B5F127EB73C /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 7B87C849C53EE8EAEB81834E3730D107 /* OpenShare-Private.xcconfig */;
-			buildSettings = {
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/OpenShare/OpenShare-prefix.pch";
-				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
-				MTL_ENABLE_DEBUG_INFO = YES;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-			};
-			name = Debug;
 		};
 		F55F88AD475FA69E8D88069E254C23ED /* Debug */ = {
 			isa = XCBuildConfiguration;
@@ -573,15 +571,6 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		08AB648FD44625B2EAC4F811E4DB5640 /* Build configuration list for PBXNativeTarget "OpenShare" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				DA71DEF14F8179FF81863B5F127EB73C /* Debug */,
-				29B4CACCF191F1186310B9D44BE67AA4 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
 		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -600,11 +589,20 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		C8AF1E0617B042612B566AA6CD291AAF /* Build configuration list for PBXNativeTarget "FXBlurView" */ = {
+		B3A91E1A5CED0005108528B4F6E0F681 /* Build configuration list for PBXNativeTarget "FXBlurView" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				5B80784F2D0F3A3F7AB1773F3B92E14E /* Debug */,
-				CA415219F447D67648A0D78A95888750 /* Release */,
+				3807FE77841D855462BB19BC235B48C5 /* Debug */,
+				680FC6C9558CC494A489FF32DFBBEBE5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E9111BD3404333FFA63485012729D47B /* Build configuration list for PBXNativeTarget "OpenShare" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0F362A3530B148F975B79F83DF6A211F /* Debug */,
+				BBF2F8877E1702AAC00F225949D4C6A6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

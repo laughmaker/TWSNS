@@ -8,23 +8,23 @@
 
 /* Begin PBXBuildFile section */
 		1B3195D2BB5A7096390D2E95 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2D9D3B8FCB0DE141FD1077B1 /* libPods.a */; };
-		2831FFF01B9FC088008CDE10 /* share-qq@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2831FFEB1B9FC088008CDE10 /* share-qq@3x.png */; settings = {ASSET_TAGS = (); }; };
-		2831FFF11B9FC088008CDE10 /* share-qqzone@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2831FFEC1B9FC088008CDE10 /* share-qqzone@3x.png */; settings = {ASSET_TAGS = (); }; };
-		2831FFF21B9FC088008CDE10 /* share-weibo@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2831FFED1B9FC088008CDE10 /* share-weibo@3x.png */; settings = {ASSET_TAGS = (); }; };
-		2831FFF31B9FC088008CDE10 /* share-weixin-frends@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2831FFEE1B9FC088008CDE10 /* share-weixin-frends@3x.png */; settings = {ASSET_TAGS = (); }; };
-		2831FFF41B9FC088008CDE10 /* share-weixin@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2831FFEF1B9FC088008CDE10 /* share-weixin@3x.png */; settings = {ASSET_TAGS = (); }; };
-		2831FFF71B9FC09D008CDE10 /* TWShareView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2831FFF61B9FC09D008CDE10 /* TWShareView.m */; settings = {ASSET_TAGS = (); }; };
 		28371DDD1B9ED0100012CEF6 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 28371DDC1B9ED0100012CEF6 /* main.m */; };
 		28371DE01B9ED0100012CEF6 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 28371DDF1B9ED0100012CEF6 /* AppDelegate.m */; };
 		28371DE31B9ED0100012CEF6 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 28371DE21B9ED0100012CEF6 /* ViewController.m */; };
 		28371DE61B9ED0100012CEF6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 28371DE41B9ED0100012CEF6 /* Main.storyboard */; };
 		28371DEB1B9ED0100012CEF6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 28371DE91B9ED0100012CEF6 /* LaunchScreen.storyboard */; };
-		28371E131B9ED0370012CEF6 /* TWOAuth.m in Sources */ = {isa = PBXBuildFile; fileRef = 28371E101B9ED0370012CEF6 /* TWOAuth.m */; settings = {ASSET_TAGS = (); }; };
-		28371E141B9ED0370012CEF6 /* TWShare.m in Sources */ = {isa = PBXBuildFile; fileRef = 28371E121B9ED0370012CEF6 /* TWShare.m */; settings = {ASSET_TAGS = (); }; };
 		28371E161B9ED8D80012CEF6 /* a.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 28371E151B9ED8D80012CEF6 /* a.jpg */; settings = {ASSET_TAGS = (); }; };
-		285E89741BA00C1600B85127 /* TWSNS.m in Sources */ = {isa = PBXBuildFile; fileRef = 285E89731BA00C1600B85127 /* TWSNS.m */; settings = {ASSET_TAGS = (); }; };
-		28F51AC61BA70BF8008639C3 /* TWSNSRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 28F51AC51BA70BF8008639C3 /* TWSNSRequest.m */; settings = {ASSET_TAGS = (); }; };
-		28F51ACC1BA714BA008639C3 /* NSString+SNSAddition.m in Sources */ = {isa = PBXBuildFile; fileRef = 28F51ACB1BA714BA008639C3 /* NSString+SNSAddition.m */; settings = {ASSET_TAGS = (); }; };
+		286AA5C31BABC23900EEA6D1 /* NSString+SNSAddition.m in Sources */ = {isa = PBXBuildFile; fileRef = 286AA5B11BABC23900EEA6D1 /* NSString+SNSAddition.m */; settings = {ASSET_TAGS = (); }; };
+		286AA5C41BABC23900EEA6D1 /* share-qq@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 286AA5B31BABC23900EEA6D1 /* share-qq@3x.png */; settings = {ASSET_TAGS = (); }; };
+		286AA5C51BABC23900EEA6D1 /* share-qqzone@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 286AA5B41BABC23900EEA6D1 /* share-qqzone@3x.png */; settings = {ASSET_TAGS = (); }; };
+		286AA5C61BABC23900EEA6D1 /* share-weibo@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 286AA5B51BABC23900EEA6D1 /* share-weibo@3x.png */; settings = {ASSET_TAGS = (); }; };
+		286AA5C71BABC23900EEA6D1 /* share-weixin-frends@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 286AA5B61BABC23900EEA6D1 /* share-weixin-frends@3x.png */; settings = {ASSET_TAGS = (); }; };
+		286AA5C81BABC23900EEA6D1 /* share-weixin@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 286AA5B71BABC23900EEA6D1 /* share-weixin@3x.png */; settings = {ASSET_TAGS = (); }; };
+		286AA5C91BABC23900EEA6D1 /* TWOAuth.m in Sources */ = {isa = PBXBuildFile; fileRef = 286AA5B91BABC23900EEA6D1 /* TWOAuth.m */; settings = {ASSET_TAGS = (); }; };
+		286AA5CA1BABC23900EEA6D1 /* TWShare.m in Sources */ = {isa = PBXBuildFile; fileRef = 286AA5BB1BABC23900EEA6D1 /* TWShare.m */; settings = {ASSET_TAGS = (); }; };
+		286AA5CB1BABC23900EEA6D1 /* TWShareView.m in Sources */ = {isa = PBXBuildFile; fileRef = 286AA5BD1BABC23900EEA6D1 /* TWShareView.m */; settings = {ASSET_TAGS = (); }; };
+		286AA5CC1BABC23900EEA6D1 /* TWSNS.m in Sources */ = {isa = PBXBuildFile; fileRef = 286AA5BF1BABC23900EEA6D1 /* TWSNS.m */; settings = {ASSET_TAGS = (); }; };
+		286AA5CD1BABC23900EEA6D1 /* TWSNSRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 286AA5C21BABC23900EEA6D1 /* TWSNSRequest.m */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,14 +45,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		2831FFEB1B9FC088008CDE10 /* share-qq@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "share-qq@3x.png"; sourceTree = "<group>"; };
-		2831FFEC1B9FC088008CDE10 /* share-qqzone@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "share-qqzone@3x.png"; sourceTree = "<group>"; };
-		2831FFED1B9FC088008CDE10 /* share-weibo@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "share-weibo@3x.png"; sourceTree = "<group>"; };
-		2831FFEE1B9FC088008CDE10 /* share-weixin-frends@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "share-weixin-frends@3x.png"; sourceTree = "<group>"; };
-		2831FFEF1B9FC088008CDE10 /* share-weixin@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "share-weixin@3x.png"; sourceTree = "<group>"; };
-		2831FFF51B9FC09D008CDE10 /* TWShareView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TWShareView.h; sourceTree = "<group>"; };
-		2831FFF61B9FC09D008CDE10 /* TWShareView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TWShareView.m; sourceTree = "<group>"; };
-		28371DD81B9ED0100012CEF6 /* TWSNS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TWSNS.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		28371DD81B9ED0100012CEF6 /* TWSNSDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TWSNSDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		28371DDC1B9ED0100012CEF6 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		28371DDE1B9ED0100012CEF6 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		28371DDF1B9ED0100012CEF6 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -61,20 +54,27 @@
 		28371DE51B9ED0100012CEF6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		28371DEA1B9ED0100012CEF6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		28371DEC1B9ED0100012CEF6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		28371DF11B9ED0100012CEF6 /* TWSNS.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TWSNS.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		28371DFC1B9ED0100012CEF6 /* TWSNS.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TWSNS.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		28371E0F1B9ED0370012CEF6 /* TWOAuth.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TWOAuth.h; sourceTree = "<group>"; };
-		28371E101B9ED0370012CEF6 /* TWOAuth.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TWOAuth.m; sourceTree = "<group>"; };
-		28371E111B9ED0370012CEF6 /* TWShare.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TWShare.h; sourceTree = "<group>"; };
-		28371E121B9ED0370012CEF6 /* TWShare.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TWShare.m; sourceTree = "<group>"; };
+		28371DF11B9ED0100012CEF6 /* TWSNSDemo.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TWSNSDemo.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		28371DFC1B9ED0100012CEF6 /* TWSNSDemo.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TWSNSDemo.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		28371E151B9ED8D80012CEF6 /* a.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = a.jpg; path = "../../../../../Pictures/壁纸/a.jpg"; sourceTree = "<group>"; };
-		285E89721BA00C1600B85127 /* TWSNS.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TWSNS.h; sourceTree = "<group>"; };
-		285E89731BA00C1600B85127 /* TWSNS.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TWSNS.m; sourceTree = "<group>"; };
-		285E89751BA0224200B85127 /* TWSNSDefine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TWSNSDefine.h; sourceTree = "<group>"; };
-		28F51AC41BA70BF8008639C3 /* TWSNSRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TWSNSRequest.h; sourceTree = "<group>"; };
-		28F51AC51BA70BF8008639C3 /* TWSNSRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TWSNSRequest.m; sourceTree = "<group>"; };
-		28F51ACA1BA714BA008639C3 /* NSString+SNSAddition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+SNSAddition.h"; sourceTree = "<group>"; };
-		28F51ACB1BA714BA008639C3 /* NSString+SNSAddition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+SNSAddition.m"; sourceTree = "<group>"; };
+		286AA5B01BABC23900EEA6D1 /* NSString+SNSAddition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+SNSAddition.h"; sourceTree = "<group>"; };
+		286AA5B11BABC23900EEA6D1 /* NSString+SNSAddition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+SNSAddition.m"; sourceTree = "<group>"; };
+		286AA5B31BABC23900EEA6D1 /* share-qq@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "share-qq@3x.png"; sourceTree = "<group>"; };
+		286AA5B41BABC23900EEA6D1 /* share-qqzone@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "share-qqzone@3x.png"; sourceTree = "<group>"; };
+		286AA5B51BABC23900EEA6D1 /* share-weibo@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "share-weibo@3x.png"; sourceTree = "<group>"; };
+		286AA5B61BABC23900EEA6D1 /* share-weixin-frends@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "share-weixin-frends@3x.png"; sourceTree = "<group>"; };
+		286AA5B71BABC23900EEA6D1 /* share-weixin@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "share-weixin@3x.png"; sourceTree = "<group>"; };
+		286AA5B81BABC23900EEA6D1 /* TWOAuth.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TWOAuth.h; sourceTree = "<group>"; };
+		286AA5B91BABC23900EEA6D1 /* TWOAuth.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TWOAuth.m; sourceTree = "<group>"; };
+		286AA5BA1BABC23900EEA6D1 /* TWShare.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TWShare.h; sourceTree = "<group>"; };
+		286AA5BB1BABC23900EEA6D1 /* TWShare.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TWShare.m; sourceTree = "<group>"; };
+		286AA5BC1BABC23900EEA6D1 /* TWShareView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TWShareView.h; sourceTree = "<group>"; };
+		286AA5BD1BABC23900EEA6D1 /* TWShareView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TWShareView.m; sourceTree = "<group>"; };
+		286AA5BE1BABC23900EEA6D1 /* TWSNS.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TWSNS.h; sourceTree = "<group>"; };
+		286AA5BF1BABC23900EEA6D1 /* TWSNS.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TWSNS.m; sourceTree = "<group>"; };
+		286AA5C01BABC23900EEA6D1 /* TWSNSDefine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TWSNSDefine.h; sourceTree = "<group>"; };
+		286AA5C11BABC23900EEA6D1 /* TWSNSRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TWSNSRequest.h; sourceTree = "<group>"; };
+		286AA5C21BABC23900EEA6D1 /* TWSNSRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TWSNSRequest.m; sourceTree = "<group>"; };
 		2D9D3B8FCB0DE141FD1077B1 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		3AA2F1963C44EE9616719555 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 		F3BFB7681AE3954A6F4C9BCC /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
@@ -106,22 +106,11 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		2831FFEA1B9FC088008CDE10 /* Resources */ = {
-			isa = PBXGroup;
-			children = (
-				2831FFEB1B9FC088008CDE10 /* share-qq@3x.png */,
-				2831FFEC1B9FC088008CDE10 /* share-qqzone@3x.png */,
-				2831FFED1B9FC088008CDE10 /* share-weibo@3x.png */,
-				2831FFEE1B9FC088008CDE10 /* share-weixin-frends@3x.png */,
-				2831FFEF1B9FC088008CDE10 /* share-weixin@3x.png */,
-			);
-			path = Resources;
-			sourceTree = "<group>";
-		};
 		28371DCF1B9ED0100012CEF6 = {
 			isa = PBXGroup;
 			children = (
-				28371DDA1B9ED0100012CEF6 /* TWSNS */,
+				286AA5AF1BABC23900EEA6D1 /* TWSNS */,
+				28371DDA1B9ED0100012CEF6 /* TWSNSDemo */,
 				28371DD91B9ED0100012CEF6 /* Products */,
 				3958C5CB25E58C445F566572 /* Pods */,
 				C33ABBBFF5E6D9D283154A0F /* Frameworks */,
@@ -131,17 +120,16 @@
 		28371DD91B9ED0100012CEF6 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				28371DD81B9ED0100012CEF6 /* TWSNS.app */,
-				28371DF11B9ED0100012CEF6 /* TWSNS.xctest */,
-				28371DFC1B9ED0100012CEF6 /* TWSNS.xctest */,
+				28371DD81B9ED0100012CEF6 /* TWSNSDemo.app */,
+				28371DF11B9ED0100012CEF6 /* TWSNSDemo.xctest */,
+				28371DFC1B9ED0100012CEF6 /* TWSNSDemo.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		28371DDA1B9ED0100012CEF6 /* TWSNS */ = {
+		28371DDA1B9ED0100012CEF6 /* TWSNSDemo */ = {
 			isa = PBXGroup;
 			children = (
-				28371E0E1B9ED0370012CEF6 /* SNS */,
 				28371DDE1B9ED0100012CEF6 /* AppDelegate.h */,
 				28371DDF1B9ED0100012CEF6 /* AppDelegate.m */,
 				28371DE11B9ED0100012CEF6 /* ViewController.h */,
@@ -151,7 +139,7 @@
 				28371DEC1B9ED0100012CEF6 /* Info.plist */,
 				28371DDB1B9ED0100012CEF6 /* Supporting Files */,
 			);
-			path = TWSNS;
+			path = TWSNSDemo;
 			sourceTree = "<group>";
 		};
 		28371DDB1B9ED0100012CEF6 /* Supporting Files */ = {
@@ -163,26 +151,38 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		28371E0E1B9ED0370012CEF6 /* SNS */ = {
+		286AA5AF1BABC23900EEA6D1 /* TWSNS */ = {
 			isa = PBXGroup;
 			children = (
-				2831FFEA1B9FC088008CDE10 /* Resources */,
-				28371E0F1B9ED0370012CEF6 /* TWOAuth.h */,
-				28371E101B9ED0370012CEF6 /* TWOAuth.m */,
-				28371E111B9ED0370012CEF6 /* TWShare.h */,
-				28371E121B9ED0370012CEF6 /* TWShare.m */,
-				2831FFF51B9FC09D008CDE10 /* TWShareView.h */,
-				2831FFF61B9FC09D008CDE10 /* TWShareView.m */,
-				285E89721BA00C1600B85127 /* TWSNS.h */,
-				285E89731BA00C1600B85127 /* TWSNS.m */,
-				285E89751BA0224200B85127 /* TWSNSDefine.h */,
-				28F51AC41BA70BF8008639C3 /* TWSNSRequest.h */,
-				28F51AC51BA70BF8008639C3 /* TWSNSRequest.m */,
-				28F51ACA1BA714BA008639C3 /* NSString+SNSAddition.h */,
-				28F51ACB1BA714BA008639C3 /* NSString+SNSAddition.m */,
+				286AA5B01BABC23900EEA6D1 /* NSString+SNSAddition.h */,
+				286AA5B11BABC23900EEA6D1 /* NSString+SNSAddition.m */,
+				286AA5B21BABC23900EEA6D1 /* Resources */,
+				286AA5B81BABC23900EEA6D1 /* TWOAuth.h */,
+				286AA5B91BABC23900EEA6D1 /* TWOAuth.m */,
+				286AA5BA1BABC23900EEA6D1 /* TWShare.h */,
+				286AA5BB1BABC23900EEA6D1 /* TWShare.m */,
+				286AA5BC1BABC23900EEA6D1 /* TWShareView.h */,
+				286AA5BD1BABC23900EEA6D1 /* TWShareView.m */,
+				286AA5BE1BABC23900EEA6D1 /* TWSNS.h */,
+				286AA5BF1BABC23900EEA6D1 /* TWSNS.m */,
+				286AA5C01BABC23900EEA6D1 /* TWSNSDefine.h */,
+				286AA5C11BABC23900EEA6D1 /* TWSNSRequest.h */,
+				286AA5C21BABC23900EEA6D1 /* TWSNSRequest.m */,
 			);
-			path = SNS;
-			sourceTree = SOURCE_ROOT;
+			path = TWSNS;
+			sourceTree = "<group>";
+		};
+		286AA5B21BABC23900EEA6D1 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				286AA5B31BABC23900EEA6D1 /* share-qq@3x.png */,
+				286AA5B41BABC23900EEA6D1 /* share-qqzone@3x.png */,
+				286AA5B51BABC23900EEA6D1 /* share-weibo@3x.png */,
+				286AA5B61BABC23900EEA6D1 /* share-weixin-frends@3x.png */,
+				286AA5B71BABC23900EEA6D1 /* share-weixin@3x.png */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
 		};
 		3958C5CB25E58C445F566572 /* Pods */ = {
 			isa = PBXGroup;
@@ -204,9 +204,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		28371DD71B9ED0100012CEF6 /* TWSNS */ = {
+		28371DD71B9ED0100012CEF6 /* TWSNSDemo */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 28371E051B9ED0100012CEF6 /* Build configuration list for PBXNativeTarget "TWSNS" */;
+			buildConfigurationList = 28371E051B9ED0100012CEF6 /* Build configuration list for PBXNativeTarget "TWSNSDemo" */;
 			buildPhases = (
 				BC56EAC1C7D8FA3ED4AF53F9 /* Check Pods Manifest.lock */,
 				28371DD41B9ED0100012CEF6 /* Sources */,
@@ -218,14 +218,14 @@
 			);
 			dependencies = (
 			);
-			name = TWSNS;
+			name = TWSNSDemo;
 			productName = XTSNS;
-			productReference = 28371DD81B9ED0100012CEF6 /* TWSNS.app */;
+			productReference = 28371DD81B9ED0100012CEF6 /* TWSNSDemo.app */;
 			productType = "com.apple.product-type.application";
 		};
-		28371DF01B9ED0100012CEF6 /* TWSNSTests */ = {
+		28371DF01B9ED0100012CEF6 /* TWSNSDemoTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 28371E081B9ED0100012CEF6 /* Build configuration list for PBXNativeTarget "TWSNSTests" */;
+			buildConfigurationList = 28371E081B9ED0100012CEF6 /* Build configuration list for PBXNativeTarget "TWSNSDemoTests" */;
 			buildPhases = (
 				28371DED1B9ED0100012CEF6 /* Sources */,
 				28371DEE1B9ED0100012CEF6 /* Frameworks */,
@@ -236,14 +236,14 @@
 			dependencies = (
 				28371DF31B9ED0100012CEF6 /* PBXTargetDependency */,
 			);
-			name = TWSNSTests;
+			name = TWSNSDemoTests;
 			productName = XTSNSTests;
-			productReference = 28371DF11B9ED0100012CEF6 /* TWSNS.xctest */;
+			productReference = 28371DF11B9ED0100012CEF6 /* TWSNSDemo.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		28371DFB1B9ED0100012CEF6 /* TWSNSUITests */ = {
+		28371DFB1B9ED0100012CEF6 /* TWSNSDemoUITests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 28371E0B1B9ED0100012CEF6 /* Build configuration list for PBXNativeTarget "TWSNSUITests" */;
+			buildConfigurationList = 28371E0B1B9ED0100012CEF6 /* Build configuration list for PBXNativeTarget "TWSNSDemoUITests" */;
 			buildPhases = (
 				28371DF81B9ED0100012CEF6 /* Sources */,
 				28371DF91B9ED0100012CEF6 /* Frameworks */,
@@ -254,9 +254,9 @@
 			dependencies = (
 				28371DFE1B9ED0100012CEF6 /* PBXTargetDependency */,
 			);
-			name = TWSNSUITests;
+			name = TWSNSDemoUITests;
 			productName = XTSNSUITests;
-			productReference = 28371DFC1B9ED0100012CEF6 /* TWSNS.xctest */;
+			productReference = 28371DFC1B9ED0100012CEF6 /* TWSNSDemo.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
 /* End PBXNativeTarget section */
@@ -281,7 +281,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 28371DD31B9ED0100012CEF6 /* Build configuration list for PBXProject "TWSNS" */;
+			buildConfigurationList = 28371DD31B9ED0100012CEF6 /* Build configuration list for PBXProject "TWSNSDemo" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -294,9 +294,9 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				28371DD71B9ED0100012CEF6 /* TWSNS */,
-				28371DF01B9ED0100012CEF6 /* TWSNSTests */,
-				28371DFB1B9ED0100012CEF6 /* TWSNSUITests */,
+				28371DD71B9ED0100012CEF6 /* TWSNSDemo */,
+				28371DF01B9ED0100012CEF6 /* TWSNSDemoTests */,
+				28371DFB1B9ED0100012CEF6 /* TWSNSDemoUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -306,14 +306,14 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2831FFF21B9FC088008CDE10 /* share-weibo@3x.png in Resources */,
-				2831FFF01B9FC088008CDE10 /* share-qq@3x.png in Resources */,
-				2831FFF11B9FC088008CDE10 /* share-qqzone@3x.png in Resources */,
-				2831FFF31B9FC088008CDE10 /* share-weixin-frends@3x.png in Resources */,
+				286AA5C71BABC23900EEA6D1 /* share-weixin-frends@3x.png in Resources */,
+				286AA5C61BABC23900EEA6D1 /* share-weibo@3x.png in Resources */,
 				28371DEB1B9ED0100012CEF6 /* LaunchScreen.storyboard in Resources */,
 				28371E161B9ED8D80012CEF6 /* a.jpg in Resources */,
-				2831FFF41B9FC088008CDE10 /* share-weixin@3x.png in Resources */,
 				28371DE61B9ED0100012CEF6 /* Main.storyboard in Resources */,
+				286AA5C81BABC23900EEA6D1 /* share-weixin@3x.png in Resources */,
+				286AA5C51BABC23900EEA6D1 /* share-qqzone@3x.png in Resources */,
+				286AA5C41BABC23900EEA6D1 /* share-qq@3x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -371,14 +371,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				285E89741BA00C1600B85127 /* TWSNS.m in Sources */,
-				2831FFF71B9FC09D008CDE10 /* TWShareView.m in Sources */,
+				286AA5C31BABC23900EEA6D1 /* NSString+SNSAddition.m in Sources */,
+				286AA5CD1BABC23900EEA6D1 /* TWSNSRequest.m in Sources */,
+				286AA5CC1BABC23900EEA6D1 /* TWSNS.m in Sources */,
 				28371DE31B9ED0100012CEF6 /* ViewController.m in Sources */,
-				28F51AC61BA70BF8008639C3 /* TWSNSRequest.m in Sources */,
-				28371E141B9ED0370012CEF6 /* TWShare.m in Sources */,
-				28371E131B9ED0370012CEF6 /* TWOAuth.m in Sources */,
 				28371DE01B9ED0100012CEF6 /* AppDelegate.m in Sources */,
-				28F51ACC1BA714BA008639C3 /* NSString+SNSAddition.m in Sources */,
+				286AA5CB1BABC23900EEA6D1 /* TWShareView.m in Sources */,
+				286AA5C91BABC23900EEA6D1 /* TWOAuth.m in Sources */,
+				286AA5CA1BABC23900EEA6D1 /* TWShare.m in Sources */,
 				28371DDD1B9ED0100012CEF6 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -402,12 +402,12 @@
 /* Begin PBXTargetDependency section */
 		28371DF31B9ED0100012CEF6 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 28371DD71B9ED0100012CEF6 /* TWSNS */;
+			target = 28371DD71B9ED0100012CEF6 /* TWSNSDemo */;
 			targetProxy = 28371DF21B9ED0100012CEF6 /* PBXContainerItemProxy */;
 		};
 		28371DFE1B9ED0100012CEF6 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 28371DD71B9ED0100012CEF6 /* TWSNS */;
+			target = 28371DD71B9ED0100012CEF6 /* TWSNSDemo */;
 			targetProxy = 28371DFD1B9ED0100012CEF6 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -526,7 +526,7 @@
 				);
 				ONLY_ACTIVE_ARCH = NO;
 				PRODUCT_BUNDLE_IDENTIFIER = com.shy.chuanqing;
-				PRODUCT_NAME = TWSNS;
+				PRODUCT_NAME = TWSNSDemo;
 			};
 			name = Debug;
 		};
@@ -543,7 +543,7 @@
 					"$(SDKROOT)/usr/lib/system",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.shy.chuanqing;
-				PRODUCT_NAME = TWSNS;
+				PRODUCT_NAME = TWSNSDemo;
 			};
 			name = Release;
 		};
@@ -554,8 +554,8 @@
 				INFOPLIST_FILE = XTSNSTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.lza.XTSNSTests;
-				PRODUCT_NAME = TWSNS;
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TWSNS.app/TWSNS";
+				PRODUCT_NAME = TWSNSDemo;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TWSNSDemo.app/TWSNSDemo";
 			};
 			name = Debug;
 		};
@@ -566,8 +566,8 @@
 				INFOPLIST_FILE = XTSNSTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.lza.XTSNSTests;
-				PRODUCT_NAME = TWSNS;
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TWSNS.app/TWSNS";
+				PRODUCT_NAME = TWSNSDemo;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TWSNSDemo.app/TWSNSDemo";
 			};
 			name = Release;
 		};
@@ -577,7 +577,7 @@
 				INFOPLIST_FILE = XTSNSUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.lza.XTSNSUITests;
-				PRODUCT_NAME = TWSNS;
+				PRODUCT_NAME = TWSNSDemo;
 				TEST_TARGET_NAME = XTSNS;
 				USES_XCTRUNNER = YES;
 			};
@@ -589,7 +589,7 @@
 				INFOPLIST_FILE = XTSNSUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.lza.XTSNSUITests;
-				PRODUCT_NAME = TWSNS;
+				PRODUCT_NAME = TWSNSDemo;
 				TEST_TARGET_NAME = XTSNS;
 				USES_XCTRUNNER = YES;
 			};
@@ -598,7 +598,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		28371DD31B9ED0100012CEF6 /* Build configuration list for PBXProject "TWSNS" */ = {
+		28371DD31B9ED0100012CEF6 /* Build configuration list for PBXProject "TWSNSDemo" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				28371E031B9ED0100012CEF6 /* Debug */,
@@ -607,7 +607,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		28371E051B9ED0100012CEF6 /* Build configuration list for PBXNativeTarget "TWSNS" */ = {
+		28371E051B9ED0100012CEF6 /* Build configuration list for PBXNativeTarget "TWSNSDemo" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				28371E061B9ED0100012CEF6 /* Debug */,
@@ -616,7 +616,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		28371E081B9ED0100012CEF6 /* Build configuration list for PBXNativeTarget "TWSNSTests" */ = {
+		28371E081B9ED0100012CEF6 /* Build configuration list for PBXNativeTarget "TWSNSDemoTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				28371E091B9ED0100012CEF6 /* Debug */,
@@ -625,7 +625,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		28371E0B1B9ED0100012CEF6 /* Build configuration list for PBXNativeTarget "TWSNSUITests" */ = {
+		28371E0B1B9ED0100012CEF6 /* Build configuration list for PBXNativeTarget "TWSNSDemoUITests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				28371E0C1B9ED0100012CEF6 /* Debug */,

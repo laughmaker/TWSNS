@@ -15,9 +15,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "28371DD71B9ED0100012CEF6"
-               BuildableName = "TWSNS.app"
-               BlueprintName = "TWSNS"
-               ReferencedContainer = "container:TWSNS.xcodeproj">
+               BuildableName = "TWSNSDemo.app"
+               BlueprintName = "TWSNSDemo"
+               ReferencedContainer = "container:TWSNSDemo.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -33,9 +33,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "28371DF01B9ED0100012CEF6"
-               BuildableName = "TWSNS.xctest"
-               BlueprintName = "TWSNSTests"
-               ReferencedContainer = "container:TWSNS.xcodeproj">
+               BuildableName = "TWSNSDemo.xctest"
+               BlueprintName = "TWSNSDemoTests"
+               ReferencedContainer = "container:TWSNSDemo.xcodeproj">
             </BuildableReference>
          </TestableReference>
          <TestableReference
@@ -43,9 +43,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "28371DFB1B9ED0100012CEF6"
-               BuildableName = "TWSNS.xctest"
-               BlueprintName = "TWSNSUITests"
-               ReferencedContainer = "container:TWSNS.xcodeproj">
+               BuildableName = "TWSNSDemo.xctest"
+               BlueprintName = "TWSNSDemoUITests"
+               ReferencedContainer = "container:TWSNSDemo.xcodeproj">
             </BuildableReference>
          </TestableReference>
       </Testables>
@@ -53,9 +53,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "28371DD71B9ED0100012CEF6"
-            BuildableName = "TWSNS.app"
-            BlueprintName = "TWSNS"
-            ReferencedContainer = "container:TWSNS.xcodeproj">
+            BuildableName = "TWSNSDemo.app"
+            BlueprintName = "TWSNSDemo"
+            ReferencedContainer = "container:TWSNSDemo.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
       <AdditionalOptions>
@@ -76,9 +76,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "28371DD71B9ED0100012CEF6"
-            BuildableName = "TWSNS.app"
-            BlueprintName = "TWSNS"
-            ReferencedContainer = "container:TWSNS.xcodeproj">
+            BuildableName = "TWSNSDemo.app"
+            BlueprintName = "TWSNSDemo"
+            ReferencedContainer = "container:TWSNSDemo.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
       <AdditionalOptions>
@@ -95,9 +95,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "28371DD71B9ED0100012CEF6"
-            BuildableName = "TWSNS.app"
-            BlueprintName = "TWSNS"
-            ReferencedContainer = "container:TWSNS.xcodeproj">
+            BuildableName = "TWSNSDemo.app"
+            BlueprintName = "TWSNSDemo"
+            ReferencedContainer = "container:TWSNSDemo.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>
