@@ -8,8 +8,9 @@
 
 #import "AppDelegate.h"
 #import "TWSNS.h"
+#import "NSString+SNSAddition.h"
 
-#warning 请替换为自己的相关帐号进行测试
+//#warning 请替换为自己的相关帐号进行测试
 ///微信第三方登录
 static NSString *const kWeiXinAppId         = @"";
 static NSString *const kWeiXinAppSecret     = @"";

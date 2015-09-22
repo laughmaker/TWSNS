@@ -4,11 +4,6 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
-		<key>FXBlurView.xcscheme</key>
-		<dict>
-			<key>isShown</key>
-			<false/>
-		</dict>
 		<key>OpenShare.xcscheme</key>
 		<dict>
 			<key>isShown</key>
@@ -22,17 +17,12 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>70AB80C0C741B0B5E645DC125C212CF2</key>
+		<key>6EB7BBA4823EE93AED27E42911F8803E</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>EF8E10A002DBB05039ECDD5DE995E6CF</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>F7CA2435EFEF7EF26D6A12030C8AFE33</key>
+		<key>FB4FEEBB366D994C57115C550AC4D73E</key>
 		<dict>
 			<key>primary</key>
 			<true/>

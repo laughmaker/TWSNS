@@ -1,13 +1,10 @@
 PODS:
-  - FXBlurView (1.6.3)
   - OpenShare (0.0.1)
 
 DEPENDENCIES:
-  - FXBlurView (= 1.6.3)
   - OpenShare (~> 0.0.1)
 
 SPEC CHECKSUMS:
-  FXBlurView: c6d23f3d35af2c6282296a2930f61c6e2c788d01
   OpenShare: a560580dbb729d5c0c3cc1ee84cd6aa4a07e94c6
 
 COCOAPODS: 0.39.0.beta.4

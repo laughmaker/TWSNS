@@ -7,7 +7,6 @@
 //
 
 #import "TWShareView.h"
-#import "FXBlurView.h"
 #import "TWSNSDefine.h"
 #import "TWShare.h"
 
@@ -19,7 +18,7 @@ static CGFloat const kTopMargin = 25;
 #define kWidth (self.bounds.size.width - kSpace * (kRankNum + 1))/kRankNum
 
 @interface TWShareView ()
-@property (strong, nonatomic) FXBlurView *contentView;
+@property (strong, nonatomic) UIToolbar *contentView;
 @property (strong, nonatomic) OSMessage *message;
 
 @property (nonatomic, copy) void (^shareCompletionHandler) (OSMessage *message, NSError *error);
@@ -45,7 +44,7 @@ static CGFloat const kTopMargin = 25;
 
         NSArray *images = @[[UIImage imageNamed:@"share-weixin"],
                             [UIImage imageNamed:@"share-weixin-frends"],
-                            [UIImage imageNamed:@"share-qq@3x"],
+                            [UIImage imageNamed:@"share-qq"],
                             [UIImage imageNamed:@"share-qqzone"],
                             [UIImage imageNamed:@"share-weibo"]];
         NSInteger rank = 0;
@@ -86,7 +85,6 @@ static CGFloat const kTopMargin = 25;
     UIView *window = [[UIApplication sharedApplication].keyWindow.subviews lastObject];
     self.contentView.frame = CGRectMake(0, self.bounds.size.height, self.bounds.size.width, 120);
     [window addSubview:self];
-    self.contentView.underlyingView = window;
 
     [UIView animateWithDuration:0.75 delay:0 usingSpringWithDamping:0.5 initialSpringVelocity:0.3 options:UIViewAnimationOptionCurveEaseInOut animations:^{
         weakSelf.contentView.frame = CGRectMake(0, weakSelf.bounds.size.height - kWidth - kTopMargin * 2 - 5, weakSelf.bounds.size.width, 400);
@@ -107,10 +105,10 @@ static CGFloat const kTopMargin = 25;
 
 #pragma getters && setters 
 
-- (FXBlurView *)contentView
+- (UIToolbar *)contentView
 {
     if (!_contentView) {
-        _contentView = [[FXBlurView alloc] init];
+        _contentView = [[UIToolbar alloc] init];
     }
     return _contentView;
 }

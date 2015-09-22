@@ -154,9 +154,9 @@
 		286AA5AF1BABC23900EEA6D1 /* TWSNS */ = {
 			isa = PBXGroup;
 			children = (
+				286AA5B21BABC23900EEA6D1 /* Resources */,
 				286AA5B01BABC23900EEA6D1 /* NSString+SNSAddition.h */,
 				286AA5B11BABC23900EEA6D1 /* NSString+SNSAddition.m */,
-				286AA5B21BABC23900EEA6D1 /* Resources */,
 				286AA5B81BABC23900EEA6D1 /* TWOAuth.h */,
 				286AA5B91BABC23900EEA6D1 /* TWOAuth.m */,
 				286AA5BA1BABC23900EEA6D1 /* TWShare.h */,
@@ -517,14 +517,14 @@
 			baseConfigurationReference = 3AA2F1963C44EE9616719555 /* Pods.debug.xcconfig */;
 			buildSettings = {
 				ENABLE_BITCODE = NO;
-				INFOPLIST_FILE = TWSNS/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/TWSNSDemo/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(SDKROOT)/usr/lib/system",
 				);
-				ONLY_ACTIVE_ARCH = NO;
+				ONLY_ACTIVE_ARCH = YES;
 				PRODUCT_BUNDLE_IDENTIFIER = com.shy.chuanqing;
 				PRODUCT_NAME = TWSNSDemo;
 			};
@@ -535,13 +535,14 @@
 			baseConfigurationReference = F3BFB7681AE3954A6F4C9BCC /* Pods.release.xcconfig */;
 			buildSettings = {
 				ENABLE_BITCODE = NO;
-				INFOPLIST_FILE = TWSNS/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/TWSNSDemo/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(SDKROOT)/usr/lib/system",
 				);
+				ONLY_ACTIVE_ARCH = YES;
 				PRODUCT_BUNDLE_IDENTIFIER = com.shy.chuanqing;
 				PRODUCT_NAME = TWSNSDemo;
 			};
