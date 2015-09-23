@@ -18,7 +18,7 @@ static CGFloat const kTopMargin = 25;
 #define kWidth (self.bounds.size.width - kSpace * (kRankNum + 1))/kRankNum
 
 @interface TWShareView ()
-@property (strong, nonatomic) UIToolbar *contentView;
+@property (strong, nonatomic) UIView *contentView;
 @property (strong, nonatomic) OSMessage *message;
 
 @property (nonatomic, copy) void (^shareCompletionHandler) (OSMessage *message, NSError *error);
@@ -105,10 +105,15 @@ static CGFloat const kTopMargin = 25;
 
 #pragma getters && setters 
 
-- (UIToolbar *)contentView
+- (UIView *)contentView
 {
     if (!_contentView) {
-        _contentView = [[UIToolbar alloc] init];
+        NSInteger version = [[[UIDevice currentDevice] systemVersion] integerValue];
+        if (version >= 8) {
+            _contentView = [[UIVisualEffectView alloc] initWithEffect:[UIBlurEffect effectWithStyle:UIBlurEffectStyleLight]];
+        } else {
+            _contentView = [[UIToolbar alloc] init];
+        }
     }
     return _contentView;
 }
