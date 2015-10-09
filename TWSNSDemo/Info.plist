@@ -26,9 +26,7 @@
 			<key>CFBundleURLName</key>
 			<string>weixin</string>
 			<key>CFBundleURLSchemes</key>
-			<array>
-				<string>wxd41b2ec423a3ea58</string>
-			</array>
+			<array/>
 		</dict>
 		<dict>
 			<key>CFBundleTypeRole</key>
@@ -36,9 +34,7 @@
 			<key>CFBundleURLName</key>
 			<string>weibo.com</string>
 			<key>CFBundleURLSchemes</key>
-			<array>
-				<string>wb1066360212</string>
-			</array>
+			<array/>
 		</dict>
 		<dict>
 			<key>CFBundleTypeRole</key>
@@ -46,17 +42,15 @@
 			<key>CFBundleURLName</key>
 			<string>tencent</string>
 			<key>CFBundleURLSchemes</key>
-			<array>
-				<string>tencent1104505542</string>
-			</array>
+			<array/>
 		</dict>
 		<dict>
 			<key>CFBundleTypeRole</key>
 			<string>Editor</string>
+			<key>CFBundleURLName</key>
+			<string>qq</string>
 			<key>CFBundleURLSchemes</key>
-			<array>
-				<string>QQ1104505542</string>
-			</array>
+			<array/>
 		</dict>
 	</array>
 	<key>CFBundleVersion</key>

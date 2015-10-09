@@ -22,7 +22,7 @@ static NSString *const kWeiBoAppRedirectURL = @"";
 
 ///QQ第三方登录
 static NSString *const kQQAppId          = @"";
-static NSString *const kQQAppSecret      = @"";
+static NSString *const kQQAppKey         = @"";
 
 @interface AppDelegate ()
 
@@ -33,7 +33,7 @@ static NSString *const kQQAppSecret      = @"";
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
-    [TWSNS registerQQAppId:kQQAppId secret:kQQAppSecret];
+    [TWSNS registerQQAppId:kQQAppId secret:kQQAppKey];
     [TWSNS registerWeiboAppId:kWeiBoAppId secret:kWeiBoAppSecret redirectURI:kWeiBoAppRedirectURL];
     [TWSNS registerWeiXinAppId:kWeiXinAppId secret:kWeiXinAppSecret];
     
