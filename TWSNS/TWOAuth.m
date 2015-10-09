@@ -24,7 +24,7 @@
             }
         }];
     } else if (platform == TWSNSPlatformQQ) {
-        [OpenShare QQAuth:@"get_info" Success:^(NSDictionary *message) {
+        [OpenShare QQAuth:@"get_user_info,get_simple_userinfo,get_info" Success:^(NSDictionary *message) {
             [TWOAuth qqOAuthWithMessage:message completionHandle:completionHandler];
         } Fail:^(NSDictionary *message, NSError *error) {
             if (completionHandler) {
