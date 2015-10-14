@@ -11,14 +11,20 @@
 #import "TWShare.h"
 
 static NSUInteger const kRankNum = 5;
-static CGFloat const kSpace = 10;
-static CGFloat const kTopMargin = 25;
+static CGFloat const kSpace = 25;
+static CGFloat const kTopMargin = 90;
 
 
 #define kWidth (self.bounds.size.width - kSpace * (kRankNum + 1))/kRankNum
 
 @interface TWShareView ()
 @property (strong, nonatomic) UIView *contentView;
+@property (strong, nonatomic) UILabel *titleLbl;
+@property (strong, nonatomic) UIButton *cancelBtn;
+
+@property (strong, nonatomic) UIView *upLine;
+@property (strong, nonatomic) UIView *downLine;
+
 @property (strong, nonatomic) OSMessage *message;
 
 @property (nonatomic, copy) void (^shareCompletionHandler) (OSMessage *message, NSError *error);
@@ -37,10 +43,14 @@ static CGFloat const kTopMargin = 25;
 {
     self = [super initWithFrame:frame];
     if (self) {
-        self.backgroundColor = [[UIColor darkTextColor] colorWithAlphaComponent:0.3];
+        self.backgroundColor = [[UIColor darkTextColor] colorWithAlphaComponent:0.2];
         [self addTarget:self action:@selector(hideSelf:) forControlEvents:UIControlEventTouchUpInside];
         
         [self addSubview:self.contentView];
+        [self.contentView addSubview:self.titleLbl];
+        [self.contentView addSubview:self.cancelBtn];
+        [self.contentView addSubview:self.upLine];
+        [self.contentView addSubview:self.downLine];
 
         NSArray *images = @[[UIImage imageNamed:@"share-weixin"],
                             [UIImage imageNamed:@"share-weixin-frends"],
@@ -67,6 +77,16 @@ static CGFloat const kTopMargin = 25;
     return self;
 }
 
+- (void)layoutSubviews
+{
+    [super layoutSubviews];
+    
+    self.titleLbl.frame = CGRectMake(0, 0, self.contentView.frame.size.width, 60);
+    self.cancelBtn.frame = CGRectMake(0, 175, self.contentView.frame.size.width, 40);
+    self.upLine.frame = CGRectMake(30, self.titleLbl.frame.size.height + 10, self.contentView.frame.size.width - 30 * 2, 0.7);
+    self.downLine.frame = CGRectMake(self.upLine.frame.origin.x, self.cancelBtn.frame.origin.y - 15, self.upLine.frame.size.width, 0.7);
+}
+
 - (void)shareButtonClickEvent:(UIButton *)sender
 {
     TWSNSShareType shareType = sender.tag;
@@ -87,7 +107,7 @@ static CGFloat const kTopMargin = 25;
     [window addSubview:self];
 
     [UIView animateWithDuration:0.75 delay:0 usingSpringWithDamping:0.5 initialSpringVelocity:0.3 options:UIViewAnimationOptionCurveEaseInOut animations:^{
-        weakSelf.contentView.frame = CGRectMake(0, weakSelf.bounds.size.height - kWidth - kTopMargin * 2 - 5, weakSelf.bounds.size.width, 400);
+        weakSelf.contentView.frame = CGRectMake(0, weakSelf.bounds.size.height - 230, weakSelf.bounds.size.width, 400);
     } completion:nil];
 }
 
@@ -116,6 +136,50 @@ static CGFloat const kTopMargin = 25;
         }
     }
     return _contentView;
+}
+
+- (UILabel *)titleLbl
+{
+    if (!_titleLbl) {
+        _titleLbl = [[UILabel alloc] init];
+        _titleLbl.textAlignment = NSTextAlignmentCenter;
+        _titleLbl.textColor = [UIColor whiteColor];
+        _titleLbl.font = [UIFont boldSystemFontOfSize:16];
+        _titleLbl.text = @"分享至";
+    }
+    return _titleLbl;
+}
+
+- (UIButton *)cancelBtn
+{
+    if (!_cancelBtn) {
+        _cancelBtn = [UIButton buttonWithType:UIButtonTypeCustom];
+        [_cancelBtn setTitle:@"取消" forState:UIControlStateNormal];
+        [_cancelBtn setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
+        _cancelBtn.titleLabel.font = [UIFont systemFontOfSize:15];
+        [_cancelBtn addTarget:self action:@selector(hideSelf:) forControlEvents:UIControlEventTouchUpInside];
+    }
+    return _cancelBtn;
+}
+
+- (UIView *)upLine
+{
+    if (!_upLine) {
+        _upLine = [[UIView alloc] init];
+        _upLine.backgroundColor = [[UIColor whiteColor] colorWithAlphaComponent:0.5];
+        _upLine.alpha = 0.5;
+    }
+    return _upLine;
+}
+
+- (UIView *)downLine
+{
+    if (!_downLine) {
+        _downLine = [[UIView alloc] init];
+        _downLine.backgroundColor = _upLine.backgroundColor;
+        _downLine.alpha = _upLine.alpha;
+    }
+    return _downLine;
 }
 
 
