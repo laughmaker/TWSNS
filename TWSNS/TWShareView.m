@@ -10,12 +10,13 @@
 #import "TWSNSDefine.h"
 #import "TWShare.h"
 
+
 static NSUInteger const kRankNum = 5;
-static CGFloat const kSpace = 25;
-static CGFloat const kTopMargin = 90;
 
+#define m6Scale self.bounds.size.width/750.0
+#define kSpace  43 * m6Scale
+#define kWidth ((self.bounds.size.width - kSpace * (kRankNum + 1))/kRankNum)
 
-#define kWidth (self.bounds.size.width - kSpace * (kRankNum + 1))/kRankNum
 
 @interface TWShareView ()
 @property (strong, nonatomic) UIView *contentView;
@@ -60,7 +61,7 @@ static CGFloat const kTopMargin = 90;
         NSInteger rank = 0;
         for (int i = 0; i < images.count; i++) {
             NSInteger row = floor(i / kRankNum);
-            CGRect rect = CGRectMake(kSpace + (kSpace + kWidth) * rank, kTopMargin + (kWidth + kTopMargin) * row, kWidth, kWidth);
+            CGRect rect = CGRectMake(kSpace + (kSpace + kWidth) * rank, self.upLine.frame.origin.y + kSpace + (kWidth + kSpace) * row, kWidth, kWidth);
             rank++;
             if (rank >= kRankNum) {
                 rank = 0;
@@ -81,10 +82,6 @@ static CGFloat const kTopMargin = 90;
 {
     [super layoutSubviews];
     
-    self.titleLbl.frame = CGRectMake(0, 0, self.contentView.frame.size.width, 60);
-    self.cancelBtn.frame = CGRectMake(0, 175, self.contentView.frame.size.width, 40);
-    self.upLine.frame = CGRectMake(30, self.titleLbl.frame.size.height + 10, self.contentView.frame.size.width - 30 * 2, 0.7);
-    self.downLine.frame = CGRectMake(self.upLine.frame.origin.x, self.cancelBtn.frame.origin.y - 15, self.upLine.frame.size.width, 0.7);
 }
 
 - (void)shareButtonClickEvent:(UIButton *)sender
@@ -107,7 +104,8 @@ static CGFloat const kTopMargin = 90;
     [window addSubview:self];
 
     [UIView animateWithDuration:0.75 delay:0 usingSpringWithDamping:0.5 initialSpringVelocity:0.3 options:UIViewAnimationOptionCurveEaseInOut animations:^{
-        weakSelf.contentView.frame = CGRectMake(0, weakSelf.bounds.size.height - 230, weakSelf.bounds.size.width, 400);
+        CGFloat bottom = weakSelf.cancelBtn.frame.size.height + weakSelf.cancelBtn.frame.origin.y;
+        weakSelf.contentView.frame = CGRectMake(0, weakSelf.bounds.size.height - bottom, weakSelf.bounds.size.width, 400);
     } completion:nil];
 }
 
@@ -134,6 +132,7 @@ static CGFloat const kTopMargin = 90;
         } else {
             _contentView = [[UIToolbar alloc] init];
         }
+        _contentView.frame = CGRectMake(0, self.bounds.size.height, self.bounds.size.width, 400);
     }
     return _contentView;
 }
@@ -141,7 +140,8 @@ static CGFloat const kTopMargin = 90;
 - (UILabel *)titleLbl
 {
     if (!_titleLbl) {
-        _titleLbl = [[UILabel alloc] init];
+        CGRect frame = CGRectMake(0, 0, self.contentView.frame.size.width, 62 * m6Scale);
+        _titleLbl = [[UILabel alloc] initWithFrame:frame];
         _titleLbl.textAlignment = NSTextAlignmentCenter;
         _titleLbl.textColor = [UIColor whiteColor];
         _titleLbl.font = [UIFont boldSystemFontOfSize:16];
@@ -150,22 +150,11 @@ static CGFloat const kTopMargin = 90;
     return _titleLbl;
 }
 
-- (UIButton *)cancelBtn
-{
-    if (!_cancelBtn) {
-        _cancelBtn = [UIButton buttonWithType:UIButtonTypeCustom];
-        [_cancelBtn setTitle:@"取消" forState:UIControlStateNormal];
-        [_cancelBtn setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
-        _cancelBtn.titleLabel.font = [UIFont systemFontOfSize:15];
-        [_cancelBtn addTarget:self action:@selector(hideSelf:) forControlEvents:UIControlEventTouchUpInside];
-    }
-    return _cancelBtn;
-}
-
 - (UIView *)upLine
 {
     if (!_upLine) {
-        _upLine = [[UIView alloc] init];
+        CGRect frame = CGRectMake(30 * m6Scale, self.titleLbl.frame.size.height + 20 * m6Scale, self.contentView.frame.size.width - 30 * m6Scale * 2, 0.5);
+        _upLine = [[UIView alloc] initWithFrame:frame];
         _upLine.backgroundColor = [[UIColor whiteColor] colorWithAlphaComponent:0.5];
         _upLine.alpha = 0.5;
     }
@@ -175,12 +164,26 @@ static CGFloat const kTopMargin = 90;
 - (UIView *)downLine
 {
     if (!_downLine) {
-        _downLine = [[UIView alloc] init];
+        CGFloat y = self.upLine.frame.origin.y + kSpace * 2 + kWidth;
+        CGRect frame = CGRectMake(self.upLine.frame.origin.x, y, self.upLine.frame.size.width, 0.5);
+        _downLine = [[UIView alloc] initWithFrame:frame];
         _downLine.backgroundColor = _upLine.backgroundColor;
         _downLine.alpha = _upLine.alpha;
     }
     return _downLine;
 }
 
+- (UIButton *)cancelBtn
+{
+    if (!_cancelBtn) {
+        _cancelBtn = [UIButton buttonWithType:UIButtonTypeCustom];
+        [_cancelBtn setTitle:@"取消" forState:UIControlStateNormal];
+        [_cancelBtn setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
+        _cancelBtn.titleLabel.font = [UIFont systemFontOfSize:15];
+        _cancelBtn.frame = CGRectMake(0, self.downLine.frame.origin.y, self.contentView.frame.size.width, 100 * m6Scale);
+        [_cancelBtn addTarget:self action:@selector(hideSelf:) forControlEvents:UIControlEventTouchUpInside];
+    }
+    return _cancelBtn;
+}
 
 @end
