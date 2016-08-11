@@ -30,6 +30,8 @@ static NSUInteger const kRankNum = 5;
 
 @property (nonatomic, copy) void (^shareCompletionHandler) (OSMessage *message, NSError *error);
 
+@property (nonatomic, strong) NSMutableArray *typeMArr;
+
 @end
 
 @implementation TWShareView
@@ -53,26 +55,51 @@ static NSUInteger const kRankNum = 5;
         [self.contentView addSubview:self.upLine];
         [self.contentView addSubview:self.downLine];
 
-        NSArray *images = @[[UIImage imageNamed:@"share-weixin"],
-                            [UIImage imageNamed:@"share-weixin-frends"],
-                            [UIImage imageNamed:@"share-qq"],
-                            [UIImage imageNamed:@"share-qqzone"],
-                            [UIImage imageNamed:@"share-weibo"]];
-        NSInteger rank = 0;
+        NSMutableArray *images = [NSMutableArray array];
+        self.typeMArr = [NSMutableArray array];
+        if ([[UIApplication sharedApplication] canOpenURL:[NSURL URLWithString:@"wechat://"]]) {
+            [images addObject:[UIImage imageNamed:@"share-weixin"]];
+            [self.typeMArr addObject:@"1"];
+        }
+        if ([[UIApplication sharedApplication] canOpenURL:[NSURL URLWithString:@"weixin://"]]) {
+            [images addObject:[UIImage imageNamed:@"share-weixin-frends"]];
+            [self.typeMArr addObject:@"2"];
+        }
+        if ([[UIApplication sharedApplication] canOpenURL:[NSURL URLWithString:@"mqq://"]]) {
+            [images addObject:[UIImage imageNamed:@"share-qq"]];
+            [images addObject:[UIImage imageNamed:@"share-qqzone"]];
+            [self.typeMArr addObject:@"3"];
+            [self.typeMArr addObject:@"4"];
+        }
+        if ([[UIApplication sharedApplication] canOpenURL:[NSURL URLWithString:@"sinaweibo://"]]) {
+            [images addObject:[UIImage imageNamed:@"share-weibo"]];
+            [self.typeMArr addObject:@"5"];
+        }
+        
+        
+        CGFloat thirdButtonLength = 50;
+        CGFloat screenWidth = [UIScreen mainScreen].bounds.size.width;
+        CGFloat buttonInterval =  (screenWidth-images.count * thirdButtonLength) /(images.count + 1);
+        
         for (int i = 0; i < images.count; i++) {
             NSInteger row = floor(i / kRankNum);
-            CGRect rect = CGRectMake(kSpace + (kSpace + kWidth) * rank, self.upLine.frame.origin.y + kSpace + (kWidth + kSpace) * row, kWidth, kWidth);
-            rank++;
-            if (rank >= kRankNum) {
-                rank = 0;
-            }
+            
+            CGRect rect1 = CGRectMake(buttonInterval * (i + 1) + thirdButtonLength*i, self.upLine.frame.origin.y + kSpace + (kWidth + kSpace) * row, thirdButtonLength, thirdButtonLength);
             
             UIButton *btn = [UIButton buttonWithType:UIButtonTypeCustom];
             [btn setImage:images[i] forState:UIControlStateNormal];
-            btn.frame = rect;
+            btn.frame = rect1;
             btn.tag = 1 + i;
             [btn addTarget:self action:@selector(shareButtonClickEvent:) forControlEvents:UIControlEventTouchUpInside];
             [self.contentView addSubview:btn];
+        }
+        
+        if (images.count == 0) {
+            UILabel *lbl = [[UILabel alloc] initWithFrame:CGRectMake(0, self.upLine.frame.origin.y, self.bounds.size.width, self.downLine.frame.origin.y - self.upLine.frame.origin.y)];
+            lbl.text = @"您暂时没有可分享的平台！";
+            lbl.textAlignment = NSTextAlignmentCenter;
+            lbl.textColor = [UIColor whiteColor];
+            [self.contentView addSubview:lbl];
         }
     }
     return self;
@@ -86,7 +113,8 @@ static NSUInteger const kRankNum = 5;
 
 - (void)shareButtonClickEvent:(UIButton *)sender
 {
-    TWSNSShareType shareType = sender.tag;
+    TWSNSShareType shareType = [self.typeMArr[sender.tag - 1] integerValue];
+
     [TWShare shareMessage:self.message withShareType:shareType completionHandler:self.shareCompletionHandler];
     
     [self hideSelf:self];

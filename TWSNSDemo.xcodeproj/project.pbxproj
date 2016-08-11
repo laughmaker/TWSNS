@@ -13,18 +13,18 @@
 		28371DE31B9ED0100012CEF6 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 28371DE21B9ED0100012CEF6 /* ViewController.m */; };
 		28371DE61B9ED0100012CEF6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 28371DE41B9ED0100012CEF6 /* Main.storyboard */; };
 		28371DEB1B9ED0100012CEF6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 28371DE91B9ED0100012CEF6 /* LaunchScreen.storyboard */; };
-		28371E161B9ED8D80012CEF6 /* a.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 28371E151B9ED8D80012CEF6 /* a.jpg */; settings = {ASSET_TAGS = (); }; };
-		286AA5C31BABC23900EEA6D1 /* NSString+SNSAddition.m in Sources */ = {isa = PBXBuildFile; fileRef = 286AA5B11BABC23900EEA6D1 /* NSString+SNSAddition.m */; settings = {ASSET_TAGS = (); }; };
-		286AA5C41BABC23900EEA6D1 /* share-qq@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 286AA5B31BABC23900EEA6D1 /* share-qq@3x.png */; settings = {ASSET_TAGS = (); }; };
-		286AA5C51BABC23900EEA6D1 /* share-qqzone@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 286AA5B41BABC23900EEA6D1 /* share-qqzone@3x.png */; settings = {ASSET_TAGS = (); }; };
-		286AA5C61BABC23900EEA6D1 /* share-weibo@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 286AA5B51BABC23900EEA6D1 /* share-weibo@3x.png */; settings = {ASSET_TAGS = (); }; };
-		286AA5C71BABC23900EEA6D1 /* share-weixin-frends@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 286AA5B61BABC23900EEA6D1 /* share-weixin-frends@3x.png */; settings = {ASSET_TAGS = (); }; };
-		286AA5C81BABC23900EEA6D1 /* share-weixin@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 286AA5B71BABC23900EEA6D1 /* share-weixin@3x.png */; settings = {ASSET_TAGS = (); }; };
-		286AA5C91BABC23900EEA6D1 /* TWOAuth.m in Sources */ = {isa = PBXBuildFile; fileRef = 286AA5B91BABC23900EEA6D1 /* TWOAuth.m */; settings = {ASSET_TAGS = (); }; };
-		286AA5CA1BABC23900EEA6D1 /* TWShare.m in Sources */ = {isa = PBXBuildFile; fileRef = 286AA5BB1BABC23900EEA6D1 /* TWShare.m */; settings = {ASSET_TAGS = (); }; };
-		286AA5CB1BABC23900EEA6D1 /* TWShareView.m in Sources */ = {isa = PBXBuildFile; fileRef = 286AA5BD1BABC23900EEA6D1 /* TWShareView.m */; settings = {ASSET_TAGS = (); }; };
-		286AA5CC1BABC23900EEA6D1 /* TWSNS.m in Sources */ = {isa = PBXBuildFile; fileRef = 286AA5BF1BABC23900EEA6D1 /* TWSNS.m */; settings = {ASSET_TAGS = (); }; };
-		286AA5CD1BABC23900EEA6D1 /* TWSNSRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 286AA5C21BABC23900EEA6D1 /* TWSNSRequest.m */; settings = {ASSET_TAGS = (); }; };
+		284DBAAE1D5C4D4400AD7DD7 /* a.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 284DBAAD1D5C4D4400AD7DD7 /* a.jpg */; };
+		286AA5C31BABC23900EEA6D1 /* NSString+SNSAddition.m in Sources */ = {isa = PBXBuildFile; fileRef = 286AA5B11BABC23900EEA6D1 /* NSString+SNSAddition.m */; };
+		286AA5C41BABC23900EEA6D1 /* share-qq@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 286AA5B31BABC23900EEA6D1 /* share-qq@3x.png */; };
+		286AA5C51BABC23900EEA6D1 /* share-qqzone@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 286AA5B41BABC23900EEA6D1 /* share-qqzone@3x.png */; };
+		286AA5C61BABC23900EEA6D1 /* share-weibo@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 286AA5B51BABC23900EEA6D1 /* share-weibo@3x.png */; };
+		286AA5C71BABC23900EEA6D1 /* share-weixin-frends@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 286AA5B61BABC23900EEA6D1 /* share-weixin-frends@3x.png */; };
+		286AA5C81BABC23900EEA6D1 /* share-weixin@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 286AA5B71BABC23900EEA6D1 /* share-weixin@3x.png */; };
+		286AA5C91BABC23900EEA6D1 /* TWOAuth.m in Sources */ = {isa = PBXBuildFile; fileRef = 286AA5B91BABC23900EEA6D1 /* TWOAuth.m */; };
+		286AA5CA1BABC23900EEA6D1 /* TWShare.m in Sources */ = {isa = PBXBuildFile; fileRef = 286AA5BB1BABC23900EEA6D1 /* TWShare.m */; };
+		286AA5CB1BABC23900EEA6D1 /* TWShareView.m in Sources */ = {isa = PBXBuildFile; fileRef = 286AA5BD1BABC23900EEA6D1 /* TWShareView.m */; };
+		286AA5CC1BABC23900EEA6D1 /* TWSNS.m in Sources */ = {isa = PBXBuildFile; fileRef = 286AA5BF1BABC23900EEA6D1 /* TWSNS.m */; };
+		286AA5CD1BABC23900EEA6D1 /* TWSNSRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 286AA5C21BABC23900EEA6D1 /* TWSNSRequest.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -56,7 +56,7 @@
 		28371DEC1B9ED0100012CEF6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		28371DF11B9ED0100012CEF6 /* TWSNSDemo.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TWSNSDemo.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		28371DFC1B9ED0100012CEF6 /* TWSNSDemo.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TWSNSDemo.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		28371E151B9ED8D80012CEF6 /* a.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = a.jpg; path = "../../../../../Pictures/壁纸/a.jpg"; sourceTree = "<group>"; };
+		284DBAAD1D5C4D4400AD7DD7 /* a.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = a.jpg; sourceTree = "<group>"; };
 		286AA5B01BABC23900EEA6D1 /* NSString+SNSAddition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+SNSAddition.h"; sourceTree = "<group>"; };
 		286AA5B11BABC23900EEA6D1 /* NSString+SNSAddition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+SNSAddition.m"; sourceTree = "<group>"; };
 		286AA5B31BABC23900EEA6D1 /* share-qq@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "share-qq@3x.png"; sourceTree = "<group>"; };
@@ -145,7 +145,7 @@
 		28371DDB1B9ED0100012CEF6 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				28371E151B9ED8D80012CEF6 /* a.jpg */,
+				284DBAAD1D5C4D4400AD7DD7 /* a.jpg */,
 				28371DDC1B9ED0100012CEF6 /* main.m */,
 			);
 			name = "Supporting Files";
@@ -270,6 +270,7 @@
 				TargetAttributes = {
 					28371DD71B9ED0100012CEF6 = {
 						CreatedOnToolsVersion = 7.0;
+						DevelopmentTeam = AK4385EZT4;
 					};
 					28371DF01B9ED0100012CEF6 = {
 						CreatedOnToolsVersion = 7.0;
@@ -307,9 +308,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				286AA5C71BABC23900EEA6D1 /* share-weixin-frends@3x.png in Resources */,
+				284DBAAE1D5C4D4400AD7DD7 /* a.jpg in Resources */,
 				286AA5C61BABC23900EEA6D1 /* share-weibo@3x.png in Resources */,
 				28371DEB1B9ED0100012CEF6 /* LaunchScreen.storyboard in Resources */,
-				28371E161B9ED8D80012CEF6 /* a.jpg in Resources */,
 				28371DE61B9ED0100012CEF6 /* Main.storyboard in Resources */,
 				286AA5C81BABC23900EEA6D1 /* share-weixin@3x.png in Resources */,
 				286AA5C51BABC23900EEA6D1 /* share-qqzone@3x.png in Resources */,
@@ -516,6 +517,8 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 3AA2F1963C44EE9616719555 /* Pods.debug.xcconfig */;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				ENABLE_BITCODE = NO;
 				INFOPLIST_FILE = "$(SRCROOT)/TWSNSDemo/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
@@ -525,8 +528,9 @@
 					"$(SDKROOT)/usr/lib/system",
 				);
 				ONLY_ACTIVE_ARCH = YES;
-				PRODUCT_BUNDLE_IDENTIFIER = com.shy.chuanqing;
+				PRODUCT_BUNDLE_IDENTIFIER = com.shy.chuanqing44;
 				PRODUCT_NAME = TWSNSDemo;
+				PROVISIONING_PROFILE = "";
 			};
 			name = Debug;
 		};
@@ -534,6 +538,8 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = F3BFB7681AE3954A6F4C9BCC /* Pods.release.xcconfig */;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				ENABLE_BITCODE = NO;
 				INFOPLIST_FILE = "$(SRCROOT)/TWSNSDemo/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
@@ -543,8 +549,9 @@
 					"$(SDKROOT)/usr/lib/system",
 				);
 				ONLY_ACTIVE_ARCH = YES;
-				PRODUCT_BUNDLE_IDENTIFIER = com.shy.chuanqing;
+				PRODUCT_BUNDLE_IDENTIFIER = com.shy.chuanqing44;
 				PRODUCT_NAME = TWSNSDemo;
+				PROVISIONING_PROFILE = "";
 			};
 			name = Release;
 		};
